@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+first commit
 # ag
 =======
 # README

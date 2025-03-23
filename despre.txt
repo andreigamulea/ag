@@ -1,0 +1,2 @@
+obtinere BD: pg_dump -U postgres -v -f "C:\ag\ag_development.sql" ag_development
+adaugare BD: psql -U postgres -d ag_development -f "C:\ag\ag_development.sql"

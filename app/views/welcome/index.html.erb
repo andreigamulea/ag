@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayus Grup</title>
+    <style>
+        /* ----------- STIL GENERAL ----------- */
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            background: #fdfaf5;
+            color: #333;
+        }
+
+        /* ----------- HEADER ----------- */
+
+        .header_container {
+            background: #8b0000;
+            border-bottom: 3px solid #fbc02d;
+        }
+
+        header {
+            color: white;
+            max-width: 1280px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 22px;
+            letter-spacing: 2px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        header p {
+            font-size: 22px;
+        }
+
+
+        /* ----------- MENIU NAV ----------- */
+        nav {
+            text-align: center;
+            padding: 10px 0;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: #8b0000;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #fbc02d;
+            border-bottom: 2px solid #fbc02d;
+            padding-bottom: 5px;
+        }
+
+        /* ----------- CONTAINER ----------- */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 25px;
+            padding-top: 0px;
+            background: white;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* ----------- TITLU SECTIUNI ----------- */
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 8px;
+            margin-bottom: 1em;
+            padding-top: 30px;
+            color: #8b0000;
+        }
+
+        .section-title h1 {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+
+        /* ----------- SEPARATOR ----------- */
+        .separator {
+            width: 68%;
+            height: 1px;
+            background-color: #8b0000;
+            margin: 0 auto;
+        }
+
+        /* ----------- GRID ARTICOLE + RESURSE ----------- */
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            background: #ffffff;
+            border-left: 1px solid #8b0000;
+            border-right: 1px solid #8b0000;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .box h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #8b0000;
+        }
+
+        .box p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .box a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 6px 12px;
+            border: 1px solid #8b0000;
+            border-radius: 5px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            background: #bc2c2c;
+        }
+
+        .box a:hover {
+            background: #8b0000;
+            color: white;
+        }
+
+        /* ----------- GRID PENTRU CARTI CU IMAGINI ----------- */
+        .books-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding-top: 20px;
+        }
+
+        .book {
+            background: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .book img {
+            width: 100%;
+            max-height: 75px;
+            object-fit: contain;
+            border-radius: 5px;
+            margin-bottom: 0px;
+
+        }
+
+        .book h3 {
+            font-size: 18px;
+            color: #8b0000;
+            margin-bottom: 5px;
+            margin-top:10px;
+        }
+
+        .book p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .book a {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 5px 22px;
+            border: 1px solid #8b0000;
+            border-radius: 5px;
+            color: #fff;
+            background: #bc2c2c;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .book a:hover {
+            background: #8b0000;
+            color: white;
+        }
+
+        .box,
+        .book {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .box:hover,
+        .book:hover,
+        nav:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+            border: none;
+        }
+
+        nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+            border: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+                /* Mică mișcare în jos */
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .box {
+            opacity: 0;
+            /* Ascundem inițial */
+            animation: fadeIn 0.8s ease-out forwards;
+            animation-delay: 0.5s;
+            /* Delay global de 0.5s */
+        }
+
+        .book {
+            opacity: 0;
+            /* Ascundem inițial */
+            animation: fadeIn 0.8s ease-out forwards;
+            animation-delay: 0.90s;
+            /* Delay global de 0.5s */
+        }
+
+
+        /* ----------- FOOTER ----------- */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #8b0000;
+            color: white;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .books-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .books-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .flex-container {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            .box {
+                background: #fff5f5;
+                margin: 10px 0;
+            }
+
+            .book h3 {
+                margin-top: 0px;
+            }
+
+            .book a,
+            .box a {
+                margin-bottom: 10px;
+            }
+
+            .box,
+            .book {
+                border: none;
+                padding: 10px;
+                margin-top: -20px;
+            }
+
+            .container {
+                padding: 0;
+            }
+
+            .flex-container {
+                margin-bottom: -20px;
+            }
+
+            .section-title {
+                margin-bottom: 0.2em;
+                margin-top: 10px;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+
+                border-radius: 6px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+            }
+
+            nav a {
+                padding: 5px;
+            }
+
+            nav a:hover {
+                padding-bottom: 2px;
+            }
+        }
+    </style>
+    <style>
+/* Header container styles */
+.header_container {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo styles */
+header div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+header div:first-child img {
+    max-height: 50px;
+    width: auto;
+}
+
+/* Company name styles */
+header div:nth-child(2) {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header div:nth-child(2) p {
+    font-size: 1.2rem;
+    color: #3498db;
+    font-weight: 500;
+}
+
+/* Search container styles */
+header div:last-child {
+    background-color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #7f8c8d;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header div:last-child:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+    
+    header div:nth-child(2) {
+        order: -1;
+    }
+    
+    header div:last-child {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="header_container">
+        <header>
+            <a href="/" class="navbar-brand">
+                
+                <img src="<%= image_path('Ayus Grup.webp') %>" alt="Ayus Cell Romania" class="logo" />
+            </a>
+            <div>
+                <p>Ayus Grup - Romania</p>
+            </div>
+            <div>Search</div>
+
+        </header>
+    </div>
+    <nav>
+        <a href="#">Acasă</a>
+        <a href="#">Articole</a>
+        <a href="#">Resurse Digitale</a>
+        <a href="#">Despre</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="section-title"><h1>📖 Articole & Informații</h1>
+        </div>
+        <div class="separator"></div>
+
+
+        <div class="flex-container">
+            <div class="box">
+                <h2>📖 Cursuri de Ayurveda in Romania</h2>
+                <p>Ayurveda este o știință a vieții ("ayus" înseamnă viață, iar "veda" înseamnă știință sau cunoaștere) deoarece oferă cunoștințe sistematice, verificabile și aplicabile. Parametrizarea joacă un rol esențial în această abordare, permițând Ayurvedei să fie o știință predictivă și adaptivă. Practianții nu se limitează la observarea unei probleme, ci analizează parametrii personali, precum tipologia constituțională (dosha-prakriti), dezechilibrele actuale (vikriti) sau factorii de influență externă și internă.</p>
+                <a href="#">Citește mai mult</a>
+            </div>
+
+            <div class="box">
+                <h2>📖 Module de specializare</h2>
+                <p>Modulul Ayurveda-Padartha este un curs introductiv, cuprinzător și detaliat, care oferă o înțelegere amplă și bine structurată a principiilor fundamentale ale Ayurvedei. Acest curs este accesibil atât celor care fac primii pași în această știință a vieții, cât și celor interesați să aprofundeze cunoștințele despre modul holistic în care Ayurveda abordează sănătatea și modalitățile practice de reechilibrare.</p>
+                <a href="#">Citește mai mult</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Wrapper pentru a face tabelul responsive */
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        /* Stilizare tabel */
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        /* Stil pentru capul tabelului */
+        .styled-table thead {
+            background: #8b0000;
+            color: white;
+            text-align: center;
+        }
+
+        /* Stil pentru celule */
+        .styled-table th,
+        .styled-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Efect hover pe rânduri */
+        .styled-table tbody tr:hover {
+            background: #fbc02d;
+            color: #8b0000;
+            transition: 0.3s ease-in-out;
+        }
+
+        /* Responsive pentru mobil */
+        @media (max-width: 600px) {
+            .styled-table {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="section-title">🌿 Tabelul Plantelor Ayurvedice</div>
+        <div class="separator"></div>
+
+        <div class="table-wrapper">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>🌱 Plantă</th>
+                        <th>✨ Proprietăți</th>
+                        <th>⚕️ Utilizări</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ashwagandha</td>
+                        <td>Adaptogen, tonic nervos</td>
+                        <td>Reduce stresul, crește energia</td>
+                    </tr>
+                    <tr>
+                        <td>Turmeric</td>
+                        <td>Anti-inflamator, antioxidant</td>
+                        <td>Susține sistemul imunitar</td>
+                    </tr>
+                    <tr>
+                        <td>Brahmi</td>
+                        <td>Îmbunătățește memoria</td>
+                        <td>Util în anxietate și concentrare</td>
+                    </tr>
+                    <tr>
+                        <td>Neem</td>
+                        <td>Antibacterian, detoxifiant</td>
+                        <td>Purifică sângele, tratează pielea</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="section-title">📚 Cărți Digitale</div>
+        <div class="separator"></div>
+
+        <div class="books-container">
+            <div class="book">
+                <img src="https://amnromania.ro/wp-content/uploads/2020/10/amn.png.webp" alt="Cartea 1">
+                <h3>📜 Ayurveda in Romania V1 EN</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut vehicula turpis. Praesent ac laoreet nisi.</p>
+                <a href="#">Detalii</a>
+            </div>
+
+            <div class="book">
+                <img src="https://amnromania.ro/wp-content/uploads/2020/10/amn.png.webp" alt="Cartea 2">
+                <h3>📜 Index Ayurvedic Sistematic Selectiv - plante din ayurveda</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut vehicula turpis. Praesent ac laoreet nisi.</p>
+                <a href="#">Detalii</a>
+            </div>
+            <div class="book">
+                <img src="https://amnromania.ro/wp-content/uploads/2020/10/amn.png.webp" alt="Cartea 3">
+                <h3>📜 Dictionar de termeni sanscrit</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut vehicula turpis. Praesent ac laoreet nisi.</p>
+                <a href="#">Detalii</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Biblioteca Ideilor | Toate drepturile rezervate.
+    </footer>
+
+</body>
+
+</html>

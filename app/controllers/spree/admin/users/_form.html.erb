@@ -1,0 +1,33 @@
+<%= form_for [:admin, @user], html: { class: 'form-horizontal' } do |f| %>
+    <%= render 'spree/admin/shared/error_messages', target: @user %>
+  
+    <div data-hook="admin_user_edit_form_fields" class="row">
+      <div class="col-6">
+        <div class="field" id="user_email_field">
+          <%= f.label :email, Spree.t(:email) %>
+          <%= f.email_field :email, class: 'fullwidth' %>
+        </div>
+        <div class="field">
+          <%= f.label :name, Spree.t(:name) %>
+          <%= f.text_field :name, class: 'fullwidth' %>
+          <%= error_message_on(f.object, :name) %>
+        </div>
+      </div>
+    </div>
+  
+    <div data-hook="admin_user_form_roles" class="field">
+      <%= f.label :spree_role_ids, Spree.t(:roles) %>
+      <%= hidden_field_tag "user[spree_role_ids][]", "" %>
+      <% Spree::Role.all.each do |role| %>
+        <li>
+          <%= check_box_tag "user[spree_role_ids][]", role.id, @user.spree_roles.include?(role), id: "user_spree_role_#{role.name}" %>
+          <%= label_tag "user_spree_role_#{role.name}", role.name %>
+        </li>
+      <% end %>
+    </div>
+  
+    <div class="form-actions" data-hook="buttons">
+      <%= f.submit Spree.t(:update), class: 'button primary' %>
+      <%= link_to Spree.t(:cancel), admin_users_path, class: 'button' %>
+    </div>
+  <% end %>

@@ -1,0 +1,41 @@
+<%= render 'spree/admin/shared/error_messages', resource: @user %>
+
+<%= form_for [:admin, @user], html: { class: 'form-horizontal' } do |f| %>
+  <div data-hook="admin_user_new_form_fields" class="row">
+    <div class="col-6">
+      <div class="field" id="user_email_field">
+        <%= f.label :email, I18n.t('spree.email') %>
+        <%= f.email_field :email, class: 'fullwidth' %>
+      </div>
+      <div class="field">
+        <%= f.label :name, I18n.t('spree.name') %>
+        <%= f.text_field :name, class: 'fullwidth' %>
+        <%= error_message_on(f.object, :name) %>
+      </div>
+      <div class="field">
+        <%= f.label :password, I18n.t('spree.password') %>
+        <%= f.password_field :password, class: 'fullwidth' %>
+      </div>
+      <div class="field">
+        <%= f.label :password_confirmation, I18n.t('spree.password_confirmation') %>
+        <%= f.password_field :password_confirmation, class: 'fullwidth' %>
+      </div>
+    </div>
+  </div>
+
+  <div data-hook="admin_user_new_form_roles" class="field">
+    <%= f.label :spree_role_ids, I18n.t('spree.roles') %>
+    <%= hidden_field_tag "user[spree_role_ids][]", "" %>
+    <% Spree::Role.all.each do |role| %>
+      <li>
+        <%= check_box_tag "user[spree_role_ids][]", role.id, @user.spree_roles.include?(role), id: "user_spree_role_#{role.name}" %>
+        <%= label_tag "user_spree_role_#{role.name}", role.name %>
+      </li>
+    <% end %>
+  </div>
+
+  <div class="form-actions" data-hook="buttons">
+    <%= f.submit I18n.t('spree.actions.create'), class: 'button primary' %>
+    <%= link_to I18n.t('spree.actions.cancel'), admin_users_path, class: 'button' %>
+  </div>
+<% end %>

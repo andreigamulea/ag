@@ -3,20 +3,30 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  # Rute pentru frontend-ul personalizat (trebuie să fie înainte de mount Spree::Core::Engine)
   get '/store', to: 'spree/home#index', as: :store
   post '/store/add_to_cart', to: 'spree/home#add_to_cart', as: :add_to_cart
   get '/store/cart', to: 'spree/home#cart', as: :cart
 
-  # Montează Solidus la /store pentru frontend
   mount Spree::Core::Engine, at: '/store'
-
-  # Montează SolidusStripe
   mount SolidusStripe::Engine, at: '/solidus_stripe'
+  mount SolidusAdmin::Engine, at: '/store/admin'
+end
 
-  # Ruta pentru interfața admin
-  mount SolidusAdmin::Engine, at: '/store/admin', constraints: ->(req) {
-    req.cookies['solidus_admin'] != 'false' &&
-    req.params['solidus_admin'] != 'false'
-  }
+Spree::Core::Engine.routes.draw do
+  devise_for :spree_user,
+             class_name: 'Spree::User',
+             module: :devise,
+             controllers: {
+               sessions: 'spree/user_sessions',
+               registrations: 'spree/user_registrations',
+               passwords: 'spree/user_passwords',
+               confirmations: 'spree/user_confirmations',
+               unlocks: 'spree/user_unlocks'
+             },
+             path: 'users',
+             path_names: {
+               sign_in: 'login',
+               sign_out: 'logout',
+               sign_up: 'signup'
+             }
 end

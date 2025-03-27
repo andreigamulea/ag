@@ -5,7 +5,7 @@
 -- Dumped from database version 16.2
 -- Dumped by pg_dump version 16.2
 
--- Started on 2025-03-23 19:47:50
+-- Started on 2025-03-27 20:42:57
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -23,7 +23,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- TOC entry 224 (class 1259 OID 186690)
+-- TOC entry 215 (class 1259 OID 191547)
 -- Name: action_mailbox_inbound_emails; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -40,7 +40,7 @@ CREATE TABLE public.action_mailbox_inbound_emails (
 ALTER TABLE public.action_mailbox_inbound_emails OWNER TO postgres;
 
 --
--- TOC entry 223 (class 1259 OID 186689)
+-- TOC entry 216 (class 1259 OID 191553)
 -- Name: action_mailbox_inbound_emails_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -56,7 +56,7 @@ ALTER SEQUENCE public.action_mailbox_inbound_emails_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6092 (class 0 OID 0)
--- Dependencies: 223
+-- Dependencies: 216
 -- Name: action_mailbox_inbound_emails_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -64,7 +64,7 @@ ALTER SEQUENCE public.action_mailbox_inbound_emails_id_seq OWNED BY public.actio
 
 
 --
--- TOC entry 226 (class 1259 OID 186701)
+-- TOC entry 217 (class 1259 OID 191554)
 -- Name: action_text_rich_texts; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -82,7 +82,7 @@ CREATE TABLE public.action_text_rich_texts (
 ALTER TABLE public.action_text_rich_texts OWNER TO postgres;
 
 --
--- TOC entry 225 (class 1259 OID 186700)
+-- TOC entry 218 (class 1259 OID 191559)
 -- Name: action_text_rich_texts_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -98,7 +98,7 @@ ALTER SEQUENCE public.action_text_rich_texts_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6093 (class 0 OID 0)
--- Dependencies: 225
+-- Dependencies: 218
 -- Name: action_text_rich_texts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -106,7 +106,7 @@ ALTER SEQUENCE public.action_text_rich_texts_id_seq OWNED BY public.action_text_
 
 
 --
--- TOC entry 220 (class 1259 OID 186659)
+-- TOC entry 219 (class 1259 OID 191560)
 -- Name: active_storage_attachments; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -123,7 +123,7 @@ CREATE TABLE public.active_storage_attachments (
 ALTER TABLE public.active_storage_attachments OWNER TO postgres;
 
 --
--- TOC entry 219 (class 1259 OID 186658)
+-- TOC entry 220 (class 1259 OID 191565)
 -- Name: active_storage_attachments_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -139,7 +139,7 @@ ALTER SEQUENCE public.active_storage_attachments_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6094 (class 0 OID 0)
--- Dependencies: 219
+-- Dependencies: 220
 -- Name: active_storage_attachments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -147,7 +147,7 @@ ALTER SEQUENCE public.active_storage_attachments_id_seq OWNED BY public.active_s
 
 
 --
--- TOC entry 218 (class 1259 OID 186649)
+-- TOC entry 221 (class 1259 OID 191566)
 -- Name: active_storage_blobs; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -167,7 +167,7 @@ CREATE TABLE public.active_storage_blobs (
 ALTER TABLE public.active_storage_blobs OWNER TO postgres;
 
 --
--- TOC entry 217 (class 1259 OID 186648)
+-- TOC entry 222 (class 1259 OID 191571)
 -- Name: active_storage_blobs_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -183,7 +183,7 @@ ALTER SEQUENCE public.active_storage_blobs_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6095 (class 0 OID 0)
--- Dependencies: 217
+-- Dependencies: 222
 -- Name: active_storage_blobs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -191,7 +191,7 @@ ALTER SEQUENCE public.active_storage_blobs_id_seq OWNED BY public.active_storage
 
 
 --
--- TOC entry 222 (class 1259 OID 186675)
+-- TOC entry 223 (class 1259 OID 191572)
 -- Name: active_storage_variant_records; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -205,7 +205,7 @@ CREATE TABLE public.active_storage_variant_records (
 ALTER TABLE public.active_storage_variant_records OWNER TO postgres;
 
 --
--- TOC entry 221 (class 1259 OID 186674)
+-- TOC entry 224 (class 1259 OID 191577)
 -- Name: active_storage_variant_records_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -221,7 +221,7 @@ ALTER SEQUENCE public.active_storage_variant_records_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6096 (class 0 OID 0)
--- Dependencies: 221
+-- Dependencies: 224
 -- Name: active_storage_variant_records_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -229,7 +229,7 @@ ALTER SEQUENCE public.active_storage_variant_records_id_seq OWNED BY public.acti
 
 
 --
--- TOC entry 216 (class 1259 OID 186641)
+-- TOC entry 225 (class 1259 OID 191578)
 -- Name: ar_internal_metadata; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -244,7 +244,7 @@ CREATE TABLE public.ar_internal_metadata (
 ALTER TABLE public.ar_internal_metadata OWNER TO postgres;
 
 --
--- TOC entry 230 (class 1259 OID 186722)
+-- TOC entry 226 (class 1259 OID 191583)
 -- Name: friendly_id_slugs; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -262,7 +262,7 @@ CREATE TABLE public.friendly_id_slugs (
 ALTER TABLE public.friendly_id_slugs OWNER TO postgres;
 
 --
--- TOC entry 229 (class 1259 OID 186721)
+-- TOC entry 227 (class 1259 OID 191588)
 -- Name: friendly_id_slugs_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -279,7 +279,7 @@ ALTER SEQUENCE public.friendly_id_slugs_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6097 (class 0 OID 0)
--- Dependencies: 229
+-- Dependencies: 227
 -- Name: friendly_id_slugs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -287,7 +287,7 @@ ALTER SEQUENCE public.friendly_id_slugs_id_seq OWNED BY public.friendly_id_slugs
 
 
 --
--- TOC entry 215 (class 1259 OID 186634)
+-- TOC entry 228 (class 1259 OID 191589)
 -- Name: schema_migrations; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -299,7 +299,7 @@ CREATE TABLE public.schema_migrations (
 ALTER TABLE public.schema_migrations OWNER TO postgres;
 
 --
--- TOC entry 416 (class 1259 OID 187861)
+-- TOC entry 229 (class 1259 OID 191594)
 -- Name: solidus_stripe_customers; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -317,7 +317,7 @@ CREATE TABLE public.solidus_stripe_customers (
 ALTER TABLE public.solidus_stripe_customers OWNER TO postgres;
 
 --
--- TOC entry 415 (class 1259 OID 187860)
+-- TOC entry 230 (class 1259 OID 191599)
 -- Name: solidus_stripe_customers_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -333,7 +333,7 @@ ALTER SEQUENCE public.solidus_stripe_customers_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6098 (class 0 OID 0)
--- Dependencies: 415
+-- Dependencies: 230
 -- Name: solidus_stripe_customers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -341,7 +341,7 @@ ALTER SEQUENCE public.solidus_stripe_customers_id_seq OWNED BY public.solidus_st
 
 
 --
--- TOC entry 412 (class 1259 OID 187824)
+-- TOC entry 231 (class 1259 OID 191600)
 -- Name: solidus_stripe_payment_intents; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -358,7 +358,7 @@ CREATE TABLE public.solidus_stripe_payment_intents (
 ALTER TABLE public.solidus_stripe_payment_intents OWNER TO postgres;
 
 --
--- TOC entry 411 (class 1259 OID 187823)
+-- TOC entry 232 (class 1259 OID 191605)
 -- Name: solidus_stripe_payment_intents_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -374,7 +374,7 @@ ALTER SEQUENCE public.solidus_stripe_payment_intents_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6099 (class 0 OID 0)
--- Dependencies: 411
+-- Dependencies: 232
 -- Name: solidus_stripe_payment_intents_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -382,7 +382,7 @@ ALTER SEQUENCE public.solidus_stripe_payment_intents_id_seq OWNED BY public.soli
 
 
 --
--- TOC entry 410 (class 1259 OID 187815)
+-- TOC entry 233 (class 1259 OID 191606)
 -- Name: solidus_stripe_payment_sources; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -398,7 +398,7 @@ CREATE TABLE public.solidus_stripe_payment_sources (
 ALTER TABLE public.solidus_stripe_payment_sources OWNER TO postgres;
 
 --
--- TOC entry 409 (class 1259 OID 187814)
+-- TOC entry 234 (class 1259 OID 191611)
 -- Name: solidus_stripe_payment_sources_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -414,7 +414,7 @@ ALTER SEQUENCE public.solidus_stripe_payment_sources_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6100 (class 0 OID 0)
--- Dependencies: 409
+-- Dependencies: 234
 -- Name: solidus_stripe_payment_sources_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -422,7 +422,7 @@ ALTER SEQUENCE public.solidus_stripe_payment_sources_id_seq OWNED BY public.soli
 
 
 --
--- TOC entry 414 (class 1259 OID 187845)
+-- TOC entry 235 (class 1259 OID 191612)
 -- Name: solidus_stripe_slug_entries; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -438,7 +438,7 @@ CREATE TABLE public.solidus_stripe_slug_entries (
 ALTER TABLE public.solidus_stripe_slug_entries OWNER TO postgres;
 
 --
--- TOC entry 413 (class 1259 OID 187844)
+-- TOC entry 236 (class 1259 OID 191617)
 -- Name: solidus_stripe_slug_entries_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -454,7 +454,7 @@ ALTER SEQUENCE public.solidus_stripe_slug_entries_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6101 (class 0 OID 0)
--- Dependencies: 413
+-- Dependencies: 236
 -- Name: solidus_stripe_slug_entries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -462,7 +462,7 @@ ALTER SEQUENCE public.solidus_stripe_slug_entries_id_seq OWNED BY public.solidus
 
 
 --
--- TOC entry 232 (class 1259 OID 186735)
+-- TOC entry 237 (class 1259 OID 191618)
 -- Name: spree_addresses; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -489,7 +489,7 @@ CREATE TABLE public.spree_addresses (
 ALTER TABLE public.spree_addresses OWNER TO postgres;
 
 --
--- TOC entry 231 (class 1259 OID 186734)
+-- TOC entry 238 (class 1259 OID 191623)
 -- Name: spree_addresses_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -506,7 +506,7 @@ ALTER SEQUENCE public.spree_addresses_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6102 (class 0 OID 0)
--- Dependencies: 231
+-- Dependencies: 238
 -- Name: spree_addresses_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -514,7 +514,7 @@ ALTER SEQUENCE public.spree_addresses_id_seq OWNED BY public.spree_addresses.id;
 
 
 --
--- TOC entry 234 (class 1259 OID 186748)
+-- TOC entry 239 (class 1259 OID 191624)
 -- Name: spree_adjustment_reasons; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -531,7 +531,7 @@ CREATE TABLE public.spree_adjustment_reasons (
 ALTER TABLE public.spree_adjustment_reasons OWNER TO postgres;
 
 --
--- TOC entry 233 (class 1259 OID 186747)
+-- TOC entry 240 (class 1259 OID 191630)
 -- Name: spree_adjustment_reasons_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -548,7 +548,7 @@ ALTER SEQUENCE public.spree_adjustment_reasons_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6103 (class 0 OID 0)
--- Dependencies: 233
+-- Dependencies: 240
 -- Name: spree_adjustment_reasons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -556,7 +556,7 @@ ALTER SEQUENCE public.spree_adjustment_reasons_id_seq OWNED BY public.spree_adju
 
 
 --
--- TOC entry 236 (class 1259 OID 186760)
+-- TOC entry 241 (class 1259 OID 191631)
 -- Name: spree_adjustments; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -582,7 +582,7 @@ CREATE TABLE public.spree_adjustments (
 ALTER TABLE public.spree_adjustments OWNER TO postgres;
 
 --
--- TOC entry 235 (class 1259 OID 186759)
+-- TOC entry 242 (class 1259 OID 191639)
 -- Name: spree_adjustments_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -599,7 +599,7 @@ ALTER SEQUENCE public.spree_adjustments_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6104 (class 0 OID 0)
--- Dependencies: 235
+-- Dependencies: 242
 -- Name: spree_adjustments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -607,7 +607,7 @@ ALTER SEQUENCE public.spree_adjustments_id_seq OWNED BY public.spree_adjustments
 
 
 --
--- TOC entry 238 (class 1259 OID 186778)
+-- TOC entry 243 (class 1259 OID 191640)
 -- Name: spree_assets; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -632,7 +632,7 @@ CREATE TABLE public.spree_assets (
 ALTER TABLE public.spree_assets OWNER TO postgres;
 
 --
--- TOC entry 237 (class 1259 OID 186777)
+-- TOC entry 244 (class 1259 OID 191645)
 -- Name: spree_assets_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -649,7 +649,7 @@ ALTER SEQUENCE public.spree_assets_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6105 (class 0 OID 0)
--- Dependencies: 237
+-- Dependencies: 244
 -- Name: spree_assets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -657,7 +657,7 @@ ALTER SEQUENCE public.spree_assets_id_seq OWNED BY public.spree_assets.id;
 
 
 --
--- TOC entry 240 (class 1259 OID 186789)
+-- TOC entry 245 (class 1259 OID 191646)
 -- Name: spree_calculators; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -675,7 +675,7 @@ CREATE TABLE public.spree_calculators (
 ALTER TABLE public.spree_calculators OWNER TO postgres;
 
 --
--- TOC entry 239 (class 1259 OID 186788)
+-- TOC entry 246 (class 1259 OID 191651)
 -- Name: spree_calculators_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -692,7 +692,7 @@ ALTER SEQUENCE public.spree_calculators_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6106 (class 0 OID 0)
--- Dependencies: 239
+-- Dependencies: 246
 -- Name: spree_calculators_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -700,7 +700,7 @@ ALTER SEQUENCE public.spree_calculators_id_seq OWNED BY public.spree_calculators
 
 
 --
--- TOC entry 242 (class 1259 OID 186800)
+-- TOC entry 247 (class 1259 OID 191652)
 -- Name: spree_cartons; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -722,7 +722,7 @@ CREATE TABLE public.spree_cartons (
 ALTER TABLE public.spree_cartons OWNER TO postgres;
 
 --
--- TOC entry 241 (class 1259 OID 186799)
+-- TOC entry 248 (class 1259 OID 191657)
 -- Name: spree_cartons_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -739,7 +739,7 @@ ALTER SEQUENCE public.spree_cartons_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6107 (class 0 OID 0)
--- Dependencies: 241
+-- Dependencies: 248
 -- Name: spree_cartons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -747,7 +747,7 @@ ALTER SEQUENCE public.spree_cartons_id_seq OWNED BY public.spree_cartons.id;
 
 
 --
--- TOC entry 244 (class 1259 OID 186813)
+-- TOC entry 249 (class 1259 OID 191658)
 -- Name: spree_countries; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -767,7 +767,7 @@ CREATE TABLE public.spree_countries (
 ALTER TABLE public.spree_countries OWNER TO postgres;
 
 --
--- TOC entry 243 (class 1259 OID 186812)
+-- TOC entry 250 (class 1259 OID 191664)
 -- Name: spree_countries_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -784,7 +784,7 @@ ALTER SEQUENCE public.spree_countries_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6108 (class 0 OID 0)
--- Dependencies: 243
+-- Dependencies: 250
 -- Name: spree_countries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -792,7 +792,7 @@ ALTER SEQUENCE public.spree_countries_id_seq OWNED BY public.spree_countries.id;
 
 
 --
--- TOC entry 246 (class 1259 OID 186824)
+-- TOC entry 251 (class 1259 OID 191665)
 -- Name: spree_credit_cards; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -817,7 +817,7 @@ CREATE TABLE public.spree_credit_cards (
 ALTER TABLE public.spree_credit_cards OWNER TO postgres;
 
 --
--- TOC entry 245 (class 1259 OID 186823)
+-- TOC entry 252 (class 1259 OID 191671)
 -- Name: spree_credit_cards_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -834,7 +834,7 @@ ALTER SEQUENCE public.spree_credit_cards_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6109 (class 0 OID 0)
--- Dependencies: 245
+-- Dependencies: 252
 -- Name: spree_credit_cards_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -842,7 +842,7 @@ ALTER SEQUENCE public.spree_credit_cards_id_seq OWNED BY public.spree_credit_car
 
 
 --
--- TOC entry 248 (class 1259 OID 186836)
+-- TOC entry 253 (class 1259 OID 191672)
 -- Name: spree_customer_returns; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -858,7 +858,7 @@ CREATE TABLE public.spree_customer_returns (
 ALTER TABLE public.spree_customer_returns OWNER TO postgres;
 
 --
--- TOC entry 247 (class 1259 OID 186835)
+-- TOC entry 254 (class 1259 OID 191677)
 -- Name: spree_customer_returns_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -875,7 +875,7 @@ ALTER SEQUENCE public.spree_customer_returns_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6110 (class 0 OID 0)
--- Dependencies: 247
+-- Dependencies: 254
 -- Name: spree_customer_returns_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -883,7 +883,7 @@ ALTER SEQUENCE public.spree_customer_returns_id_seq OWNED BY public.spree_custom
 
 
 --
--- TOC entry 250 (class 1259 OID 186845)
+-- TOC entry 255 (class 1259 OID 191678)
 -- Name: spree_inventory_units; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -903,7 +903,7 @@ CREATE TABLE public.spree_inventory_units (
 ALTER TABLE public.spree_inventory_units OWNER TO postgres;
 
 --
--- TOC entry 249 (class 1259 OID 186844)
+-- TOC entry 256 (class 1259 OID 191684)
 -- Name: spree_inventory_units_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -920,7 +920,7 @@ ALTER SEQUENCE public.spree_inventory_units_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6111 (class 0 OID 0)
--- Dependencies: 249
+-- Dependencies: 256
 -- Name: spree_inventory_units_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -928,7 +928,7 @@ ALTER SEQUENCE public.spree_inventory_units_id_seq OWNED BY public.spree_invento
 
 
 --
--- TOC entry 252 (class 1259 OID 186860)
+-- TOC entry 257 (class 1259 OID 191685)
 -- Name: spree_line_item_actions; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -945,7 +945,7 @@ CREATE TABLE public.spree_line_item_actions (
 ALTER TABLE public.spree_line_item_actions OWNER TO postgres;
 
 --
--- TOC entry 251 (class 1259 OID 186859)
+-- TOC entry 258 (class 1259 OID 191689)
 -- Name: spree_line_item_actions_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -962,7 +962,7 @@ ALTER SEQUENCE public.spree_line_item_actions_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6112 (class 0 OID 0)
--- Dependencies: 251
+-- Dependencies: 258
 -- Name: spree_line_item_actions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -970,7 +970,7 @@ ALTER SEQUENCE public.spree_line_item_actions_id_seq OWNED BY public.spree_line_
 
 
 --
--- TOC entry 254 (class 1259 OID 186870)
+-- TOC entry 259 (class 1259 OID 191690)
 -- Name: spree_line_items; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -994,7 +994,7 @@ CREATE TABLE public.spree_line_items (
 ALTER TABLE public.spree_line_items OWNER TO postgres;
 
 --
--- TOC entry 253 (class 1259 OID 186869)
+-- TOC entry 260 (class 1259 OID 191697)
 -- Name: spree_line_items_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1011,7 +1011,7 @@ ALTER SEQUENCE public.spree_line_items_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6113 (class 0 OID 0)
--- Dependencies: 253
+-- Dependencies: 260
 -- Name: spree_line_items_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1019,7 +1019,7 @@ ALTER SEQUENCE public.spree_line_items_id_seq OWNED BY public.spree_line_items.i
 
 
 --
--- TOC entry 256 (class 1259 OID 186885)
+-- TOC entry 261 (class 1259 OID 191698)
 -- Name: spree_log_entries; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1036,7 +1036,7 @@ CREATE TABLE public.spree_log_entries (
 ALTER TABLE public.spree_log_entries OWNER TO postgres;
 
 --
--- TOC entry 255 (class 1259 OID 186884)
+-- TOC entry 262 (class 1259 OID 191703)
 -- Name: spree_log_entries_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1053,7 +1053,7 @@ ALTER SEQUENCE public.spree_log_entries_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6114 (class 0 OID 0)
--- Dependencies: 255
+-- Dependencies: 262
 -- Name: spree_log_entries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1061,7 +1061,7 @@ ALTER SEQUENCE public.spree_log_entries_id_seq OWNED BY public.spree_log_entries
 
 
 --
--- TOC entry 258 (class 1259 OID 186895)
+-- TOC entry 263 (class 1259 OID 191704)
 -- Name: spree_option_type_prototypes; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1077,7 +1077,7 @@ CREATE TABLE public.spree_option_type_prototypes (
 ALTER TABLE public.spree_option_type_prototypes OWNER TO postgres;
 
 --
--- TOC entry 257 (class 1259 OID 186894)
+-- TOC entry 264 (class 1259 OID 191707)
 -- Name: spree_option_type_prototypes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1094,7 +1094,7 @@ ALTER SEQUENCE public.spree_option_type_prototypes_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6115 (class 0 OID 0)
--- Dependencies: 257
+-- Dependencies: 264
 -- Name: spree_option_type_prototypes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1102,7 +1102,7 @@ ALTER SEQUENCE public.spree_option_type_prototypes_id_seq OWNED BY public.spree_
 
 
 --
--- TOC entry 260 (class 1259 OID 186902)
+-- TOC entry 265 (class 1259 OID 191708)
 -- Name: spree_option_types; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1119,7 +1119,7 @@ CREATE TABLE public.spree_option_types (
 ALTER TABLE public.spree_option_types OWNER TO postgres;
 
 --
--- TOC entry 259 (class 1259 OID 186901)
+-- TOC entry 266 (class 1259 OID 191712)
 -- Name: spree_option_types_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1136,7 +1136,7 @@ ALTER SEQUENCE public.spree_option_types_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6116 (class 0 OID 0)
--- Dependencies: 259
+-- Dependencies: 266
 -- Name: spree_option_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1144,7 +1144,7 @@ ALTER SEQUENCE public.spree_option_types_id_seq OWNED BY public.spree_option_typ
 
 
 --
--- TOC entry 262 (class 1259 OID 186911)
+-- TOC entry 267 (class 1259 OID 191713)
 -- Name: spree_option_values; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1162,7 +1162,7 @@ CREATE TABLE public.spree_option_values (
 ALTER TABLE public.spree_option_values OWNER TO postgres;
 
 --
--- TOC entry 261 (class 1259 OID 186910)
+-- TOC entry 268 (class 1259 OID 191718)
 -- Name: spree_option_values_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1179,7 +1179,7 @@ ALTER SEQUENCE public.spree_option_values_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6117 (class 0 OID 0)
--- Dependencies: 261
+-- Dependencies: 268
 -- Name: spree_option_values_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1187,7 +1187,7 @@ ALTER SEQUENCE public.spree_option_values_id_seq OWNED BY public.spree_option_va
 
 
 --
--- TOC entry 264 (class 1259 OID 186922)
+-- TOC entry 269 (class 1259 OID 191719)
 -- Name: spree_option_values_variants; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1203,7 +1203,7 @@ CREATE TABLE public.spree_option_values_variants (
 ALTER TABLE public.spree_option_values_variants OWNER TO postgres;
 
 --
--- TOC entry 263 (class 1259 OID 186921)
+-- TOC entry 270 (class 1259 OID 191722)
 -- Name: spree_option_values_variants_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1220,7 +1220,7 @@ ALTER SEQUENCE public.spree_option_values_variants_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6118 (class 0 OID 0)
--- Dependencies: 263
+-- Dependencies: 270
 -- Name: spree_option_values_variants_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1228,7 +1228,7 @@ ALTER SEQUENCE public.spree_option_values_variants_id_seq OWNED BY public.spree_
 
 
 --
--- TOC entry 266 (class 1259 OID 186931)
+-- TOC entry 271 (class 1259 OID 191723)
 -- Name: spree_order_mutexes; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1242,7 +1242,7 @@ CREATE TABLE public.spree_order_mutexes (
 ALTER TABLE public.spree_order_mutexes OWNER TO postgres;
 
 --
--- TOC entry 265 (class 1259 OID 186930)
+-- TOC entry 272 (class 1259 OID 191726)
 -- Name: spree_order_mutexes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1259,7 +1259,7 @@ ALTER SEQUENCE public.spree_order_mutexes_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6119 (class 0 OID 0)
--- Dependencies: 265
+-- Dependencies: 272
 -- Name: spree_order_mutexes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1267,7 +1267,7 @@ ALTER SEQUENCE public.spree_order_mutexes_id_seq OWNED BY public.spree_order_mut
 
 
 --
--- TOC entry 268 (class 1259 OID 186939)
+-- TOC entry 273 (class 1259 OID 191727)
 -- Name: spree_orders; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1313,7 +1313,7 @@ CREATE TABLE public.spree_orders (
 ALTER TABLE public.spree_orders OWNER TO postgres;
 
 --
--- TOC entry 267 (class 1259 OID 186938)
+-- TOC entry 274 (class 1259 OID 191744)
 -- Name: spree_orders_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1330,7 +1330,7 @@ ALTER SEQUENCE public.spree_orders_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6120 (class 0 OID 0)
--- Dependencies: 267
+-- Dependencies: 274
 -- Name: spree_orders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1338,7 +1338,7 @@ ALTER SEQUENCE public.spree_orders_id_seq OWNED BY public.spree_orders.id;
 
 
 --
--- TOC entry 270 (class 1259 OID 186969)
+-- TOC entry 275 (class 1259 OID 191745)
 -- Name: spree_orders_promotions; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1355,7 +1355,7 @@ CREATE TABLE public.spree_orders_promotions (
 ALTER TABLE public.spree_orders_promotions OWNER TO postgres;
 
 --
--- TOC entry 269 (class 1259 OID 186968)
+-- TOC entry 276 (class 1259 OID 191748)
 -- Name: spree_orders_promotions_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1372,7 +1372,7 @@ ALTER SEQUENCE public.spree_orders_promotions_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6121 (class 0 OID 0)
--- Dependencies: 269
+-- Dependencies: 276
 -- Name: spree_orders_promotions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1380,7 +1380,7 @@ ALTER SEQUENCE public.spree_orders_promotions_id_seq OWNED BY public.spree_order
 
 
 --
--- TOC entry 272 (class 1259 OID 186978)
+-- TOC entry 277 (class 1259 OID 191749)
 -- Name: spree_payment_capture_events; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1396,7 +1396,7 @@ CREATE TABLE public.spree_payment_capture_events (
 ALTER TABLE public.spree_payment_capture_events OWNER TO postgres;
 
 --
--- TOC entry 271 (class 1259 OID 186977)
+-- TOC entry 278 (class 1259 OID 191753)
 -- Name: spree_payment_capture_events_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1413,7 +1413,7 @@ ALTER SEQUENCE public.spree_payment_capture_events_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6122 (class 0 OID 0)
--- Dependencies: 271
+-- Dependencies: 278
 -- Name: spree_payment_capture_events_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1421,7 +1421,7 @@ ALTER SEQUENCE public.spree_payment_capture_events_id_seq OWNED BY public.spree_
 
 
 --
--- TOC entry 274 (class 1259 OID 186987)
+-- TOC entry 279 (class 1259 OID 191754)
 -- Name: spree_payment_methods; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1447,7 +1447,7 @@ CREATE TABLE public.spree_payment_methods (
 ALTER TABLE public.spree_payment_methods OWNER TO postgres;
 
 --
--- TOC entry 273 (class 1259 OID 186986)
+-- TOC entry 280 (class 1259 OID 191763)
 -- Name: spree_payment_methods_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1464,7 +1464,7 @@ ALTER SEQUENCE public.spree_payment_methods_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6123 (class 0 OID 0)
--- Dependencies: 273
+-- Dependencies: 280
 -- Name: spree_payment_methods_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1472,7 +1472,7 @@ ALTER SEQUENCE public.spree_payment_methods_id_seq OWNED BY public.spree_payment
 
 
 --
--- TOC entry 276 (class 1259 OID 186999)
+-- TOC entry 281 (class 1259 OID 191764)
 -- Name: spree_payments; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1497,7 +1497,7 @@ CREATE TABLE public.spree_payments (
 ALTER TABLE public.spree_payments OWNER TO postgres;
 
 --
--- TOC entry 275 (class 1259 OID 186998)
+-- TOC entry 282 (class 1259 OID 191770)
 -- Name: spree_payments_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1514,7 +1514,7 @@ ALTER SEQUENCE public.spree_payments_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6124 (class 0 OID 0)
--- Dependencies: 275
+-- Dependencies: 282
 -- Name: spree_payments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1522,7 +1522,7 @@ ALTER SEQUENCE public.spree_payments_id_seq OWNED BY public.spree_payments.id;
 
 
 --
--- TOC entry 278 (class 1259 OID 187012)
+-- TOC entry 283 (class 1259 OID 191771)
 -- Name: spree_preferences; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1538,7 +1538,7 @@ CREATE TABLE public.spree_preferences (
 ALTER TABLE public.spree_preferences OWNER TO postgres;
 
 --
--- TOC entry 277 (class 1259 OID 187011)
+-- TOC entry 284 (class 1259 OID 191776)
 -- Name: spree_preferences_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1555,7 +1555,7 @@ ALTER SEQUENCE public.spree_preferences_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6125 (class 0 OID 0)
--- Dependencies: 277
+-- Dependencies: 284
 -- Name: spree_preferences_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1563,7 +1563,7 @@ ALTER SEQUENCE public.spree_preferences_id_seq OWNED BY public.spree_preferences
 
 
 --
--- TOC entry 280 (class 1259 OID 187022)
+-- TOC entry 285 (class 1259 OID 191777)
 -- Name: spree_prices; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1582,7 +1582,7 @@ CREATE TABLE public.spree_prices (
 ALTER TABLE public.spree_prices OWNER TO postgres;
 
 --
--- TOC entry 279 (class 1259 OID 187021)
+-- TOC entry 286 (class 1259 OID 191782)
 -- Name: spree_prices_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1599,7 +1599,7 @@ ALTER SEQUENCE public.spree_prices_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6126 (class 0 OID 0)
--- Dependencies: 279
+-- Dependencies: 286
 -- Name: spree_prices_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1607,7 +1607,7 @@ ALTER SEQUENCE public.spree_prices_id_seq OWNED BY public.spree_prices.id;
 
 
 --
--- TOC entry 282 (class 1259 OID 187034)
+-- TOC entry 287 (class 1259 OID 191783)
 -- Name: spree_product_option_types; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1624,7 +1624,7 @@ CREATE TABLE public.spree_product_option_types (
 ALTER TABLE public.spree_product_option_types OWNER TO postgres;
 
 --
--- TOC entry 281 (class 1259 OID 187033)
+-- TOC entry 288 (class 1259 OID 191786)
 -- Name: spree_product_option_types_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1641,7 +1641,7 @@ ALTER SEQUENCE public.spree_product_option_types_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6127 (class 0 OID 0)
--- Dependencies: 281
+-- Dependencies: 288
 -- Name: spree_product_option_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1649,7 +1649,7 @@ ALTER SEQUENCE public.spree_product_option_types_id_seq OWNED BY public.spree_pr
 
 
 --
--- TOC entry 284 (class 1259 OID 187044)
+-- TOC entry 289 (class 1259 OID 191787)
 -- Name: spree_product_promotion_rules; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1665,7 +1665,7 @@ CREATE TABLE public.spree_product_promotion_rules (
 ALTER TABLE public.spree_product_promotion_rules OWNER TO postgres;
 
 --
--- TOC entry 283 (class 1259 OID 187043)
+-- TOC entry 290 (class 1259 OID 191790)
 -- Name: spree_product_promotion_rules_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1682,7 +1682,7 @@ ALTER SEQUENCE public.spree_product_promotion_rules_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6128 (class 0 OID 0)
--- Dependencies: 283
+-- Dependencies: 290
 -- Name: spree_product_promotion_rules_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1690,7 +1690,7 @@ ALTER SEQUENCE public.spree_product_promotion_rules_id_seq OWNED BY public.spree
 
 
 --
--- TOC entry 286 (class 1259 OID 187053)
+-- TOC entry 291 (class 1259 OID 191791)
 -- Name: spree_product_properties; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1708,7 +1708,7 @@ CREATE TABLE public.spree_product_properties (
 ALTER TABLE public.spree_product_properties OWNER TO postgres;
 
 --
--- TOC entry 285 (class 1259 OID 187052)
+-- TOC entry 292 (class 1259 OID 191797)
 -- Name: spree_product_properties_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1725,7 +1725,7 @@ ALTER SEQUENCE public.spree_product_properties_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6129 (class 0 OID 0)
--- Dependencies: 285
+-- Dependencies: 292
 -- Name: spree_product_properties_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1733,7 +1733,7 @@ ALTER SEQUENCE public.spree_product_properties_id_seq OWNED BY public.spree_prod
 
 
 --
--- TOC entry 288 (class 1259 OID 187066)
+-- TOC entry 293 (class 1259 OID 191798)
 -- Name: spree_products; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1759,7 +1759,7 @@ CREATE TABLE public.spree_products (
 ALTER TABLE public.spree_products OWNER TO postgres;
 
 --
--- TOC entry 287 (class 1259 OID 187065)
+-- TOC entry 294 (class 1259 OID 191805)
 -- Name: spree_products_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1776,7 +1776,7 @@ ALTER SEQUENCE public.spree_products_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6130 (class 0 OID 0)
--- Dependencies: 287
+-- Dependencies: 294
 -- Name: spree_products_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1784,7 +1784,7 @@ ALTER SEQUENCE public.spree_products_id_seq OWNED BY public.spree_products.id;
 
 
 --
--- TOC entry 290 (class 1259 OID 187081)
+-- TOC entry 295 (class 1259 OID 191806)
 -- Name: spree_products_taxons; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1801,7 +1801,7 @@ CREATE TABLE public.spree_products_taxons (
 ALTER TABLE public.spree_products_taxons OWNER TO postgres;
 
 --
--- TOC entry 289 (class 1259 OID 187080)
+-- TOC entry 296 (class 1259 OID 191809)
 -- Name: spree_products_taxons_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1818,7 +1818,7 @@ ALTER SEQUENCE public.spree_products_taxons_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6131 (class 0 OID 0)
--- Dependencies: 289
+-- Dependencies: 296
 -- Name: spree_products_taxons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1826,7 +1826,7 @@ ALTER SEQUENCE public.spree_products_taxons_id_seq OWNED BY public.spree_product
 
 
 --
--- TOC entry 292 (class 1259 OID 187101)
+-- TOC entry 297 (class 1259 OID 191810)
 -- Name: spree_promotion_actions; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1845,7 +1845,7 @@ CREATE TABLE public.spree_promotion_actions (
 ALTER TABLE public.spree_promotion_actions OWNER TO postgres;
 
 --
--- TOC entry 291 (class 1259 OID 187100)
+-- TOC entry 298 (class 1259 OID 191815)
 -- Name: spree_promotion_actions_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1862,7 +1862,7 @@ ALTER SEQUENCE public.spree_promotion_actions_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6132 (class 0 OID 0)
--- Dependencies: 291
+-- Dependencies: 298
 -- Name: spree_promotion_actions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1870,7 +1870,7 @@ ALTER SEQUENCE public.spree_promotion_actions_id_seq OWNED BY public.spree_promo
 
 
 --
--- TOC entry 294 (class 1259 OID 187113)
+-- TOC entry 299 (class 1259 OID 191816)
 -- Name: spree_promotion_categories; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1886,7 +1886,7 @@ CREATE TABLE public.spree_promotion_categories (
 ALTER TABLE public.spree_promotion_categories OWNER TO postgres;
 
 --
--- TOC entry 293 (class 1259 OID 187112)
+-- TOC entry 300 (class 1259 OID 191821)
 -- Name: spree_promotion_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1903,7 +1903,7 @@ ALTER SEQUENCE public.spree_promotion_categories_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6133 (class 0 OID 0)
--- Dependencies: 293
+-- Dependencies: 300
 -- Name: spree_promotion_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1911,7 +1911,7 @@ ALTER SEQUENCE public.spree_promotion_categories_id_seq OWNED BY public.spree_pr
 
 
 --
--- TOC entry 400 (class 1259 OID 187715)
+-- TOC entry 301 (class 1259 OID 191822)
 -- Name: spree_promotion_code_batches; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1932,7 +1932,7 @@ CREATE TABLE public.spree_promotion_code_batches (
 ALTER TABLE public.spree_promotion_code_batches OWNER TO postgres;
 
 --
--- TOC entry 399 (class 1259 OID 187714)
+-- TOC entry 302 (class 1259 OID 191829)
 -- Name: spree_promotion_code_batches_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1949,7 +1949,7 @@ ALTER SEQUENCE public.spree_promotion_code_batches_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6134 (class 0 OID 0)
--- Dependencies: 399
+-- Dependencies: 302
 -- Name: spree_promotion_code_batches_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1957,7 +1957,7 @@ ALTER SEQUENCE public.spree_promotion_code_batches_id_seq OWNED BY public.spree_
 
 
 --
--- TOC entry 296 (class 1259 OID 187122)
+-- TOC entry 303 (class 1259 OID 191830)
 -- Name: spree_promotion_codes; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -1974,7 +1974,7 @@ CREATE TABLE public.spree_promotion_codes (
 ALTER TABLE public.spree_promotion_codes OWNER TO postgres;
 
 --
--- TOC entry 295 (class 1259 OID 187121)
+-- TOC entry 304 (class 1259 OID 191835)
 -- Name: spree_promotion_codes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -1991,7 +1991,7 @@ ALTER SEQUENCE public.spree_promotion_codes_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6135 (class 0 OID 0)
--- Dependencies: 295
+-- Dependencies: 304
 -- Name: spree_promotion_codes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -1999,7 +1999,7 @@ ALTER SEQUENCE public.spree_promotion_codes_id_seq OWNED BY public.spree_promoti
 
 
 --
--- TOC entry 298 (class 1259 OID 187133)
+-- TOC entry 305 (class 1259 OID 191836)
 -- Name: spree_promotion_rule_taxons; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2015,7 +2015,7 @@ CREATE TABLE public.spree_promotion_rule_taxons (
 ALTER TABLE public.spree_promotion_rule_taxons OWNER TO postgres;
 
 --
--- TOC entry 297 (class 1259 OID 187132)
+-- TOC entry 306 (class 1259 OID 191839)
 -- Name: spree_promotion_rule_taxons_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2032,7 +2032,7 @@ ALTER SEQUENCE public.spree_promotion_rule_taxons_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6136 (class 0 OID 0)
--- Dependencies: 297
+-- Dependencies: 306
 -- Name: spree_promotion_rule_taxons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2040,7 +2040,7 @@ ALTER SEQUENCE public.spree_promotion_rule_taxons_id_seq OWNED BY public.spree_p
 
 
 --
--- TOC entry 300 (class 1259 OID 187142)
+-- TOC entry 307 (class 1259 OID 191840)
 -- Name: spree_promotion_rules; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2057,7 +2057,7 @@ CREATE TABLE public.spree_promotion_rules (
 ALTER TABLE public.spree_promotion_rules OWNER TO postgres;
 
 --
--- TOC entry 299 (class 1259 OID 187141)
+-- TOC entry 308 (class 1259 OID 191845)
 -- Name: spree_promotion_rules_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2074,7 +2074,7 @@ ALTER SEQUENCE public.spree_promotion_rules_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6137 (class 0 OID 0)
--- Dependencies: 299
+-- Dependencies: 308
 -- Name: spree_promotion_rules_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2082,7 +2082,7 @@ ALTER SEQUENCE public.spree_promotion_rules_id_seq OWNED BY public.spree_promoti
 
 
 --
--- TOC entry 404 (class 1259 OID 187762)
+-- TOC entry 309 (class 1259 OID 191846)
 -- Name: spree_promotion_rules_stores; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2098,7 +2098,7 @@ CREATE TABLE public.spree_promotion_rules_stores (
 ALTER TABLE public.spree_promotion_rules_stores OWNER TO postgres;
 
 --
--- TOC entry 403 (class 1259 OID 187761)
+-- TOC entry 310 (class 1259 OID 191849)
 -- Name: spree_promotion_rules_stores_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2114,7 +2114,7 @@ ALTER SEQUENCE public.spree_promotion_rules_stores_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6138 (class 0 OID 0)
--- Dependencies: 403
+-- Dependencies: 310
 -- Name: spree_promotion_rules_stores_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2122,7 +2122,7 @@ ALTER SEQUENCE public.spree_promotion_rules_stores_id_seq OWNED BY public.spree_
 
 
 --
--- TOC entry 302 (class 1259 OID 187153)
+-- TOC entry 311 (class 1259 OID 191850)
 -- Name: spree_promotion_rules_users; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2138,7 +2138,7 @@ CREATE TABLE public.spree_promotion_rules_users (
 ALTER TABLE public.spree_promotion_rules_users OWNER TO postgres;
 
 --
--- TOC entry 301 (class 1259 OID 187152)
+-- TOC entry 312 (class 1259 OID 191853)
 -- Name: spree_promotion_rules_users_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2155,7 +2155,7 @@ ALTER SEQUENCE public.spree_promotion_rules_users_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6139 (class 0 OID 0)
--- Dependencies: 301
+-- Dependencies: 312
 -- Name: spree_promotion_rules_users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2163,7 +2163,7 @@ ALTER SEQUENCE public.spree_promotion_rules_users_id_seq OWNED BY public.spree_p
 
 
 --
--- TOC entry 304 (class 1259 OID 187162)
+-- TOC entry 313 (class 1259 OID 191854)
 -- Name: spree_promotions; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2188,7 +2188,7 @@ CREATE TABLE public.spree_promotions (
 ALTER TABLE public.spree_promotions OWNER TO postgres;
 
 --
--- TOC entry 303 (class 1259 OID 187161)
+-- TOC entry 314 (class 1259 OID 191861)
 -- Name: spree_promotions_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2205,7 +2205,7 @@ ALTER SEQUENCE public.spree_promotions_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6140 (class 0 OID 0)
--- Dependencies: 303
+-- Dependencies: 314
 -- Name: spree_promotions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2213,7 +2213,7 @@ ALTER SEQUENCE public.spree_promotions_id_seq OWNED BY public.spree_promotions.i
 
 
 --
--- TOC entry 306 (class 1259 OID 187181)
+-- TOC entry 315 (class 1259 OID 191862)
 -- Name: spree_properties; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2229,7 +2229,7 @@ CREATE TABLE public.spree_properties (
 ALTER TABLE public.spree_properties OWNER TO postgres;
 
 --
--- TOC entry 305 (class 1259 OID 187180)
+-- TOC entry 316 (class 1259 OID 191867)
 -- Name: spree_properties_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2246,7 +2246,7 @@ ALTER SEQUENCE public.spree_properties_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6141 (class 0 OID 0)
--- Dependencies: 305
+-- Dependencies: 316
 -- Name: spree_properties_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2254,7 +2254,7 @@ ALTER SEQUENCE public.spree_properties_id_seq OWNED BY public.spree_properties.i
 
 
 --
--- TOC entry 308 (class 1259 OID 187190)
+-- TOC entry 317 (class 1259 OID 191868)
 -- Name: spree_property_prototypes; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2270,7 +2270,7 @@ CREATE TABLE public.spree_property_prototypes (
 ALTER TABLE public.spree_property_prototypes OWNER TO postgres;
 
 --
--- TOC entry 307 (class 1259 OID 187189)
+-- TOC entry 318 (class 1259 OID 191871)
 -- Name: spree_property_prototypes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2287,7 +2287,7 @@ ALTER SEQUENCE public.spree_property_prototypes_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6142 (class 0 OID 0)
--- Dependencies: 307
+-- Dependencies: 318
 -- Name: spree_property_prototypes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2295,7 +2295,7 @@ ALTER SEQUENCE public.spree_property_prototypes_id_seq OWNED BY public.spree_pro
 
 
 --
--- TOC entry 310 (class 1259 OID 187197)
+-- TOC entry 319 (class 1259 OID 191872)
 -- Name: spree_prototype_taxons; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2311,7 +2311,7 @@ CREATE TABLE public.spree_prototype_taxons (
 ALTER TABLE public.spree_prototype_taxons OWNER TO postgres;
 
 --
--- TOC entry 309 (class 1259 OID 187196)
+-- TOC entry 320 (class 1259 OID 191875)
 -- Name: spree_prototype_taxons_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2328,7 +2328,7 @@ ALTER SEQUENCE public.spree_prototype_taxons_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6143 (class 0 OID 0)
--- Dependencies: 309
+-- Dependencies: 320
 -- Name: spree_prototype_taxons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2336,7 +2336,7 @@ ALTER SEQUENCE public.spree_prototype_taxons_id_seq OWNED BY public.spree_protot
 
 
 --
--- TOC entry 312 (class 1259 OID 187206)
+-- TOC entry 321 (class 1259 OID 191876)
 -- Name: spree_prototypes; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2351,7 +2351,7 @@ CREATE TABLE public.spree_prototypes (
 ALTER TABLE public.spree_prototypes OWNER TO postgres;
 
 --
--- TOC entry 311 (class 1259 OID 187205)
+-- TOC entry 322 (class 1259 OID 191881)
 -- Name: spree_prototypes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2368,7 +2368,7 @@ ALTER SEQUENCE public.spree_prototypes_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6144 (class 0 OID 0)
--- Dependencies: 311
+-- Dependencies: 322
 -- Name: spree_prototypes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2376,7 +2376,7 @@ ALTER SEQUENCE public.spree_prototypes_id_seq OWNED BY public.spree_prototypes.i
 
 
 --
--- TOC entry 314 (class 1259 OID 187215)
+-- TOC entry 323 (class 1259 OID 191882)
 -- Name: spree_refund_reasons; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2394,7 +2394,7 @@ CREATE TABLE public.spree_refund_reasons (
 ALTER TABLE public.spree_refund_reasons OWNER TO postgres;
 
 --
--- TOC entry 313 (class 1259 OID 187214)
+-- TOC entry 324 (class 1259 OID 191889)
 -- Name: spree_refund_reasons_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2411,7 +2411,7 @@ ALTER SEQUENCE public.spree_refund_reasons_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6145 (class 0 OID 0)
--- Dependencies: 313
+-- Dependencies: 324
 -- Name: spree_refund_reasons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2419,7 +2419,7 @@ ALTER SEQUENCE public.spree_refund_reasons_id_seq OWNED BY public.spree_refund_r
 
 
 --
--- TOC entry 316 (class 1259 OID 187226)
+-- TOC entry 325 (class 1259 OID 191890)
 -- Name: spree_refunds; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2438,7 +2438,7 @@ CREATE TABLE public.spree_refunds (
 ALTER TABLE public.spree_refunds OWNER TO postgres;
 
 --
--- TOC entry 315 (class 1259 OID 187225)
+-- TOC entry 326 (class 1259 OID 191896)
 -- Name: spree_refunds_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2455,7 +2455,7 @@ ALTER SEQUENCE public.spree_refunds_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6146 (class 0 OID 0)
--- Dependencies: 315
+-- Dependencies: 326
 -- Name: spree_refunds_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2463,7 +2463,7 @@ ALTER SEQUENCE public.spree_refunds_id_seq OWNED BY public.spree_refunds.id;
 
 
 --
--- TOC entry 318 (class 1259 OID 187239)
+-- TOC entry 327 (class 1259 OID 191897)
 -- Name: spree_reimbursement_credits; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2481,7 +2481,7 @@ CREATE TABLE public.spree_reimbursement_credits (
 ALTER TABLE public.spree_reimbursement_credits OWNER TO postgres;
 
 --
--- TOC entry 317 (class 1259 OID 187238)
+-- TOC entry 328 (class 1259 OID 191903)
 -- Name: spree_reimbursement_credits_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2498,7 +2498,7 @@ ALTER SEQUENCE public.spree_reimbursement_credits_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6147 (class 0 OID 0)
--- Dependencies: 317
+-- Dependencies: 328
 -- Name: spree_reimbursement_credits_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2506,7 +2506,7 @@ ALTER SEQUENCE public.spree_reimbursement_credits_id_seq OWNED BY public.spree_r
 
 
 --
--- TOC entry 320 (class 1259 OID 187249)
+-- TOC entry 329 (class 1259 OID 191904)
 -- Name: spree_reimbursement_types; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2524,7 +2524,7 @@ CREATE TABLE public.spree_reimbursement_types (
 ALTER TABLE public.spree_reimbursement_types OWNER TO postgres;
 
 --
--- TOC entry 319 (class 1259 OID 187248)
+-- TOC entry 330 (class 1259 OID 191911)
 -- Name: spree_reimbursement_types_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2541,7 +2541,7 @@ ALTER SEQUENCE public.spree_reimbursement_types_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6148 (class 0 OID 0)
--- Dependencies: 319
+-- Dependencies: 330
 -- Name: spree_reimbursement_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2549,7 +2549,7 @@ ALTER SEQUENCE public.spree_reimbursement_types_id_seq OWNED BY public.spree_rei
 
 
 --
--- TOC entry 322 (class 1259 OID 187261)
+-- TOC entry 331 (class 1259 OID 191912)
 -- Name: spree_reimbursements; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2568,7 +2568,7 @@ CREATE TABLE public.spree_reimbursements (
 ALTER TABLE public.spree_reimbursements OWNER TO postgres;
 
 --
--- TOC entry 321 (class 1259 OID 187260)
+-- TOC entry 332 (class 1259 OID 191917)
 -- Name: spree_reimbursements_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2585,7 +2585,7 @@ ALTER SEQUENCE public.spree_reimbursements_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6149 (class 0 OID 0)
--- Dependencies: 321
+-- Dependencies: 332
 -- Name: spree_reimbursements_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2593,7 +2593,7 @@ ALTER SEQUENCE public.spree_reimbursements_id_seq OWNED BY public.spree_reimburs
 
 
 --
--- TOC entry 324 (class 1259 OID 187272)
+-- TOC entry 333 (class 1259 OID 191918)
 -- Name: spree_return_authorizations; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2613,7 +2613,7 @@ CREATE TABLE public.spree_return_authorizations (
 ALTER TABLE public.spree_return_authorizations OWNER TO postgres;
 
 --
--- TOC entry 323 (class 1259 OID 187271)
+-- TOC entry 334 (class 1259 OID 191923)
 -- Name: spree_return_authorizations_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2630,7 +2630,7 @@ ALTER SEQUENCE public.spree_return_authorizations_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6150 (class 0 OID 0)
--- Dependencies: 323
+-- Dependencies: 334
 -- Name: spree_return_authorizations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2638,7 +2638,7 @@ ALTER SEQUENCE public.spree_return_authorizations_id_seq OWNED BY public.spree_r
 
 
 --
--- TOC entry 326 (class 1259 OID 187282)
+-- TOC entry 335 (class 1259 OID 191924)
 -- Name: spree_return_items; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2668,7 +2668,7 @@ CREATE TABLE public.spree_return_items (
 ALTER TABLE public.spree_return_items OWNER TO postgres;
 
 --
--- TOC entry 325 (class 1259 OID 187281)
+-- TOC entry 336 (class 1259 OID 191933)
 -- Name: spree_return_items_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2685,7 +2685,7 @@ ALTER SEQUENCE public.spree_return_items_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6151 (class 0 OID 0)
--- Dependencies: 325
+-- Dependencies: 336
 -- Name: spree_return_items_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2693,7 +2693,7 @@ ALTER SEQUENCE public.spree_return_items_id_seq OWNED BY public.spree_return_ite
 
 
 --
--- TOC entry 328 (class 1259 OID 187297)
+-- TOC entry 337 (class 1259 OID 191934)
 -- Name: spree_return_reasons; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2710,7 +2710,7 @@ CREATE TABLE public.spree_return_reasons (
 ALTER TABLE public.spree_return_reasons OWNER TO postgres;
 
 --
--- TOC entry 327 (class 1259 OID 187296)
+-- TOC entry 338 (class 1259 OID 191941)
 -- Name: spree_return_reasons_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2727,7 +2727,7 @@ ALTER SEQUENCE public.spree_return_reasons_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6152 (class 0 OID 0)
--- Dependencies: 327
+-- Dependencies: 338
 -- Name: spree_return_reasons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2735,7 +2735,7 @@ ALTER SEQUENCE public.spree_return_reasons_id_seq OWNED BY public.spree_return_r
 
 
 --
--- TOC entry 330 (class 1259 OID 187308)
+-- TOC entry 339 (class 1259 OID 191942)
 -- Name: spree_roles; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2750,7 +2750,7 @@ CREATE TABLE public.spree_roles (
 ALTER TABLE public.spree_roles OWNER TO postgres;
 
 --
--- TOC entry 329 (class 1259 OID 187307)
+-- TOC entry 340 (class 1259 OID 191947)
 -- Name: spree_roles_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2767,7 +2767,7 @@ ALTER SEQUENCE public.spree_roles_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6153 (class 0 OID 0)
--- Dependencies: 329
+-- Dependencies: 340
 -- Name: spree_roles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2775,7 +2775,7 @@ ALTER SEQUENCE public.spree_roles_id_seq OWNED BY public.spree_roles.id;
 
 
 --
--- TOC entry 332 (class 1259 OID 187317)
+-- TOC entry 341 (class 1259 OID 191948)
 -- Name: spree_roles_users; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2791,7 +2791,7 @@ CREATE TABLE public.spree_roles_users (
 ALTER TABLE public.spree_roles_users OWNER TO postgres;
 
 --
--- TOC entry 331 (class 1259 OID 187316)
+-- TOC entry 342 (class 1259 OID 191951)
 -- Name: spree_roles_users_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2808,7 +2808,7 @@ ALTER SEQUENCE public.spree_roles_users_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6154 (class 0 OID 0)
--- Dependencies: 331
+-- Dependencies: 342
 -- Name: spree_roles_users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2816,7 +2816,7 @@ ALTER SEQUENCE public.spree_roles_users_id_seq OWNED BY public.spree_roles_users
 
 
 --
--- TOC entry 334 (class 1259 OID 187326)
+-- TOC entry 343 (class 1259 OID 191952)
 -- Name: spree_shipments; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2841,7 +2841,7 @@ CREATE TABLE public.spree_shipments (
 ALTER TABLE public.spree_shipments OWNER TO postgres;
 
 --
--- TOC entry 333 (class 1259 OID 187325)
+-- TOC entry 344 (class 1259 OID 191962)
 -- Name: spree_shipments_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2858,7 +2858,7 @@ ALTER SEQUENCE public.spree_shipments_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6155 (class 0 OID 0)
--- Dependencies: 333
+-- Dependencies: 344
 -- Name: spree_shipments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2866,7 +2866,7 @@ ALTER SEQUENCE public.spree_shipments_id_seq OWNED BY public.spree_shipments.id;
 
 
 --
--- TOC entry 336 (class 1259 OID 187344)
+-- TOC entry 345 (class 1259 OID 191963)
 -- Name: spree_shipping_categories; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2881,7 +2881,7 @@ CREATE TABLE public.spree_shipping_categories (
 ALTER TABLE public.spree_shipping_categories OWNER TO postgres;
 
 --
--- TOC entry 335 (class 1259 OID 187343)
+-- TOC entry 346 (class 1259 OID 191968)
 -- Name: spree_shipping_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2898,7 +2898,7 @@ ALTER SEQUENCE public.spree_shipping_categories_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6156 (class 0 OID 0)
--- Dependencies: 335
+-- Dependencies: 346
 -- Name: spree_shipping_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2906,7 +2906,7 @@ ALTER SEQUENCE public.spree_shipping_categories_id_seq OWNED BY public.spree_shi
 
 
 --
--- TOC entry 338 (class 1259 OID 187353)
+-- TOC entry 347 (class 1259 OID 191969)
 -- Name: spree_shipping_method_categories; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2922,7 +2922,7 @@ CREATE TABLE public.spree_shipping_method_categories (
 ALTER TABLE public.spree_shipping_method_categories OWNER TO postgres;
 
 --
--- TOC entry 337 (class 1259 OID 187352)
+-- TOC entry 348 (class 1259 OID 191972)
 -- Name: spree_shipping_method_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2939,7 +2939,7 @@ ALTER SEQUENCE public.spree_shipping_method_categories_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6157 (class 0 OID 0)
--- Dependencies: 337
+-- Dependencies: 348
 -- Name: spree_shipping_method_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2947,7 +2947,7 @@ ALTER SEQUENCE public.spree_shipping_method_categories_id_seq OWNED BY public.sp
 
 
 --
--- TOC entry 340 (class 1259 OID 187362)
+-- TOC entry 349 (class 1259 OID 191973)
 -- Name: spree_shipping_method_stock_locations; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -2963,7 +2963,7 @@ CREATE TABLE public.spree_shipping_method_stock_locations (
 ALTER TABLE public.spree_shipping_method_stock_locations OWNER TO postgres;
 
 --
--- TOC entry 339 (class 1259 OID 187361)
+-- TOC entry 350 (class 1259 OID 191976)
 -- Name: spree_shipping_method_stock_locations_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -2980,7 +2980,7 @@ ALTER SEQUENCE public.spree_shipping_method_stock_locations_id_seq OWNER TO post
 
 --
 -- TOC entry 6158 (class 0 OID 0)
--- Dependencies: 339
+-- Dependencies: 350
 -- Name: spree_shipping_method_stock_locations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -2988,7 +2988,7 @@ ALTER SEQUENCE public.spree_shipping_method_stock_locations_id_seq OWNED BY publ
 
 
 --
--- TOC entry 342 (class 1259 OID 187371)
+-- TOC entry 351 (class 1259 OID 191977)
 -- Name: spree_shipping_method_zones; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3004,7 +3004,7 @@ CREATE TABLE public.spree_shipping_method_zones (
 ALTER TABLE public.spree_shipping_method_zones OWNER TO postgres;
 
 --
--- TOC entry 341 (class 1259 OID 187370)
+-- TOC entry 352 (class 1259 OID 191980)
 -- Name: spree_shipping_method_zones_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3021,7 +3021,7 @@ ALTER SEQUENCE public.spree_shipping_method_zones_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6159 (class 0 OID 0)
--- Dependencies: 341
+-- Dependencies: 352
 -- Name: spree_shipping_method_zones_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3029,7 +3029,7 @@ ALTER SEQUENCE public.spree_shipping_method_zones_id_seq OWNED BY public.spree_s
 
 
 --
--- TOC entry 344 (class 1259 OID 187378)
+-- TOC entry 353 (class 1259 OID 191981)
 -- Name: spree_shipping_methods; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3053,7 +3053,7 @@ CREATE TABLE public.spree_shipping_methods (
 ALTER TABLE public.spree_shipping_methods OWNER TO postgres;
 
 --
--- TOC entry 343 (class 1259 OID 187377)
+-- TOC entry 354 (class 1259 OID 191988)
 -- Name: spree_shipping_methods_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3070,7 +3070,7 @@ ALTER SEQUENCE public.spree_shipping_methods_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6160 (class 0 OID 0)
--- Dependencies: 343
+-- Dependencies: 354
 -- Name: spree_shipping_methods_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3078,7 +3078,7 @@ ALTER SEQUENCE public.spree_shipping_methods_id_seq OWNED BY public.spree_shippi
 
 
 --
--- TOC entry 346 (class 1259 OID 187389)
+-- TOC entry 355 (class 1259 OID 191989)
 -- Name: spree_shipping_rate_taxes; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3095,7 +3095,7 @@ CREATE TABLE public.spree_shipping_rate_taxes (
 ALTER TABLE public.spree_shipping_rate_taxes OWNER TO postgres;
 
 --
--- TOC entry 345 (class 1259 OID 187388)
+-- TOC entry 356 (class 1259 OID 191993)
 -- Name: spree_shipping_rate_taxes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3112,7 +3112,7 @@ ALTER SEQUENCE public.spree_shipping_rate_taxes_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6161 (class 0 OID 0)
--- Dependencies: 345
+-- Dependencies: 356
 -- Name: spree_shipping_rate_taxes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3120,7 +3120,7 @@ ALTER SEQUENCE public.spree_shipping_rate_taxes_id_seq OWNED BY public.spree_shi
 
 
 --
--- TOC entry 348 (class 1259 OID 187399)
+-- TOC entry 357 (class 1259 OID 191994)
 -- Name: spree_shipping_rates; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3139,7 +3139,7 @@ CREATE TABLE public.spree_shipping_rates (
 ALTER TABLE public.spree_shipping_rates OWNER TO postgres;
 
 --
--- TOC entry 347 (class 1259 OID 187398)
+-- TOC entry 358 (class 1259 OID 191999)
 -- Name: spree_shipping_rates_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3156,7 +3156,7 @@ ALTER SEQUENCE public.spree_shipping_rates_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6162 (class 0 OID 0)
--- Dependencies: 347
+-- Dependencies: 358
 -- Name: spree_shipping_rates_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3164,7 +3164,7 @@ ALTER SEQUENCE public.spree_shipping_rates_id_seq OWNED BY public.spree_shipping
 
 
 --
--- TOC entry 350 (class 1259 OID 187409)
+-- TOC entry 359 (class 1259 OID 192000)
 -- Name: spree_state_changes; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3184,7 +3184,7 @@ CREATE TABLE public.spree_state_changes (
 ALTER TABLE public.spree_state_changes OWNER TO postgres;
 
 --
--- TOC entry 349 (class 1259 OID 187408)
+-- TOC entry 360 (class 1259 OID 192005)
 -- Name: spree_state_changes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3201,7 +3201,7 @@ ALTER SEQUENCE public.spree_state_changes_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6163 (class 0 OID 0)
--- Dependencies: 349
+-- Dependencies: 360
 -- Name: spree_state_changes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3209,7 +3209,7 @@ ALTER SEQUENCE public.spree_state_changes_id_seq OWNED BY public.spree_state_cha
 
 
 --
--- TOC entry 352 (class 1259 OID 187420)
+-- TOC entry 361 (class 1259 OID 192006)
 -- Name: spree_states; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3226,7 +3226,7 @@ CREATE TABLE public.spree_states (
 ALTER TABLE public.spree_states OWNER TO postgres;
 
 --
--- TOC entry 351 (class 1259 OID 187419)
+-- TOC entry 362 (class 1259 OID 192011)
 -- Name: spree_states_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3243,7 +3243,7 @@ ALTER SEQUENCE public.spree_states_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6164 (class 0 OID 0)
--- Dependencies: 351
+-- Dependencies: 362
 -- Name: spree_states_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3251,7 +3251,7 @@ ALTER SEQUENCE public.spree_states_id_seq OWNED BY public.spree_states.id;
 
 
 --
--- TOC entry 354 (class 1259 OID 187430)
+-- TOC entry 363 (class 1259 OID 192012)
 -- Name: spree_stock_items; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3270,7 +3270,7 @@ CREATE TABLE public.spree_stock_items (
 ALTER TABLE public.spree_stock_items OWNER TO postgres;
 
 --
--- TOC entry 353 (class 1259 OID 187429)
+-- TOC entry 364 (class 1259 OID 192017)
 -- Name: spree_stock_items_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3287,7 +3287,7 @@ ALTER SEQUENCE public.spree_stock_items_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6165 (class 0 OID 0)
--- Dependencies: 353
+-- Dependencies: 364
 -- Name: spree_stock_items_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3295,7 +3295,7 @@ ALTER SEQUENCE public.spree_stock_items_id_seq OWNED BY public.spree_stock_items
 
 
 --
--- TOC entry 356 (class 1259 OID 187443)
+-- TOC entry 365 (class 1259 OID 192018)
 -- Name: spree_stock_locations; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3328,7 +3328,7 @@ CREATE TABLE public.spree_stock_locations (
 ALTER TABLE public.spree_stock_locations OWNER TO postgres;
 
 --
--- TOC entry 355 (class 1259 OID 187442)
+-- TOC entry 366 (class 1259 OID 192031)
 -- Name: spree_stock_locations_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3345,7 +3345,7 @@ ALTER SEQUENCE public.spree_stock_locations_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6166 (class 0 OID 0)
--- Dependencies: 355
+-- Dependencies: 366
 -- Name: spree_stock_locations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3353,7 +3353,7 @@ ALTER SEQUENCE public.spree_stock_locations_id_seq OWNED BY public.spree_stock_l
 
 
 --
--- TOC entry 358 (class 1259 OID 187462)
+-- TOC entry 367 (class 1259 OID 192032)
 -- Name: spree_stock_movements; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3372,7 +3372,7 @@ CREATE TABLE public.spree_stock_movements (
 ALTER TABLE public.spree_stock_movements OWNER TO postgres;
 
 --
--- TOC entry 357 (class 1259 OID 187461)
+-- TOC entry 368 (class 1259 OID 192038)
 -- Name: spree_stock_movements_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3389,7 +3389,7 @@ ALTER SEQUENCE public.spree_stock_movements_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6167 (class 0 OID 0)
--- Dependencies: 357
+-- Dependencies: 368
 -- Name: spree_stock_movements_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3397,7 +3397,7 @@ ALTER SEQUENCE public.spree_stock_movements_id_seq OWNED BY public.spree_stock_m
 
 
 --
--- TOC entry 360 (class 1259 OID 187473)
+-- TOC entry 369 (class 1259 OID 192039)
 -- Name: spree_store_credit_categories; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3412,7 +3412,7 @@ CREATE TABLE public.spree_store_credit_categories (
 ALTER TABLE public.spree_store_credit_categories OWNER TO postgres;
 
 --
--- TOC entry 359 (class 1259 OID 187472)
+-- TOC entry 370 (class 1259 OID 192044)
 -- Name: spree_store_credit_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3429,7 +3429,7 @@ ALTER SEQUENCE public.spree_store_credit_categories_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6168 (class 0 OID 0)
--- Dependencies: 359
+-- Dependencies: 370
 -- Name: spree_store_credit_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3437,7 +3437,7 @@ ALTER SEQUENCE public.spree_store_credit_categories_id_seq OWNED BY public.spree
 
 
 --
--- TOC entry 362 (class 1259 OID 187482)
+-- TOC entry 371 (class 1259 OID 192045)
 -- Name: spree_store_credit_events; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3461,7 +3461,7 @@ CREATE TABLE public.spree_store_credit_events (
 ALTER TABLE public.spree_store_credit_events OWNER TO postgres;
 
 --
--- TOC entry 361 (class 1259 OID 187481)
+-- TOC entry 372 (class 1259 OID 192052)
 -- Name: spree_store_credit_events_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3478,7 +3478,7 @@ ALTER SEQUENCE public.spree_store_credit_events_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6169 (class 0 OID 0)
--- Dependencies: 361
+-- Dependencies: 372
 -- Name: spree_store_credit_events_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3486,7 +3486,7 @@ ALTER SEQUENCE public.spree_store_credit_events_id_seq OWNED BY public.spree_sto
 
 
 --
--- TOC entry 408 (class 1259 OID 187785)
+-- TOC entry 373 (class 1259 OID 192053)
 -- Name: spree_store_credit_reasons; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3502,7 +3502,7 @@ CREATE TABLE public.spree_store_credit_reasons (
 ALTER TABLE public.spree_store_credit_reasons OWNER TO postgres;
 
 --
--- TOC entry 407 (class 1259 OID 187784)
+-- TOC entry 374 (class 1259 OID 192059)
 -- Name: spree_store_credit_reasons_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3518,7 +3518,7 @@ ALTER SEQUENCE public.spree_store_credit_reasons_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6170 (class 0 OID 0)
--- Dependencies: 407
+-- Dependencies: 374
 -- Name: spree_store_credit_reasons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3526,7 +3526,7 @@ ALTER SEQUENCE public.spree_store_credit_reasons_id_seq OWNED BY public.spree_st
 
 
 --
--- TOC entry 364 (class 1259 OID 187494)
+-- TOC entry 375 (class 1259 OID 192060)
 -- Name: spree_store_credit_types; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3542,7 +3542,7 @@ CREATE TABLE public.spree_store_credit_types (
 ALTER TABLE public.spree_store_credit_types OWNER TO postgres;
 
 --
--- TOC entry 363 (class 1259 OID 187493)
+-- TOC entry 376 (class 1259 OID 192065)
 -- Name: spree_store_credit_types_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3559,7 +3559,7 @@ ALTER SEQUENCE public.spree_store_credit_types_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6171 (class 0 OID 0)
--- Dependencies: 363
+-- Dependencies: 376
 -- Name: spree_store_credit_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3567,7 +3567,7 @@ ALTER SEQUENCE public.spree_store_credit_types_id_seq OWNED BY public.spree_stor
 
 
 --
--- TOC entry 366 (class 1259 OID 187513)
+-- TOC entry 377 (class 1259 OID 192066)
 -- Name: spree_store_credits; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3592,7 +3592,7 @@ CREATE TABLE public.spree_store_credits (
 ALTER TABLE public.spree_store_credits OWNER TO postgres;
 
 --
--- TOC entry 365 (class 1259 OID 187512)
+-- TOC entry 378 (class 1259 OID 192074)
 -- Name: spree_store_credits_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3609,7 +3609,7 @@ ALTER SEQUENCE public.spree_store_credits_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6172 (class 0 OID 0)
--- Dependencies: 365
+-- Dependencies: 378
 -- Name: spree_store_credits_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3617,7 +3617,7 @@ ALTER SEQUENCE public.spree_store_credits_id_seq OWNED BY public.spree_store_cre
 
 
 --
--- TOC entry 368 (class 1259 OID 187528)
+-- TOC entry 379 (class 1259 OID 192075)
 -- Name: spree_store_payment_methods; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3633,7 +3633,7 @@ CREATE TABLE public.spree_store_payment_methods (
 ALTER TABLE public.spree_store_payment_methods OWNER TO postgres;
 
 --
--- TOC entry 367 (class 1259 OID 187527)
+-- TOC entry 380 (class 1259 OID 192078)
 -- Name: spree_store_payment_methods_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3650,7 +3650,7 @@ ALTER SEQUENCE public.spree_store_payment_methods_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6173 (class 0 OID 0)
--- Dependencies: 367
+-- Dependencies: 380
 -- Name: spree_store_payment_methods_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3658,7 +3658,7 @@ ALTER SEQUENCE public.spree_store_payment_methods_id_seq OWNED BY public.spree_s
 
 
 --
--- TOC entry 406 (class 1259 OID 187771)
+-- TOC entry 381 (class 1259 OID 192079)
 -- Name: spree_store_shipping_methods; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3674,7 +3674,7 @@ CREATE TABLE public.spree_store_shipping_methods (
 ALTER TABLE public.spree_store_shipping_methods OWNER TO postgres;
 
 --
--- TOC entry 405 (class 1259 OID 187770)
+-- TOC entry 382 (class 1259 OID 192082)
 -- Name: spree_store_shipping_methods_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3690,7 +3690,7 @@ ALTER SEQUENCE public.spree_store_shipping_methods_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6174 (class 0 OID 0)
--- Dependencies: 405
+-- Dependencies: 382
 -- Name: spree_store_shipping_methods_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3698,7 +3698,7 @@ ALTER SEQUENCE public.spree_store_shipping_methods_id_seq OWNED BY public.spree_
 
 
 --
--- TOC entry 370 (class 1259 OID 187537)
+-- TOC entry 383 (class 1259 OID 192083)
 -- Name: spree_stores; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3724,7 +3724,7 @@ CREATE TABLE public.spree_stores (
 ALTER TABLE public.spree_stores OWNER TO postgres;
 
 --
--- TOC entry 369 (class 1259 OID 187536)
+-- TOC entry 384 (class 1259 OID 192089)
 -- Name: spree_stores_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3741,7 +3741,7 @@ ALTER SEQUENCE public.spree_stores_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6175 (class 0 OID 0)
--- Dependencies: 369
+-- Dependencies: 384
 -- Name: spree_stores_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3749,7 +3749,7 @@ ALTER SEQUENCE public.spree_stores_id_seq OWNED BY public.spree_stores.id;
 
 
 --
--- TOC entry 372 (class 1259 OID 187549)
+-- TOC entry 385 (class 1259 OID 192090)
 -- Name: spree_tax_categories; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3768,7 +3768,7 @@ CREATE TABLE public.spree_tax_categories (
 ALTER TABLE public.spree_tax_categories OWNER TO postgres;
 
 --
--- TOC entry 371 (class 1259 OID 187548)
+-- TOC entry 386 (class 1259 OID 192096)
 -- Name: spree_tax_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3785,7 +3785,7 @@ ALTER SEQUENCE public.spree_tax_categories_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6176 (class 0 OID 0)
--- Dependencies: 371
+-- Dependencies: 386
 -- Name: spree_tax_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3793,7 +3793,7 @@ ALTER SEQUENCE public.spree_tax_categories_id_seq OWNED BY public.spree_tax_cate
 
 
 --
--- TOC entry 402 (class 1259 OID 187741)
+-- TOC entry 387 (class 1259 OID 192097)
 -- Name: spree_tax_rate_tax_categories; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3807,7 +3807,7 @@ CREATE TABLE public.spree_tax_rate_tax_categories (
 ALTER TABLE public.spree_tax_rate_tax_categories OWNER TO postgres;
 
 --
--- TOC entry 401 (class 1259 OID 187740)
+-- TOC entry 388 (class 1259 OID 192100)
 -- Name: spree_tax_rate_tax_categories_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3824,7 +3824,7 @@ ALTER SEQUENCE public.spree_tax_rate_tax_categories_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6177 (class 0 OID 0)
--- Dependencies: 401
+-- Dependencies: 388
 -- Name: spree_tax_rate_tax_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3832,7 +3832,7 @@ ALTER SEQUENCE public.spree_tax_rate_tax_categories_id_seq OWNED BY public.spree
 
 
 --
--- TOC entry 374 (class 1259 OID 187559)
+-- TOC entry 389 (class 1259 OID 192101)
 -- Name: spree_tax_rates; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3855,7 +3855,7 @@ CREATE TABLE public.spree_tax_rates (
 ALTER TABLE public.spree_tax_rates OWNER TO postgres;
 
 --
--- TOC entry 373 (class 1259 OID 187558)
+-- TOC entry 390 (class 1259 OID 192109)
 -- Name: spree_tax_rates_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3872,7 +3872,7 @@ ALTER SEQUENCE public.spree_tax_rates_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6178 (class 0 OID 0)
--- Dependencies: 373
+-- Dependencies: 390
 -- Name: spree_tax_rates_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3880,7 +3880,7 @@ ALTER SEQUENCE public.spree_tax_rates_id_seq OWNED BY public.spree_tax_rates.id;
 
 
 --
--- TOC entry 376 (class 1259 OID 187573)
+-- TOC entry 391 (class 1259 OID 192110)
 -- Name: spree_taxonomies; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3896,7 +3896,7 @@ CREATE TABLE public.spree_taxonomies (
 ALTER TABLE public.spree_taxonomies OWNER TO postgres;
 
 --
--- TOC entry 375 (class 1259 OID 187572)
+-- TOC entry 392 (class 1259 OID 192116)
 -- Name: spree_taxonomies_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3913,7 +3913,7 @@ ALTER SEQUENCE public.spree_taxonomies_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6179 (class 0 OID 0)
--- Dependencies: 375
+-- Dependencies: 392
 -- Name: spree_taxonomies_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3921,7 +3921,7 @@ ALTER SEQUENCE public.spree_taxonomies_id_seq OWNED BY public.spree_taxonomies.i
 
 
 --
--- TOC entry 378 (class 1259 OID 187584)
+-- TOC entry 393 (class 1259 OID 192117)
 -- Name: spree_taxons; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3950,7 +3950,7 @@ CREATE TABLE public.spree_taxons (
 ALTER TABLE public.spree_taxons OWNER TO postgres;
 
 --
--- TOC entry 377 (class 1259 OID 187583)
+-- TOC entry 394 (class 1259 OID 192122)
 -- Name: spree_taxons_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -3967,7 +3967,7 @@ ALTER SEQUENCE public.spree_taxons_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6180 (class 0 OID 0)
--- Dependencies: 377
+-- Dependencies: 394
 -- Name: spree_taxons_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -3975,7 +3975,7 @@ ALTER SEQUENCE public.spree_taxons_id_seq OWNED BY public.spree_taxons.id;
 
 
 --
--- TOC entry 380 (class 1259 OID 187598)
+-- TOC entry 395 (class 1259 OID 192123)
 -- Name: spree_unit_cancels; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -3992,7 +3992,7 @@ CREATE TABLE public.spree_unit_cancels (
 ALTER TABLE public.spree_unit_cancels OWNER TO postgres;
 
 --
--- TOC entry 379 (class 1259 OID 187597)
+-- TOC entry 396 (class 1259 OID 192128)
 -- Name: spree_unit_cancels_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4009,7 +4009,7 @@ ALTER SEQUENCE public.spree_unit_cancels_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6181 (class 0 OID 0)
--- Dependencies: 379
+-- Dependencies: 396
 -- Name: spree_unit_cancels_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4017,7 +4017,7 @@ ALTER SEQUENCE public.spree_unit_cancels_id_seq OWNED BY public.spree_unit_cance
 
 
 --
--- TOC entry 382 (class 1259 OID 187608)
+-- TOC entry 397 (class 1259 OID 192129)
 -- Name: spree_user_addresses; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -4036,7 +4036,7 @@ CREATE TABLE public.spree_user_addresses (
 ALTER TABLE public.spree_user_addresses OWNER TO postgres;
 
 --
--- TOC entry 381 (class 1259 OID 187607)
+-- TOC entry 398 (class 1259 OID 192135)
 -- Name: spree_user_addresses_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4053,7 +4053,7 @@ ALTER SEQUENCE public.spree_user_addresses_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6182 (class 0 OID 0)
--- Dependencies: 381
+-- Dependencies: 398
 -- Name: spree_user_addresses_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4061,7 +4061,7 @@ ALTER SEQUENCE public.spree_user_addresses_id_seq OWNED BY public.spree_user_add
 
 
 --
--- TOC entry 384 (class 1259 OID 187620)
+-- TOC entry 399 (class 1259 OID 192136)
 -- Name: spree_user_stock_locations; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -4077,7 +4077,7 @@ CREATE TABLE public.spree_user_stock_locations (
 ALTER TABLE public.spree_user_stock_locations OWNER TO postgres;
 
 --
--- TOC entry 383 (class 1259 OID 187619)
+-- TOC entry 400 (class 1259 OID 192139)
 -- Name: spree_user_stock_locations_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4094,7 +4094,7 @@ ALTER SEQUENCE public.spree_user_stock_locations_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6183 (class 0 OID 0)
--- Dependencies: 383
+-- Dependencies: 400
 -- Name: spree_user_stock_locations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4102,7 +4102,7 @@ ALTER SEQUENCE public.spree_user_stock_locations_id_seq OWNED BY public.spree_us
 
 
 --
--- TOC entry 228 (class 1259 OID 186711)
+-- TOC entry 401 (class 1259 OID 192140)
 -- Name: spree_users; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -4137,14 +4137,15 @@ CREATE TABLE public.spree_users (
     confirmation_token character varying,
     confirmed_at timestamp without time zone,
     confirmation_sent_at timestamp without time zone,
-    unconfirmed_email character varying
+    unconfirmed_email character varying,
+    name character varying
 );
 
 
 ALTER TABLE public.spree_users OWNER TO postgres;
 
 --
--- TOC entry 227 (class 1259 OID 186710)
+-- TOC entry 402 (class 1259 OID 192147)
 -- Name: spree_users_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4161,7 +4162,7 @@ ALTER SEQUENCE public.spree_users_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6184 (class 0 OID 0)
--- Dependencies: 227
+-- Dependencies: 402
 -- Name: spree_users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4169,7 +4170,7 @@ ALTER SEQUENCE public.spree_users_id_seq OWNED BY public.spree_users.id;
 
 
 --
--- TOC entry 386 (class 1259 OID 187628)
+-- TOC entry 403 (class 1259 OID 192148)
 -- Name: spree_variant_property_rule_conditions; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -4185,7 +4186,7 @@ CREATE TABLE public.spree_variant_property_rule_conditions (
 ALTER TABLE public.spree_variant_property_rule_conditions OWNER TO postgres;
 
 --
--- TOC entry 385 (class 1259 OID 187627)
+-- TOC entry 404 (class 1259 OID 192151)
 -- Name: spree_variant_property_rule_conditions_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4202,7 +4203,7 @@ ALTER SEQUENCE public.spree_variant_property_rule_conditions_id_seq OWNER TO pos
 
 --
 -- TOC entry 6185 (class 0 OID 0)
--- Dependencies: 385
+-- Dependencies: 404
 -- Name: spree_variant_property_rule_conditions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4210,7 +4211,7 @@ ALTER SEQUENCE public.spree_variant_property_rule_conditions_id_seq OWNED BY pub
 
 
 --
--- TOC entry 388 (class 1259 OID 187636)
+-- TOC entry 405 (class 1259 OID 192152)
 -- Name: spree_variant_property_rule_values; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -4228,7 +4229,7 @@ CREATE TABLE public.spree_variant_property_rule_values (
 ALTER TABLE public.spree_variant_property_rule_values OWNER TO postgres;
 
 --
--- TOC entry 387 (class 1259 OID 187635)
+-- TOC entry 406 (class 1259 OID 192158)
 -- Name: spree_variant_property_rule_values_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4245,7 +4246,7 @@ ALTER SEQUENCE public.spree_variant_property_rule_values_id_seq OWNER TO postgre
 
 --
 -- TOC entry 6186 (class 0 OID 0)
--- Dependencies: 387
+-- Dependencies: 406
 -- Name: spree_variant_property_rule_values_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4253,7 +4254,7 @@ ALTER SEQUENCE public.spree_variant_property_rule_values_id_seq OWNED BY public.
 
 
 --
--- TOC entry 390 (class 1259 OID 187648)
+-- TOC entry 407 (class 1259 OID 192159)
 -- Name: spree_variant_property_rules; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -4269,7 +4270,7 @@ CREATE TABLE public.spree_variant_property_rules (
 ALTER TABLE public.spree_variant_property_rules OWNER TO postgres;
 
 --
--- TOC entry 389 (class 1259 OID 187647)
+-- TOC entry 408 (class 1259 OID 192163)
 -- Name: spree_variant_property_rules_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4286,7 +4287,7 @@ ALTER SEQUENCE public.spree_variant_property_rules_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6187 (class 0 OID 0)
--- Dependencies: 389
+-- Dependencies: 408
 -- Name: spree_variant_property_rules_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4294,7 +4295,7 @@ ALTER SEQUENCE public.spree_variant_property_rules_id_seq OWNED BY public.spree_
 
 
 --
--- TOC entry 392 (class 1259 OID 187656)
+-- TOC entry 409 (class 1259 OID 192164)
 -- Name: spree_variants; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -4322,7 +4323,7 @@ CREATE TABLE public.spree_variants (
 ALTER TABLE public.spree_variants OWNER TO postgres;
 
 --
--- TOC entry 391 (class 1259 OID 187655)
+-- TOC entry 410 (class 1259 OID 192173)
 -- Name: spree_variants_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4339,7 +4340,7 @@ ALTER SEQUENCE public.spree_variants_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6188 (class 0 OID 0)
--- Dependencies: 391
+-- Dependencies: 410
 -- Name: spree_variants_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4347,7 +4348,7 @@ ALTER SEQUENCE public.spree_variants_id_seq OWNED BY public.spree_variants.id;
 
 
 --
--- TOC entry 398 (class 1259 OID 187696)
+-- TOC entry 411 (class 1259 OID 192174)
 -- Name: spree_wallet_payment_sources; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -4365,7 +4366,7 @@ CREATE TABLE public.spree_wallet_payment_sources (
 ALTER TABLE public.spree_wallet_payment_sources OWNER TO postgres;
 
 --
--- TOC entry 397 (class 1259 OID 187695)
+-- TOC entry 412 (class 1259 OID 192180)
 -- Name: spree_wallet_payment_sources_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4382,7 +4383,7 @@ ALTER SEQUENCE public.spree_wallet_payment_sources_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6189 (class 0 OID 0)
--- Dependencies: 397
+-- Dependencies: 412
 -- Name: spree_wallet_payment_sources_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4390,7 +4391,7 @@ ALTER SEQUENCE public.spree_wallet_payment_sources_id_seq OWNED BY public.spree_
 
 
 --
--- TOC entry 394 (class 1259 OID 187674)
+-- TOC entry 413 (class 1259 OID 192181)
 -- Name: spree_zone_members; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -4407,7 +4408,7 @@ CREATE TABLE public.spree_zone_members (
 ALTER TABLE public.spree_zone_members OWNER TO postgres;
 
 --
--- TOC entry 393 (class 1259 OID 187673)
+-- TOC entry 414 (class 1259 OID 192186)
 -- Name: spree_zone_members_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4424,7 +4425,7 @@ ALTER SEQUENCE public.spree_zone_members_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6190 (class 0 OID 0)
--- Dependencies: 393
+-- Dependencies: 414
 -- Name: spree_zone_members_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4432,7 +4433,7 @@ ALTER SEQUENCE public.spree_zone_members_id_seq OWNED BY public.spree_zone_membe
 
 
 --
--- TOC entry 396 (class 1259 OID 187685)
+-- TOC entry 415 (class 1259 OID 192187)
 -- Name: spree_zones; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -4449,7 +4450,7 @@ CREATE TABLE public.spree_zones (
 ALTER TABLE public.spree_zones OWNER TO postgres;
 
 --
--- TOC entry 395 (class 1259 OID 187684)
+-- TOC entry 416 (class 1259 OID 192193)
 -- Name: spree_zones_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -4466,7 +4467,7 @@ ALTER SEQUENCE public.spree_zones_id_seq OWNER TO postgres;
 
 --
 -- TOC entry 6191 (class 0 OID 0)
--- Dependencies: 395
+-- Dependencies: 416
 -- Name: spree_zones_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -4474,7 +4475,7 @@ ALTER SEQUENCE public.spree_zones_id_seq OWNED BY public.spree_zones.id;
 
 
 --
--- TOC entry 5140 (class 2604 OID 186693)
+-- TOC entry 5137 (class 2604 OID 192194)
 -- Name: action_mailbox_inbound_emails id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4482,7 +4483,7 @@ ALTER TABLE ONLY public.action_mailbox_inbound_emails ALTER COLUMN id SET DEFAUL
 
 
 --
--- TOC entry 5142 (class 2604 OID 186704)
+-- TOC entry 5139 (class 2604 OID 192195)
 -- Name: action_text_rich_texts id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4490,7 +4491,7 @@ ALTER TABLE ONLY public.action_text_rich_texts ALTER COLUMN id SET DEFAULT nextv
 
 
 --
--- TOC entry 5138 (class 2604 OID 186662)
+-- TOC entry 5140 (class 2604 OID 192196)
 -- Name: active_storage_attachments id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4498,7 +4499,7 @@ ALTER TABLE ONLY public.active_storage_attachments ALTER COLUMN id SET DEFAULT n
 
 
 --
--- TOC entry 5137 (class 2604 OID 186652)
+-- TOC entry 5141 (class 2604 OID 192197)
 -- Name: active_storage_blobs id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4506,7 +4507,7 @@ ALTER TABLE ONLY public.active_storage_blobs ALTER COLUMN id SET DEFAULT nextval
 
 
 --
--- TOC entry 5139 (class 2604 OID 186678)
+-- TOC entry 5142 (class 2604 OID 192198)
 -- Name: active_storage_variant_records id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4514,7 +4515,7 @@ ALTER TABLE ONLY public.active_storage_variant_records ALTER COLUMN id SET DEFAU
 
 
 --
--- TOC entry 5146 (class 2604 OID 186725)
+-- TOC entry 5143 (class 2604 OID 192199)
 -- Name: friendly_id_slugs id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4522,7 +4523,7 @@ ALTER TABLE ONLY public.friendly_id_slugs ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
--- TOC entry 5333 (class 2604 OID 187864)
+-- TOC entry 5144 (class 2604 OID 192200)
 -- Name: solidus_stripe_customers id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4530,7 +4531,7 @@ ALTER TABLE ONLY public.solidus_stripe_customers ALTER COLUMN id SET DEFAULT nex
 
 
 --
--- TOC entry 5331 (class 2604 OID 187827)
+-- TOC entry 5145 (class 2604 OID 192201)
 -- Name: solidus_stripe_payment_intents id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4538,7 +4539,7 @@ ALTER TABLE ONLY public.solidus_stripe_payment_intents ALTER COLUMN id SET DEFAU
 
 
 --
--- TOC entry 5330 (class 2604 OID 187818)
+-- TOC entry 5146 (class 2604 OID 192202)
 -- Name: solidus_stripe_payment_sources id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4546,7 +4547,7 @@ ALTER TABLE ONLY public.solidus_stripe_payment_sources ALTER COLUMN id SET DEFAU
 
 
 --
--- TOC entry 5332 (class 2604 OID 187848)
+-- TOC entry 5147 (class 2604 OID 192203)
 -- Name: solidus_stripe_slug_entries id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4554,7 +4555,7 @@ ALTER TABLE ONLY public.solidus_stripe_slug_entries ALTER COLUMN id SET DEFAULT 
 
 
 --
--- TOC entry 5147 (class 2604 OID 186738)
+-- TOC entry 5148 (class 2604 OID 192204)
 -- Name: spree_addresses id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4562,7 +4563,7 @@ ALTER TABLE ONLY public.spree_addresses ALTER COLUMN id SET DEFAULT nextval('pub
 
 
 --
--- TOC entry 5148 (class 2604 OID 186751)
+-- TOC entry 5149 (class 2604 OID 192205)
 -- Name: spree_adjustment_reasons id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4570,7 +4571,7 @@ ALTER TABLE ONLY public.spree_adjustment_reasons ALTER COLUMN id SET DEFAULT nex
 
 
 --
--- TOC entry 5150 (class 2604 OID 186763)
+-- TOC entry 5151 (class 2604 OID 192206)
 -- Name: spree_adjustments id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4578,7 +4579,7 @@ ALTER TABLE ONLY public.spree_adjustments ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
--- TOC entry 5154 (class 2604 OID 186781)
+-- TOC entry 5155 (class 2604 OID 192207)
 -- Name: spree_assets id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4586,7 +4587,7 @@ ALTER TABLE ONLY public.spree_assets ALTER COLUMN id SET DEFAULT nextval('public
 
 
 --
--- TOC entry 5155 (class 2604 OID 186792)
+-- TOC entry 5156 (class 2604 OID 192208)
 -- Name: spree_calculators id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4594,7 +4595,7 @@ ALTER TABLE ONLY public.spree_calculators ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
--- TOC entry 5156 (class 2604 OID 186803)
+-- TOC entry 5157 (class 2604 OID 192209)
 -- Name: spree_cartons id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4602,7 +4603,7 @@ ALTER TABLE ONLY public.spree_cartons ALTER COLUMN id SET DEFAULT nextval('publi
 
 
 --
--- TOC entry 5157 (class 2604 OID 186816)
+-- TOC entry 5158 (class 2604 OID 192210)
 -- Name: spree_countries id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4610,7 +4611,7 @@ ALTER TABLE ONLY public.spree_countries ALTER COLUMN id SET DEFAULT nextval('pub
 
 
 --
--- TOC entry 5159 (class 2604 OID 186827)
+-- TOC entry 5160 (class 2604 OID 192211)
 -- Name: spree_credit_cards id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4618,7 +4619,7 @@ ALTER TABLE ONLY public.spree_credit_cards ALTER COLUMN id SET DEFAULT nextval('
 
 
 --
--- TOC entry 5161 (class 2604 OID 186839)
+-- TOC entry 5162 (class 2604 OID 192212)
 -- Name: spree_customer_returns id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4626,7 +4627,7 @@ ALTER TABLE ONLY public.spree_customer_returns ALTER COLUMN id SET DEFAULT nextv
 
 
 --
--- TOC entry 5162 (class 2604 OID 186848)
+-- TOC entry 5163 (class 2604 OID 192213)
 -- Name: spree_inventory_units id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4634,7 +4635,7 @@ ALTER TABLE ONLY public.spree_inventory_units ALTER COLUMN id SET DEFAULT nextva
 
 
 --
--- TOC entry 5164 (class 2604 OID 186863)
+-- TOC entry 5165 (class 2604 OID 192214)
 -- Name: spree_line_item_actions id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4642,7 +4643,7 @@ ALTER TABLE ONLY public.spree_line_item_actions ALTER COLUMN id SET DEFAULT next
 
 
 --
--- TOC entry 5166 (class 2604 OID 186873)
+-- TOC entry 5167 (class 2604 OID 192215)
 -- Name: spree_line_items id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4650,7 +4651,7 @@ ALTER TABLE ONLY public.spree_line_items ALTER COLUMN id SET DEFAULT nextval('pu
 
 
 --
--- TOC entry 5171 (class 2604 OID 186888)
+-- TOC entry 5172 (class 2604 OID 192216)
 -- Name: spree_log_entries id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4658,7 +4659,7 @@ ALTER TABLE ONLY public.spree_log_entries ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
--- TOC entry 5172 (class 2604 OID 186898)
+-- TOC entry 5173 (class 2604 OID 192217)
 -- Name: spree_option_type_prototypes id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4666,7 +4667,7 @@ ALTER TABLE ONLY public.spree_option_type_prototypes ALTER COLUMN id SET DEFAULT
 
 
 --
--- TOC entry 5173 (class 2604 OID 186905)
+-- TOC entry 5174 (class 2604 OID 192218)
 -- Name: spree_option_types id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4674,7 +4675,7 @@ ALTER TABLE ONLY public.spree_option_types ALTER COLUMN id SET DEFAULT nextval('
 
 
 --
--- TOC entry 5175 (class 2604 OID 186914)
+-- TOC entry 5176 (class 2604 OID 192219)
 -- Name: spree_option_values id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4682,7 +4683,7 @@ ALTER TABLE ONLY public.spree_option_values ALTER COLUMN id SET DEFAULT nextval(
 
 
 --
--- TOC entry 5176 (class 2604 OID 186925)
+-- TOC entry 5177 (class 2604 OID 192220)
 -- Name: spree_option_values_variants id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4690,7 +4691,7 @@ ALTER TABLE ONLY public.spree_option_values_variants ALTER COLUMN id SET DEFAULT
 
 
 --
--- TOC entry 5177 (class 2604 OID 186934)
+-- TOC entry 5178 (class 2604 OID 192221)
 -- Name: spree_order_mutexes id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4698,7 +4699,7 @@ ALTER TABLE ONLY public.spree_order_mutexes ALTER COLUMN id SET DEFAULT nextval(
 
 
 --
--- TOC entry 5178 (class 2604 OID 186942)
+-- TOC entry 5179 (class 2604 OID 192222)
 -- Name: spree_orders id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4706,7 +4707,7 @@ ALTER TABLE ONLY public.spree_orders ALTER COLUMN id SET DEFAULT nextval('public
 
 
 --
--- TOC entry 5191 (class 2604 OID 186972)
+-- TOC entry 5192 (class 2604 OID 192223)
 -- Name: spree_orders_promotions id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4714,7 +4715,7 @@ ALTER TABLE ONLY public.spree_orders_promotions ALTER COLUMN id SET DEFAULT next
 
 
 --
--- TOC entry 5192 (class 2604 OID 186981)
+-- TOC entry 5193 (class 2604 OID 192224)
 -- Name: spree_payment_capture_events id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4722,7 +4723,7 @@ ALTER TABLE ONLY public.spree_payment_capture_events ALTER COLUMN id SET DEFAULT
 
 
 --
--- TOC entry 5194 (class 2604 OID 186990)
+-- TOC entry 5195 (class 2604 OID 192225)
 -- Name: spree_payment_methods id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4730,7 +4731,7 @@ ALTER TABLE ONLY public.spree_payment_methods ALTER COLUMN id SET DEFAULT nextva
 
 
 --
--- TOC entry 5199 (class 2604 OID 187002)
+-- TOC entry 5200 (class 2604 OID 192226)
 -- Name: spree_payments id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4738,7 +4739,7 @@ ALTER TABLE ONLY public.spree_payments ALTER COLUMN id SET DEFAULT nextval('publ
 
 
 --
--- TOC entry 5201 (class 2604 OID 187015)
+-- TOC entry 5202 (class 2604 OID 192227)
 -- Name: spree_preferences id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4746,7 +4747,7 @@ ALTER TABLE ONLY public.spree_preferences ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
--- TOC entry 5202 (class 2604 OID 187025)
+-- TOC entry 5203 (class 2604 OID 192228)
 -- Name: spree_prices id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4754,7 +4755,7 @@ ALTER TABLE ONLY public.spree_prices ALTER COLUMN id SET DEFAULT nextval('public
 
 
 --
--- TOC entry 5203 (class 2604 OID 187037)
+-- TOC entry 5204 (class 2604 OID 192229)
 -- Name: spree_product_option_types id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4762,7 +4763,7 @@ ALTER TABLE ONLY public.spree_product_option_types ALTER COLUMN id SET DEFAULT n
 
 
 --
--- TOC entry 5204 (class 2604 OID 187047)
+-- TOC entry 5205 (class 2604 OID 192230)
 -- Name: spree_product_promotion_rules id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4770,7 +4771,7 @@ ALTER TABLE ONLY public.spree_product_promotion_rules ALTER COLUMN id SET DEFAUL
 
 
 --
--- TOC entry 5205 (class 2604 OID 187056)
+-- TOC entry 5206 (class 2604 OID 192231)
 -- Name: spree_product_properties id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4778,7 +4779,7 @@ ALTER TABLE ONLY public.spree_product_properties ALTER COLUMN id SET DEFAULT nex
 
 
 --
--- TOC entry 5207 (class 2604 OID 187069)
+-- TOC entry 5208 (class 2604 OID 192232)
 -- Name: spree_products id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4786,7 +4787,7 @@ ALTER TABLE ONLY public.spree_products ALTER COLUMN id SET DEFAULT nextval('publ
 
 
 --
--- TOC entry 5210 (class 2604 OID 187084)
+-- TOC entry 5211 (class 2604 OID 192233)
 -- Name: spree_products_taxons id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4794,7 +4795,7 @@ ALTER TABLE ONLY public.spree_products_taxons ALTER COLUMN id SET DEFAULT nextva
 
 
 --
--- TOC entry 5211 (class 2604 OID 187104)
+-- TOC entry 5212 (class 2604 OID 192234)
 -- Name: spree_promotion_actions id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4802,7 +4803,7 @@ ALTER TABLE ONLY public.spree_promotion_actions ALTER COLUMN id SET DEFAULT next
 
 
 --
--- TOC entry 5212 (class 2604 OID 187116)
+-- TOC entry 5213 (class 2604 OID 192235)
 -- Name: spree_promotion_categories id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4810,7 +4811,7 @@ ALTER TABLE ONLY public.spree_promotion_categories ALTER COLUMN id SET DEFAULT n
 
 
 --
--- TOC entry 5322 (class 2604 OID 187718)
+-- TOC entry 5214 (class 2604 OID 192236)
 -- Name: spree_promotion_code_batches id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4818,7 +4819,7 @@ ALTER TABLE ONLY public.spree_promotion_code_batches ALTER COLUMN id SET DEFAULT
 
 
 --
--- TOC entry 5213 (class 2604 OID 187125)
+-- TOC entry 5217 (class 2604 OID 192237)
 -- Name: spree_promotion_codes id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4826,7 +4827,7 @@ ALTER TABLE ONLY public.spree_promotion_codes ALTER COLUMN id SET DEFAULT nextva
 
 
 --
--- TOC entry 5214 (class 2604 OID 187136)
+-- TOC entry 5218 (class 2604 OID 192238)
 -- Name: spree_promotion_rule_taxons id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4834,7 +4835,7 @@ ALTER TABLE ONLY public.spree_promotion_rule_taxons ALTER COLUMN id SET DEFAULT 
 
 
 --
--- TOC entry 5215 (class 2604 OID 187145)
+-- TOC entry 5219 (class 2604 OID 192239)
 -- Name: spree_promotion_rules id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4842,7 +4843,7 @@ ALTER TABLE ONLY public.spree_promotion_rules ALTER COLUMN id SET DEFAULT nextva
 
 
 --
--- TOC entry 5326 (class 2604 OID 187765)
+-- TOC entry 5220 (class 2604 OID 192240)
 -- Name: spree_promotion_rules_stores id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4850,7 +4851,7 @@ ALTER TABLE ONLY public.spree_promotion_rules_stores ALTER COLUMN id SET DEFAULT
 
 
 --
--- TOC entry 5216 (class 2604 OID 187156)
+-- TOC entry 5221 (class 2604 OID 192241)
 -- Name: spree_promotion_rules_users id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4858,7 +4859,7 @@ ALTER TABLE ONLY public.spree_promotion_rules_users ALTER COLUMN id SET DEFAULT 
 
 
 --
--- TOC entry 5217 (class 2604 OID 187165)
+-- TOC entry 5222 (class 2604 OID 192242)
 -- Name: spree_promotions id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4866,7 +4867,7 @@ ALTER TABLE ONLY public.spree_promotions ALTER COLUMN id SET DEFAULT nextval('pu
 
 
 --
--- TOC entry 5220 (class 2604 OID 187184)
+-- TOC entry 5225 (class 2604 OID 192243)
 -- Name: spree_properties id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4874,7 +4875,7 @@ ALTER TABLE ONLY public.spree_properties ALTER COLUMN id SET DEFAULT nextval('pu
 
 
 --
--- TOC entry 5221 (class 2604 OID 187193)
+-- TOC entry 5226 (class 2604 OID 192244)
 -- Name: spree_property_prototypes id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4882,7 +4883,7 @@ ALTER TABLE ONLY public.spree_property_prototypes ALTER COLUMN id SET DEFAULT ne
 
 
 --
--- TOC entry 5222 (class 2604 OID 187200)
+-- TOC entry 5227 (class 2604 OID 192245)
 -- Name: spree_prototype_taxons id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4890,7 +4891,7 @@ ALTER TABLE ONLY public.spree_prototype_taxons ALTER COLUMN id SET DEFAULT nextv
 
 
 --
--- TOC entry 5223 (class 2604 OID 187209)
+-- TOC entry 5228 (class 2604 OID 192246)
 -- Name: spree_prototypes id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4898,7 +4899,7 @@ ALTER TABLE ONLY public.spree_prototypes ALTER COLUMN id SET DEFAULT nextval('pu
 
 
 --
--- TOC entry 5224 (class 2604 OID 187218)
+-- TOC entry 5229 (class 2604 OID 192247)
 -- Name: spree_refund_reasons id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4906,7 +4907,7 @@ ALTER TABLE ONLY public.spree_refund_reasons ALTER COLUMN id SET DEFAULT nextval
 
 
 --
--- TOC entry 5227 (class 2604 OID 187229)
+-- TOC entry 5232 (class 2604 OID 192248)
 -- Name: spree_refunds id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4914,7 +4915,7 @@ ALTER TABLE ONLY public.spree_refunds ALTER COLUMN id SET DEFAULT nextval('publi
 
 
 --
--- TOC entry 5229 (class 2604 OID 187242)
+-- TOC entry 5234 (class 2604 OID 192249)
 -- Name: spree_reimbursement_credits id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4922,7 +4923,7 @@ ALTER TABLE ONLY public.spree_reimbursement_credits ALTER COLUMN id SET DEFAULT 
 
 
 --
--- TOC entry 5231 (class 2604 OID 187252)
+-- TOC entry 5236 (class 2604 OID 192250)
 -- Name: spree_reimbursement_types id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4930,7 +4931,7 @@ ALTER TABLE ONLY public.spree_reimbursement_types ALTER COLUMN id SET DEFAULT ne
 
 
 --
--- TOC entry 5234 (class 2604 OID 187264)
+-- TOC entry 5239 (class 2604 OID 192251)
 -- Name: spree_reimbursements id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4938,7 +4939,7 @@ ALTER TABLE ONLY public.spree_reimbursements ALTER COLUMN id SET DEFAULT nextval
 
 
 --
--- TOC entry 5235 (class 2604 OID 187275)
+-- TOC entry 5240 (class 2604 OID 192252)
 -- Name: spree_return_authorizations id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4946,7 +4947,7 @@ ALTER TABLE ONLY public.spree_return_authorizations ALTER COLUMN id SET DEFAULT 
 
 
 --
--- TOC entry 5236 (class 2604 OID 187285)
+-- TOC entry 5241 (class 2604 OID 192253)
 -- Name: spree_return_items id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4954,7 +4955,7 @@ ALTER TABLE ONLY public.spree_return_items ALTER COLUMN id SET DEFAULT nextval('
 
 
 --
--- TOC entry 5241 (class 2604 OID 187300)
+-- TOC entry 5246 (class 2604 OID 192254)
 -- Name: spree_return_reasons id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4962,7 +4963,7 @@ ALTER TABLE ONLY public.spree_return_reasons ALTER COLUMN id SET DEFAULT nextval
 
 
 --
--- TOC entry 5244 (class 2604 OID 187311)
+-- TOC entry 5249 (class 2604 OID 192255)
 -- Name: spree_roles id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4970,7 +4971,7 @@ ALTER TABLE ONLY public.spree_roles ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
--- TOC entry 5245 (class 2604 OID 187320)
+-- TOC entry 5250 (class 2604 OID 192256)
 -- Name: spree_roles_users id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4978,7 +4979,7 @@ ALTER TABLE ONLY public.spree_roles_users ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
--- TOC entry 5246 (class 2604 OID 187329)
+-- TOC entry 5251 (class 2604 OID 192257)
 -- Name: spree_shipments id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4986,7 +4987,7 @@ ALTER TABLE ONLY public.spree_shipments ALTER COLUMN id SET DEFAULT nextval('pub
 
 
 --
--- TOC entry 5252 (class 2604 OID 187347)
+-- TOC entry 5257 (class 2604 OID 192258)
 -- Name: spree_shipping_categories id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -4994,7 +4995,7 @@ ALTER TABLE ONLY public.spree_shipping_categories ALTER COLUMN id SET DEFAULT ne
 
 
 --
--- TOC entry 5253 (class 2604 OID 187356)
+-- TOC entry 5258 (class 2604 OID 192259)
 -- Name: spree_shipping_method_categories id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5002,7 +5003,7 @@ ALTER TABLE ONLY public.spree_shipping_method_categories ALTER COLUMN id SET DEF
 
 
 --
--- TOC entry 5254 (class 2604 OID 187365)
+-- TOC entry 5259 (class 2604 OID 192260)
 -- Name: spree_shipping_method_stock_locations id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5010,7 +5011,7 @@ ALTER TABLE ONLY public.spree_shipping_method_stock_locations ALTER COLUMN id SE
 
 
 --
--- TOC entry 5255 (class 2604 OID 187374)
+-- TOC entry 5260 (class 2604 OID 192261)
 -- Name: spree_shipping_method_zones id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5018,7 +5019,7 @@ ALTER TABLE ONLY public.spree_shipping_method_zones ALTER COLUMN id SET DEFAULT 
 
 
 --
--- TOC entry 5256 (class 2604 OID 187381)
+-- TOC entry 5261 (class 2604 OID 192262)
 -- Name: spree_shipping_methods id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5026,7 +5027,7 @@ ALTER TABLE ONLY public.spree_shipping_methods ALTER COLUMN id SET DEFAULT nextv
 
 
 --
--- TOC entry 5259 (class 2604 OID 187392)
+-- TOC entry 5264 (class 2604 OID 192263)
 -- Name: spree_shipping_rate_taxes id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5034,7 +5035,7 @@ ALTER TABLE ONLY public.spree_shipping_rate_taxes ALTER COLUMN id SET DEFAULT ne
 
 
 --
--- TOC entry 5261 (class 2604 OID 187402)
+-- TOC entry 5266 (class 2604 OID 192264)
 -- Name: spree_shipping_rates id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5042,7 +5043,7 @@ ALTER TABLE ONLY public.spree_shipping_rates ALTER COLUMN id SET DEFAULT nextval
 
 
 --
--- TOC entry 5264 (class 2604 OID 187412)
+-- TOC entry 5269 (class 2604 OID 192265)
 -- Name: spree_state_changes id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5050,7 +5051,7 @@ ALTER TABLE ONLY public.spree_state_changes ALTER COLUMN id SET DEFAULT nextval(
 
 
 --
--- TOC entry 5265 (class 2604 OID 187423)
+-- TOC entry 5270 (class 2604 OID 192266)
 -- Name: spree_states id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5058,7 +5059,7 @@ ALTER TABLE ONLY public.spree_states ALTER COLUMN id SET DEFAULT nextval('public
 
 
 --
--- TOC entry 5266 (class 2604 OID 187433)
+-- TOC entry 5271 (class 2604 OID 192267)
 -- Name: spree_stock_items id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5066,7 +5067,7 @@ ALTER TABLE ONLY public.spree_stock_items ALTER COLUMN id SET DEFAULT nextval('p
 
 
 --
--- TOC entry 5269 (class 2604 OID 187446)
+-- TOC entry 5274 (class 2604 OID 192268)
 -- Name: spree_stock_locations id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5074,7 +5075,7 @@ ALTER TABLE ONLY public.spree_stock_locations ALTER COLUMN id SET DEFAULT nextva
 
 
 --
--- TOC entry 5278 (class 2604 OID 187465)
+-- TOC entry 5283 (class 2604 OID 192269)
 -- Name: spree_stock_movements id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5082,7 +5083,7 @@ ALTER TABLE ONLY public.spree_stock_movements ALTER COLUMN id SET DEFAULT nextva
 
 
 --
--- TOC entry 5280 (class 2604 OID 187476)
+-- TOC entry 5285 (class 2604 OID 192270)
 -- Name: spree_store_credit_categories id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5090,7 +5091,7 @@ ALTER TABLE ONLY public.spree_store_credit_categories ALTER COLUMN id SET DEFAUL
 
 
 --
--- TOC entry 5281 (class 2604 OID 187485)
+-- TOC entry 5286 (class 2604 OID 192271)
 -- Name: spree_store_credit_events id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5098,7 +5099,7 @@ ALTER TABLE ONLY public.spree_store_credit_events ALTER COLUMN id SET DEFAULT ne
 
 
 --
--- TOC entry 5328 (class 2604 OID 187788)
+-- TOC entry 5289 (class 2604 OID 192272)
 -- Name: spree_store_credit_reasons id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5106,7 +5107,7 @@ ALTER TABLE ONLY public.spree_store_credit_reasons ALTER COLUMN id SET DEFAULT n
 
 
 --
--- TOC entry 5284 (class 2604 OID 187497)
+-- TOC entry 5291 (class 2604 OID 192273)
 -- Name: spree_store_credit_types id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5114,7 +5115,7 @@ ALTER TABLE ONLY public.spree_store_credit_types ALTER COLUMN id SET DEFAULT nex
 
 
 --
--- TOC entry 5285 (class 2604 OID 187516)
+-- TOC entry 5292 (class 2604 OID 192274)
 -- Name: spree_store_credits id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5122,7 +5123,7 @@ ALTER TABLE ONLY public.spree_store_credits ALTER COLUMN id SET DEFAULT nextval(
 
 
 --
--- TOC entry 5289 (class 2604 OID 187531)
+-- TOC entry 5296 (class 2604 OID 192275)
 -- Name: spree_store_payment_methods id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5130,7 +5131,7 @@ ALTER TABLE ONLY public.spree_store_payment_methods ALTER COLUMN id SET DEFAULT 
 
 
 --
--- TOC entry 5327 (class 2604 OID 187774)
+-- TOC entry 5297 (class 2604 OID 192276)
 -- Name: spree_store_shipping_methods id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5138,7 +5139,7 @@ ALTER TABLE ONLY public.spree_store_shipping_methods ALTER COLUMN id SET DEFAULT
 
 
 --
--- TOC entry 5290 (class 2604 OID 187540)
+-- TOC entry 5298 (class 2604 OID 192277)
 -- Name: spree_stores id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5146,7 +5147,7 @@ ALTER TABLE ONLY public.spree_stores ALTER COLUMN id SET DEFAULT nextval('public
 
 
 --
--- TOC entry 5292 (class 2604 OID 187552)
+-- TOC entry 5300 (class 2604 OID 192278)
 -- Name: spree_tax_categories id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5154,7 +5155,7 @@ ALTER TABLE ONLY public.spree_tax_categories ALTER COLUMN id SET DEFAULT nextval
 
 
 --
--- TOC entry 5325 (class 2604 OID 187744)
+-- TOC entry 5302 (class 2604 OID 192279)
 -- Name: spree_tax_rate_tax_categories id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5162,7 +5163,7 @@ ALTER TABLE ONLY public.spree_tax_rate_tax_categories ALTER COLUMN id SET DEFAUL
 
 
 --
--- TOC entry 5294 (class 2604 OID 187562)
+-- TOC entry 5303 (class 2604 OID 192280)
 -- Name: spree_tax_rates id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5170,7 +5171,7 @@ ALTER TABLE ONLY public.spree_tax_rates ALTER COLUMN id SET DEFAULT nextval('pub
 
 
 --
--- TOC entry 5298 (class 2604 OID 187576)
+-- TOC entry 5307 (class 2604 OID 192281)
 -- Name: spree_taxonomies id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5178,7 +5179,7 @@ ALTER TABLE ONLY public.spree_taxonomies ALTER COLUMN id SET DEFAULT nextval('pu
 
 
 --
--- TOC entry 5300 (class 2604 OID 187587)
+-- TOC entry 5309 (class 2604 OID 192282)
 -- Name: spree_taxons id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5186,7 +5187,7 @@ ALTER TABLE ONLY public.spree_taxons ALTER COLUMN id SET DEFAULT nextval('public
 
 
 --
--- TOC entry 5301 (class 2604 OID 187601)
+-- TOC entry 5310 (class 2604 OID 192283)
 -- Name: spree_unit_cancels id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5194,7 +5195,7 @@ ALTER TABLE ONLY public.spree_unit_cancels ALTER COLUMN id SET DEFAULT nextval('
 
 
 --
--- TOC entry 5302 (class 2604 OID 187611)
+-- TOC entry 5311 (class 2604 OID 192284)
 -- Name: spree_user_addresses id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5202,7 +5203,7 @@ ALTER TABLE ONLY public.spree_user_addresses ALTER COLUMN id SET DEFAULT nextval
 
 
 --
--- TOC entry 5306 (class 2604 OID 187623)
+-- TOC entry 5315 (class 2604 OID 192285)
 -- Name: spree_user_stock_locations id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5210,7 +5211,7 @@ ALTER TABLE ONLY public.spree_user_stock_locations ALTER COLUMN id SET DEFAULT n
 
 
 --
--- TOC entry 5143 (class 2604 OID 186714)
+-- TOC entry 5316 (class 2604 OID 192286)
 -- Name: spree_users id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5218,7 +5219,7 @@ ALTER TABLE ONLY public.spree_users ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
--- TOC entry 5307 (class 2604 OID 187631)
+-- TOC entry 5319 (class 2604 OID 192287)
 -- Name: spree_variant_property_rule_conditions id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5226,7 +5227,7 @@ ALTER TABLE ONLY public.spree_variant_property_rule_conditions ALTER COLUMN id S
 
 
 --
--- TOC entry 5308 (class 2604 OID 187639)
+-- TOC entry 5320 (class 2604 OID 192288)
 -- Name: spree_variant_property_rule_values id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5234,7 +5235,7 @@ ALTER TABLE ONLY public.spree_variant_property_rule_values ALTER COLUMN id SET D
 
 
 --
--- TOC entry 5310 (class 2604 OID 187651)
+-- TOC entry 5322 (class 2604 OID 192289)
 -- Name: spree_variant_property_rules id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5242,7 +5243,7 @@ ALTER TABLE ONLY public.spree_variant_property_rules ALTER COLUMN id SET DEFAULT
 
 
 --
--- TOC entry 5312 (class 2604 OID 187659)
+-- TOC entry 5324 (class 2604 OID 192290)
 -- Name: spree_variants id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5250,7 +5251,7 @@ ALTER TABLE ONLY public.spree_variants ALTER COLUMN id SET DEFAULT nextval('publ
 
 
 --
--- TOC entry 5320 (class 2604 OID 187699)
+-- TOC entry 5329 (class 2604 OID 192291)
 -- Name: spree_wallet_payment_sources id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5258,7 +5259,7 @@ ALTER TABLE ONLY public.spree_wallet_payment_sources ALTER COLUMN id SET DEFAULT
 
 
 --
--- TOC entry 5317 (class 2604 OID 187677)
+-- TOC entry 5331 (class 2604 OID 192292)
 -- Name: spree_zone_members id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5266,7 +5267,7 @@ ALTER TABLE ONLY public.spree_zone_members ALTER COLUMN id SET DEFAULT nextval('
 
 
 --
--- TOC entry 5318 (class 2604 OID 187688)
+-- TOC entry 5332 (class 2604 OID 192293)
 -- Name: spree_zones id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -5274,8 +5275,8 @@ ALTER TABLE ONLY public.spree_zones ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
--- TOC entry 5894 (class 0 OID 186690)
--- Dependencies: 224
+-- TOC entry 5885 (class 0 OID 191547)
+-- Dependencies: 215
 -- Data for Name: action_mailbox_inbound_emails; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5284,8 +5285,8 @@ COPY public.action_mailbox_inbound_emails (id, status, message_id, message_check
 
 
 --
--- TOC entry 5896 (class 0 OID 186701)
--- Dependencies: 226
+-- TOC entry 5887 (class 0 OID 191554)
+-- Dependencies: 217
 -- Data for Name: action_text_rich_texts; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5294,8 +5295,8 @@ COPY public.action_text_rich_texts (id, name, body, record_type, record_id, crea
 
 
 --
--- TOC entry 5890 (class 0 OID 186659)
--- Dependencies: 220
+-- TOC entry 5889 (class 0 OID 191560)
+-- Dependencies: 219
 -- Data for Name: active_storage_attachments; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5396,8 +5397,8 @@ COPY public.active_storage_attachments (id, name, record_type, record_id, blob_i
 
 
 --
--- TOC entry 5888 (class 0 OID 186649)
--- Dependencies: 218
+-- TOC entry 5891 (class 0 OID 191566)
+-- Dependencies: 221
 -- Data for Name: active_storage_blobs; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5498,8 +5499,8 @@ COPY public.active_storage_blobs (id, key, filename, content_type, metadata, ser
 
 
 --
--- TOC entry 5892 (class 0 OID 186675)
--- Dependencies: 222
+-- TOC entry 5893 (class 0 OID 191572)
+-- Dependencies: 223
 -- Data for Name: active_storage_variant_records; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5542,8 +5543,8 @@ COPY public.active_storage_variant_records (id, blob_id, variation_digest) FROM 
 
 
 --
--- TOC entry 5886 (class 0 OID 186641)
--- Dependencies: 216
+-- TOC entry 5895 (class 0 OID 191578)
+-- Dependencies: 225
 -- Data for Name: ar_internal_metadata; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5553,8 +5554,8 @@ environment	development	2025-03-22 05:21:13.381308	2025-03-22 05:21:13.381311
 
 
 --
--- TOC entry 5900 (class 0 OID 186722)
--- Dependencies: 230
+-- TOC entry 5896 (class 0 OID 191583)
+-- Dependencies: 226
 -- Data for Name: friendly_id_slugs; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5575,8 +5576,8 @@ COPY public.friendly_id_slugs (id, slug, sluggable_id, sluggable_type, scope, cr
 
 
 --
--- TOC entry 5885 (class 0 OID 186634)
--- Dependencies: 215
+-- TOC entry 5898 (class 0 OID 191589)
+-- Dependencies: 228
 -- Data for Name: schema_migrations; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5645,12 +5646,13 @@ COPY public.schema_migrations (version) FROM stdin;
 20250322052215
 20250322052216
 20250322052217
+20250325212934
 \.
 
 
 --
--- TOC entry 6086 (class 0 OID 187861)
--- Dependencies: 416
+-- TOC entry 5899 (class 0 OID 191594)
+-- Dependencies: 229
 -- Data for Name: solidus_stripe_customers; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5659,8 +5661,8 @@ COPY public.solidus_stripe_customers (id, payment_method_id, source_type, source
 
 
 --
--- TOC entry 6082 (class 0 OID 187824)
--- Dependencies: 412
+-- TOC entry 5901 (class 0 OID 191600)
+-- Dependencies: 231
 -- Data for Name: solidus_stripe_payment_intents; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5669,8 +5671,8 @@ COPY public.solidus_stripe_payment_intents (id, stripe_intent_id, order_id, paym
 
 
 --
--- TOC entry 6080 (class 0 OID 187815)
--- Dependencies: 410
+-- TOC entry 5903 (class 0 OID 191606)
+-- Dependencies: 233
 -- Data for Name: solidus_stripe_payment_sources; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5679,8 +5681,8 @@ COPY public.solidus_stripe_payment_sources (id, payment_method_id, stripe_paymen
 
 
 --
--- TOC entry 6084 (class 0 OID 187845)
--- Dependencies: 414
+-- TOC entry 5905 (class 0 OID 191612)
+-- Dependencies: 235
 -- Data for Name: solidus_stripe_slug_entries; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5689,8 +5691,8 @@ COPY public.solidus_stripe_slug_entries (id, payment_method_id, slug, created_at
 
 
 --
--- TOC entry 5902 (class 0 OID 186735)
--- Dependencies: 232
+-- TOC entry 5907 (class 0 OID 191618)
+-- Dependencies: 237
 -- Data for Name: spree_addresses; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5701,8 +5703,8 @@ COPY public.spree_addresses (id, firstname, lastname, address1, address2, city, 
 
 
 --
--- TOC entry 5904 (class 0 OID 186748)
--- Dependencies: 234
+-- TOC entry 5909 (class 0 OID 191624)
+-- Dependencies: 239
 -- Data for Name: spree_adjustment_reasons; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5711,8 +5713,8 @@ COPY public.spree_adjustment_reasons (id, name, code, active, created_at, update
 
 
 --
--- TOC entry 5906 (class 0 OID 186760)
--- Dependencies: 236
+-- TOC entry 5911 (class 0 OID 191631)
+-- Dependencies: 241
 -- Data for Name: spree_adjustments; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5725,8 +5727,8 @@ COPY public.spree_adjustments (id, source_type, source_id, adjustable_type, adju
 
 
 --
--- TOC entry 5908 (class 0 OID 186778)
--- Dependencies: 238
+-- TOC entry 5913 (class 0 OID 191640)
+-- Dependencies: 243
 -- Data for Name: spree_assets; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5793,8 +5795,8 @@ COPY public.spree_assets (id, viewable_type, viewable_id, attachment_width, atta
 
 
 --
--- TOC entry 5910 (class 0 OID 186789)
--- Dependencies: 240
+-- TOC entry 5915 (class 0 OID 191646)
+-- Dependencies: 245
 -- Data for Name: spree_calculators; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5809,8 +5811,8 @@ COPY public.spree_calculators (id, type, calculable_type, calculable_id, created
 
 
 --
--- TOC entry 5912 (class 0 OID 186800)
--- Dependencies: 242
+-- TOC entry 5917 (class 0 OID 191652)
+-- Dependencies: 247
 -- Data for Name: spree_cartons; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -5820,8 +5822,8 @@ COPY public.spree_cartons (id, number, external_number, stock_location_id, addre
 
 
 --
--- TOC entry 5914 (class 0 OID 186813)
--- Dependencies: 244
+-- TOC entry 5919 (class 0 OID 191658)
+-- Dependencies: 249
 -- Data for Name: spree_countries; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6079,8 +6081,8 @@ COPY public.spree_countries (id, iso_name, iso, iso3, name, numcode, states_requ
 
 
 --
--- TOC entry 5916 (class 0 OID 186824)
--- Dependencies: 246
+-- TOC entry 5921 (class 0 OID 191665)
+-- Dependencies: 251
 -- Data for Name: spree_credit_cards; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6090,8 +6092,8 @@ COPY public.spree_credit_cards (id, month, year, cc_type, last_digits, gateway_c
 
 
 --
--- TOC entry 5918 (class 0 OID 186836)
--- Dependencies: 248
+-- TOC entry 5923 (class 0 OID 191672)
+-- Dependencies: 253
 -- Data for Name: spree_customer_returns; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6101,8 +6103,8 @@ COPY public.spree_customer_returns (id, number, stock_location_id, created_at, u
 
 
 --
--- TOC entry 5920 (class 0 OID 186845)
--- Dependencies: 250
+-- TOC entry 5925 (class 0 OID 191678)
+-- Dependencies: 255
 -- Data for Name: spree_inventory_units; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6113,8 +6115,8 @@ COPY public.spree_inventory_units (id, state, variant_id, shipment_id, created_a
 
 
 --
--- TOC entry 5922 (class 0 OID 186860)
--- Dependencies: 252
+-- TOC entry 5927 (class 0 OID 191685)
+-- Dependencies: 257
 -- Data for Name: spree_line_item_actions; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6123,8 +6125,8 @@ COPY public.spree_line_item_actions (id, line_item_id, action_id, quantity, crea
 
 
 --
--- TOC entry 5924 (class 0 OID 186870)
--- Dependencies: 254
+-- TOC entry 5929 (class 0 OID 191690)
+-- Dependencies: 259
 -- Data for Name: spree_line_items; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6137,12 +6139,15 @@ COPY public.spree_line_items (id, variant_id, order_id, quantity, price, created
 6	5	4	1	29.99	2025-03-22 06:23:15.186695	2025-03-22 06:23:15.186695	27.00	1	0.00	0.00	0.00	0.00
 7	5	4	2	29.99	2025-03-22 06:24:30.596584	2025-03-22 06:24:30.596584	27.00	1	0.00	0.00	0.00	0.00
 8	10	4	3	15.99	2025-03-22 06:33:05.732732	2025-03-22 06:33:05.732732	7.00	1	0.00	0.00	0.00	0.00
+9	10	12	1	15.99	2025-03-27 01:38:32.572395	2025-03-27 01:38:32.572395	7.00	1	0.00	0.00	0.00	0.00
+10	1	12	1	19.99	2025-03-27 01:39:07.558713	2025-03-27 01:39:07.558713	17.00	1	0.00	0.00	0.00	0.00
+11	3	13	1	29.99	2025-03-27 01:39:46.036096	2025-03-27 01:39:46.036096	17.00	1	0.00	0.00	0.00	0.00
 \.
 
 
 --
--- TOC entry 5926 (class 0 OID 186885)
--- Dependencies: 256
+-- TOC entry 5931 (class 0 OID 191698)
+-- Dependencies: 261
 -- Data for Name: spree_log_entries; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6152,8 +6157,8 @@ COPY public.spree_log_entries (id, source_type, source_id, details, created_at, 
 
 
 --
--- TOC entry 5928 (class 0 OID 186895)
--- Dependencies: 258
+-- TOC entry 5933 (class 0 OID 191704)
+-- Dependencies: 263
 -- Data for Name: spree_option_type_prototypes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6162,8 +6167,8 @@ COPY public.spree_option_type_prototypes (id, prototype_id, option_type_id, crea
 
 
 --
--- TOC entry 5930 (class 0 OID 186902)
--- Dependencies: 260
+-- TOC entry 5935 (class 0 OID 191708)
+-- Dependencies: 265
 -- Data for Name: spree_option_types; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6174,8 +6179,8 @@ COPY public.spree_option_types (id, name, presentation, "position", created_at, 
 
 
 --
--- TOC entry 5932 (class 0 OID 186911)
--- Dependencies: 262
+-- TOC entry 5937 (class 0 OID 191713)
+-- Dependencies: 267
 -- Data for Name: spree_option_values; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6192,8 +6197,8 @@ COPY public.spree_option_values (id, "position", name, presentation, option_type
 
 
 --
--- TOC entry 5934 (class 0 OID 186922)
--- Dependencies: 264
+-- TOC entry 5939 (class 0 OID 191719)
+-- Dependencies: 269
 -- Data for Name: spree_option_values_variants; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6280,8 +6285,8 @@ COPY public.spree_option_values_variants (id, variant_id, option_value_id, creat
 
 
 --
--- TOC entry 5936 (class 0 OID 186931)
--- Dependencies: 266
+-- TOC entry 5941 (class 0 OID 191723)
+-- Dependencies: 271
 -- Data for Name: spree_order_mutexes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6290,8 +6295,8 @@ COPY public.spree_order_mutexes (id, order_id, created_at) FROM stdin;
 
 
 --
--- TOC entry 5938 (class 0 OID 186939)
--- Dependencies: 268
+-- TOC entry 5943 (class 0 OID 191727)
+-- Dependencies: 273
 -- Data for Name: spree_orders; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6300,12 +6305,25 @@ COPY public.spree_orders (id, number, item_total, total, state, adjustment_total
 3	R429108920	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	\N	\N	2025-03-22 06:13:09.558713	2025-03-22 06:13:09.558713	USD	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	cxnWP6F9TAEMebb0NOT9CQ	\N	\N	1	\N	t
 4	R859653725	357.81	357.81	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	\N	\N	2025-03-22 06:17:27.122	2025-03-22 06:33:05.947406	USD	\N	\N	0.00	0.00	0.00	spree	0.00	19	\N	\N	f	oJclQwjr69cGxbM2H9bWYA	\N	\N	1	\N	t
 1	R123456789	15.99	22.04	complete	1.05	\N	2025-03-22 05:28:51.928399	2	1	0.00	pending	balance_due	spree@example.com	\N	2025-03-22 05:28:42.469536	2025-03-22 05:28:54.970122	USD	\N	\N	5.00	1.05	0.00	spree	0.00	1	\N	\N	t	HH1LChI1Qwz8J6dQrMnDyw	\N	\N	1	\N	t
+5	R833287300	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-25 07:21:42.253876	2025-03-25 07:21:42.253876	USD	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	Mzmn5sR48wncR-0x17aLRQ	\N	\N	1	\N	t
+6	R858032193	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-25 20:45:55.280237	2025-03-25 20:45:55.280237	USD	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	y0Va2wU7TtH1Wh9ihDDs5g	\N	\N	1	\N	t
+7	R887707356	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-25 21:28:30.177022	2025-03-25 21:28:30.177022	USD	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	oDbiJPxAbQ__48488Pzc6w	\N	\N	1	\N	t
+8	R571451392	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-25 21:30:48.019766	2025-03-25 21:30:48.019766	USD	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	ERIKpfIql8egGP94CFEVPw	\N	\N	1	\N	t
+9	R723184249	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-25 21:37:49.651198	2025-03-25 21:37:49.651198	USD	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	-q5FpqgMV2gQaZwSP2yPSQ	\N	\N	1	\N	t
+10	R480699636	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-25 21:38:15.357707	2025-03-25 21:38:15.357707	USD	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	1w6eNEEkSYNe1alnKeJu2Q	\N	\N	1	\N	t
+11	R285302532	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-25 21:39:00.121796	2025-03-25 21:39:00.121796	USD	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	Tjirg8iCky3y7NGn8wnb_A	\N	\N	1	\N	t
+12	R825500390	35.98	35.98	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-27 01:38:22.981752	2025-03-27 01:39:07.593186	RON	\N	\N	0.00	0.00	0.00	spree	0.00	2	\N	\N	f	XkDJkudt-uTnpABQ9Yg8Xw	\N	\N	1	\N	t
+13	R541704358	29.99	29.99	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-27 01:39:32.941712	2025-03-27 01:39:46.067865	RON	\N	\N	0.00	0.00	0.00	spree	0.00	1	\N	\N	f	KuYZE1ZFH7CNZooyz6l5BA	\N	\N	1	\N	t
+14	R808340526	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-27 01:40:04.752749	2025-03-27 01:40:04.752749	RON	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	OJTfT9GRlVzgGPIeHyts0A	\N	\N	1	\N	t
+15	R110347046	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-27 03:47:23.807096	2025-03-27 03:47:23.807096	RON	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	ckTS0prm9Zl_bCmisRYnew	\N	\N	1	\N	t
+16	R777579619	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-27 05:00:29.883027	2025-03-27 05:00:29.883027	RON	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	WHbami8A58RpIZo18CnhSQ	\N	\N	1	\N	t
+17	R288748532	0.00	0.00	cart	0.00	\N	\N	\N	\N	0.00	\N	\N	guest@example.com	\N	2025-03-27 05:20:12.644306	2025-03-27 05:20:12.644306	RON	\N	\N	0.00	0.00	0.00	spree	0.00	0	\N	\N	f	Z2Za7VL1o4YPJXLMygO-BQ	\N	\N	1	\N	t
 \.
 
 
 --
--- TOC entry 5940 (class 0 OID 186969)
--- Dependencies: 270
+-- TOC entry 5945 (class 0 OID 191745)
+-- Dependencies: 275
 -- Data for Name: spree_orders_promotions; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6314,8 +6332,8 @@ COPY public.spree_orders_promotions (id, order_id, promotion_id, promotion_code_
 
 
 --
--- TOC entry 5942 (class 0 OID 186978)
--- Dependencies: 272
+-- TOC entry 5947 (class 0 OID 191749)
+-- Dependencies: 277
 -- Data for Name: spree_payment_capture_events; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6324,8 +6342,8 @@ COPY public.spree_payment_capture_events (id, amount, payment_id, created_at, up
 
 
 --
--- TOC entry 5944 (class 0 OID 186987)
--- Dependencies: 274
+-- TOC entry 5949 (class 0 OID 191754)
+-- Dependencies: 279
 -- Data for Name: spree_payment_methods; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6339,8 +6357,8 @@ COPY public.spree_payment_methods (id, type, name, description, active, deleted_
 
 
 --
--- TOC entry 5946 (class 0 OID 186999)
--- Dependencies: 276
+-- TOC entry 5951 (class 0 OID 191764)
+-- Dependencies: 281
 -- Data for Name: spree_payments; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6353,8 +6371,8 @@ COPY public.spree_payments (id, amount, order_id, source_type, source_id, paymen
 
 
 --
--- TOC entry 5948 (class 0 OID 187012)
--- Dependencies: 278
+-- TOC entry 5953 (class 0 OID 191771)
+-- Dependencies: 283
 -- Data for Name: spree_preferences; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6363,8 +6381,8 @@ COPY public.spree_preferences (id, value, key, created_at, updated_at) FROM stdi
 
 
 --
--- TOC entry 5950 (class 0 OID 187022)
--- Dependencies: 280
+-- TOC entry 5955 (class 0 OID 191777)
+-- Dependencies: 285
 -- Data for Name: spree_prices; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6436,8 +6454,8 @@ COPY public.spree_prices (id, variant_id, amount, currency, deleted_at, created_
 
 
 --
--- TOC entry 5952 (class 0 OID 187034)
--- Dependencies: 282
+-- TOC entry 5957 (class 0 OID 191783)
+-- Dependencies: 287
 -- Data for Name: spree_product_option_types; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6450,8 +6468,8 @@ COPY public.spree_product_option_types (id, "position", product_id, option_type_
 
 
 --
--- TOC entry 5954 (class 0 OID 187044)
--- Dependencies: 284
+-- TOC entry 5959 (class 0 OID 191787)
+-- Dependencies: 289
 -- Data for Name: spree_product_promotion_rules; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6460,8 +6478,8 @@ COPY public.spree_product_promotion_rules (id, product_id, promotion_rule_id, cr
 
 
 --
--- TOC entry 5956 (class 0 OID 187053)
--- Dependencies: 286
+-- TOC entry 5961 (class 0 OID 191791)
+-- Dependencies: 291
 -- Data for Name: spree_product_properties; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6513,8 +6531,8 @@ COPY public.spree_product_properties (id, value, product_id, property_id, create
 
 
 --
--- TOC entry 5958 (class 0 OID 187066)
--- Dependencies: 288
+-- TOC entry 5963 (class 0 OID 191798)
+-- Dependencies: 293
 -- Data for Name: spree_products; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6535,8 +6553,8 @@ COPY public.spree_products (id, name, description, available_on, deleted_at, slu
 
 
 --
--- TOC entry 5960 (class 0 OID 187081)
--- Dependencies: 290
+-- TOC entry 5965 (class 0 OID 191806)
+-- Dependencies: 295
 -- Data for Name: spree_products_taxons; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6555,8 +6573,8 @@ COPY public.spree_products_taxons (id, product_id, taxon_id, "position", created
 
 
 --
--- TOC entry 5962 (class 0 OID 187101)
--- Dependencies: 292
+-- TOC entry 5967 (class 0 OID 191810)
+-- Dependencies: 297
 -- Data for Name: spree_promotion_actions; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6565,8 +6583,8 @@ COPY public.spree_promotion_actions (id, promotion_id, "position", type, deleted
 
 
 --
--- TOC entry 5964 (class 0 OID 187113)
--- Dependencies: 294
+-- TOC entry 5969 (class 0 OID 191816)
+-- Dependencies: 299
 -- Data for Name: spree_promotion_categories; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6575,8 +6593,8 @@ COPY public.spree_promotion_categories (id, name, created_at, updated_at, code) 
 
 
 --
--- TOC entry 6070 (class 0 OID 187715)
--- Dependencies: 400
+-- TOC entry 5971 (class 0 OID 191822)
+-- Dependencies: 301
 -- Data for Name: spree_promotion_code_batches; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6585,8 +6603,8 @@ COPY public.spree_promotion_code_batches (id, promotion_id, base_code, number_of
 
 
 --
--- TOC entry 5966 (class 0 OID 187122)
--- Dependencies: 296
+-- TOC entry 5973 (class 0 OID 191830)
+-- Dependencies: 303
 -- Data for Name: spree_promotion_codes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6595,8 +6613,8 @@ COPY public.spree_promotion_codes (id, promotion_id, value, created_at, updated_
 
 
 --
--- TOC entry 5968 (class 0 OID 187133)
--- Dependencies: 298
+-- TOC entry 5975 (class 0 OID 191836)
+-- Dependencies: 305
 -- Data for Name: spree_promotion_rule_taxons; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6605,8 +6623,8 @@ COPY public.spree_promotion_rule_taxons (id, taxon_id, promotion_rule_id, create
 
 
 --
--- TOC entry 5970 (class 0 OID 187142)
--- Dependencies: 300
+-- TOC entry 5977 (class 0 OID 191840)
+-- Dependencies: 307
 -- Data for Name: spree_promotion_rules; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6615,8 +6633,8 @@ COPY public.spree_promotion_rules (id, promotion_id, type, created_at, updated_a
 
 
 --
--- TOC entry 6074 (class 0 OID 187762)
--- Dependencies: 404
+-- TOC entry 5979 (class 0 OID 191846)
+-- Dependencies: 309
 -- Data for Name: spree_promotion_rules_stores; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6625,8 +6643,8 @@ COPY public.spree_promotion_rules_stores (id, store_id, promotion_rule_id, creat
 
 
 --
--- TOC entry 5972 (class 0 OID 187153)
--- Dependencies: 302
+-- TOC entry 5981 (class 0 OID 191850)
+-- Dependencies: 311
 -- Data for Name: spree_promotion_rules_users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6635,8 +6653,8 @@ COPY public.spree_promotion_rules_users (id, user_id, promotion_rule_id, created
 
 
 --
--- TOC entry 5974 (class 0 OID 187162)
--- Dependencies: 304
+-- TOC entry 5983 (class 0 OID 191854)
+-- Dependencies: 313
 -- Data for Name: spree_promotions; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6645,8 +6663,8 @@ COPY public.spree_promotions (id, description, expires_at, starts_at, name, type
 
 
 --
--- TOC entry 5976 (class 0 OID 187181)
--- Dependencies: 306
+-- TOC entry 5985 (class 0 OID 191862)
+-- Dependencies: 315
 -- Data for Name: spree_properties; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6666,8 +6684,8 @@ COPY public.spree_properties (id, name, presentation, created_at, updated_at) FR
 
 
 --
--- TOC entry 5978 (class 0 OID 187190)
--- Dependencies: 308
+-- TOC entry 5987 (class 0 OID 191868)
+-- Dependencies: 317
 -- Data for Name: spree_property_prototypes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6676,8 +6694,8 @@ COPY public.spree_property_prototypes (id, prototype_id, property_id, created_at
 
 
 --
--- TOC entry 5980 (class 0 OID 187197)
--- Dependencies: 310
+-- TOC entry 5989 (class 0 OID 191872)
+-- Dependencies: 319
 -- Data for Name: spree_prototype_taxons; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6686,8 +6704,8 @@ COPY public.spree_prototype_taxons (id, taxon_id, prototype_id, created_at, upda
 
 
 --
--- TOC entry 5982 (class 0 OID 187206)
--- Dependencies: 312
+-- TOC entry 5991 (class 0 OID 191876)
+-- Dependencies: 321
 -- Data for Name: spree_prototypes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6696,8 +6714,8 @@ COPY public.spree_prototypes (id, name, created_at, updated_at) FROM stdin;
 
 
 --
--- TOC entry 5984 (class 0 OID 187215)
--- Dependencies: 314
+-- TOC entry 5993 (class 0 OID 191882)
+-- Dependencies: 323
 -- Data for Name: spree_refund_reasons; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6707,8 +6725,8 @@ COPY public.spree_refund_reasons (id, name, active, mutable, created_at, updated
 
 
 --
--- TOC entry 5986 (class 0 OID 187226)
--- Dependencies: 316
+-- TOC entry 5995 (class 0 OID 191890)
+-- Dependencies: 325
 -- Data for Name: spree_refunds; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6718,8 +6736,8 @@ COPY public.spree_refunds (id, payment_id, amount, transaction_id, created_at, u
 
 
 --
--- TOC entry 5988 (class 0 OID 187239)
--- Dependencies: 318
+-- TOC entry 5997 (class 0 OID 191897)
+-- Dependencies: 327
 -- Data for Name: spree_reimbursement_credits; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6728,8 +6746,8 @@ COPY public.spree_reimbursement_credits (id, amount, reimbursement_id, creditabl
 
 
 --
--- TOC entry 5990 (class 0 OID 187249)
--- Dependencies: 320
+-- TOC entry 5999 (class 0 OID 191904)
+-- Dependencies: 329
 -- Data for Name: spree_reimbursement_types; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6740,8 +6758,8 @@ COPY public.spree_reimbursement_types (id, name, active, mutable, created_at, up
 
 
 --
--- TOC entry 5992 (class 0 OID 187261)
--- Dependencies: 322
+-- TOC entry 6001 (class 0 OID 191912)
+-- Dependencies: 331
 -- Data for Name: spree_reimbursements; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6751,8 +6769,8 @@ COPY public.spree_reimbursements (id, number, reimbursement_status, customer_ret
 
 
 --
--- TOC entry 5994 (class 0 OID 187272)
--- Dependencies: 324
+-- TOC entry 6003 (class 0 OID 191918)
+-- Dependencies: 333
 -- Data for Name: spree_return_authorizations; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6762,8 +6780,8 @@ COPY public.spree_return_authorizations (id, number, state, order_id, memo, crea
 
 
 --
--- TOC entry 5996 (class 0 OID 187282)
--- Dependencies: 326
+-- TOC entry 6005 (class 0 OID 191924)
+-- Dependencies: 335
 -- Data for Name: spree_return_items; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6773,8 +6791,8 @@ COPY public.spree_return_items (id, return_authorization_id, inventory_unit_id, 
 
 
 --
--- TOC entry 5998 (class 0 OID 187297)
--- Dependencies: 328
+-- TOC entry 6007 (class 0 OID 191934)
+-- Dependencies: 337
 -- Data for Name: spree_return_reasons; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6792,8 +6810,8 @@ COPY public.spree_return_reasons (id, name, active, mutable, created_at, updated
 
 
 --
--- TOC entry 6000 (class 0 OID 187308)
--- Dependencies: 330
+-- TOC entry 6009 (class 0 OID 191942)
+-- Dependencies: 339
 -- Data for Name: spree_roles; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6803,19 +6821,22 @@ COPY public.spree_roles (id, name, created_at, updated_at) FROM stdin;
 
 
 --
--- TOC entry 6002 (class 0 OID 187317)
--- Dependencies: 332
+-- TOC entry 6011 (class 0 OID 191948)
+-- Dependencies: 341
 -- Data for Name: spree_roles_users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.spree_roles_users (id, role_id, user_id, created_at, updated_at) FROM stdin;
 1	1	1	2025-03-22 05:26:16.529083	2025-03-22 05:26:16.529083
+5	1	2	2025-03-27 01:36:55.850289	2025-03-27 01:36:55.850289
+7	1	5	2025-03-27 05:17:04.607237	2025-03-27 05:17:04.607237
+9	1	7	2025-03-27 18:41:22.887318	2025-03-27 18:41:22.887318
 \.
 
 
 --
--- TOC entry 6004 (class 0 OID 187326)
--- Dependencies: 334
+-- TOC entry 6013 (class 0 OID 191952)
+-- Dependencies: 343
 -- Data for Name: spree_shipments; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6826,8 +6847,8 @@ COPY public.spree_shipments (id, tracking, number, cost, shipped_at, order_id, s
 
 
 --
--- TOC entry 6006 (class 0 OID 187344)
--- Dependencies: 336
+-- TOC entry 6015 (class 0 OID 191963)
+-- Dependencies: 345
 -- Data for Name: spree_shipping_categories; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6837,8 +6858,8 @@ COPY public.spree_shipping_categories (id, name, created_at, updated_at) FROM st
 
 
 --
--- TOC entry 6008 (class 0 OID 187353)
--- Dependencies: 338
+-- TOC entry 6017 (class 0 OID 191969)
+-- Dependencies: 347
 -- Data for Name: spree_shipping_method_categories; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6852,8 +6873,8 @@ COPY public.spree_shipping_method_categories (id, shipping_method_id, shipping_c
 
 
 --
--- TOC entry 6010 (class 0 OID 187362)
--- Dependencies: 340
+-- TOC entry 6019 (class 0 OID 191973)
+-- Dependencies: 349
 -- Data for Name: spree_shipping_method_stock_locations; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6862,8 +6883,8 @@ COPY public.spree_shipping_method_stock_locations (id, shipping_method_id, stock
 
 
 --
--- TOC entry 6012 (class 0 OID 187371)
--- Dependencies: 342
+-- TOC entry 6021 (class 0 OID 191977)
+-- Dependencies: 351
 -- Data for Name: spree_shipping_method_zones; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6877,8 +6898,8 @@ COPY public.spree_shipping_method_zones (id, shipping_method_id, zone_id, create
 
 
 --
--- TOC entry 6014 (class 0 OID 187378)
--- Dependencies: 344
+-- TOC entry 6023 (class 0 OID 191981)
+-- Dependencies: 353
 -- Data for Name: spree_shipping_methods; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6892,8 +6913,8 @@ COPY public.spree_shipping_methods (id, name, deleted_at, created_at, updated_at
 
 
 --
--- TOC entry 6016 (class 0 OID 187389)
--- Dependencies: 346
+-- TOC entry 6025 (class 0 OID 191989)
+-- Dependencies: 355
 -- Data for Name: spree_shipping_rate_taxes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6908,8 +6929,8 @@ COPY public.spree_shipping_rate_taxes (id, amount, tax_rate_id, shipping_rate_id
 
 
 --
--- TOC entry 6018 (class 0 OID 187399)
--- Dependencies: 348
+-- TOC entry 6027 (class 0 OID 191994)
+-- Dependencies: 357
 -- Data for Name: spree_shipping_rates; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6924,8 +6945,8 @@ COPY public.spree_shipping_rates (id, shipment_id, shipping_method_id, selected,
 
 
 --
--- TOC entry 6020 (class 0 OID 187409)
--- Dependencies: 350
+-- TOC entry 6029 (class 0 OID 192000)
+-- Dependencies: 359
 -- Data for Name: spree_state_changes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -6956,8 +6977,8 @@ COPY public.spree_state_changes (id, name, previous_state, stateful_id, user_id,
 
 
 --
--- TOC entry 6022 (class 0 OID 187420)
--- Dependencies: 352
+-- TOC entry 6031 (class 0 OID 192006)
+-- Dependencies: 361
 -- Data for Name: spree_states; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10652,8 +10673,8 @@ COPY public.spree_states (id, name, abbr, country_id, updated_at, created_at) FR
 
 
 --
--- TOC entry 6024 (class 0 OID 187430)
--- Dependencies: 354
+-- TOC entry 6033 (class 0 OID 192012)
+-- Dependencies: 363
 -- Data for Name: spree_stock_items; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10713,8 +10734,8 @@ COPY public.spree_stock_items (id, stock_location_id, variant_id, count_on_hand,
 
 
 --
--- TOC entry 6026 (class 0 OID 187443)
--- Dependencies: 356
+-- TOC entry 6035 (class 0 OID 192018)
+-- Dependencies: 365
 -- Data for Name: spree_stock_locations; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10724,8 +10745,8 @@ COPY public.spree_stock_locations (id, name, created_at, updated_at, "default", 
 
 
 --
--- TOC entry 6028 (class 0 OID 187462)
--- Dependencies: 358
+-- TOC entry 6037 (class 0 OID 192032)
+-- Dependencies: 367
 -- Data for Name: spree_stock_movements; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10788,8 +10809,8 @@ COPY public.spree_stock_movements (id, stock_item_id, quantity, action, created_
 
 
 --
--- TOC entry 6030 (class 0 OID 187473)
--- Dependencies: 360
+-- TOC entry 6039 (class 0 OID 192039)
+-- Dependencies: 369
 -- Data for Name: spree_store_credit_categories; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10800,8 +10821,8 @@ COPY public.spree_store_credit_categories (id, name, created_at, updated_at) FRO
 
 
 --
--- TOC entry 6032 (class 0 OID 187482)
--- Dependencies: 362
+-- TOC entry 6041 (class 0 OID 192045)
+-- Dependencies: 371
 -- Data for Name: spree_store_credit_events; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10810,8 +10831,8 @@ COPY public.spree_store_credit_events (id, store_credit_id, action, amount, user
 
 
 --
--- TOC entry 6078 (class 0 OID 187785)
--- Dependencies: 408
+-- TOC entry 6043 (class 0 OID 192053)
+-- Dependencies: 373
 -- Data for Name: spree_store_credit_reasons; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10821,8 +10842,8 @@ COPY public.spree_store_credit_reasons (id, name, active, created_at, updated_at
 
 
 --
--- TOC entry 6034 (class 0 OID 187494)
--- Dependencies: 364
+-- TOC entry 6045 (class 0 OID 192060)
+-- Dependencies: 375
 -- Data for Name: spree_store_credit_types; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10833,8 +10854,8 @@ COPY public.spree_store_credit_types (id, name, priority, created_at, updated_at
 
 
 --
--- TOC entry 6036 (class 0 OID 187513)
--- Dependencies: 366
+-- TOC entry 6047 (class 0 OID 192066)
+-- Dependencies: 377
 -- Data for Name: spree_store_credits; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10843,8 +10864,8 @@ COPY public.spree_store_credits (id, user_id, category_id, created_by_id, amount
 
 
 --
--- TOC entry 6038 (class 0 OID 187528)
--- Dependencies: 368
+-- TOC entry 6049 (class 0 OID 192075)
+-- Dependencies: 379
 -- Data for Name: spree_store_payment_methods; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10853,8 +10874,8 @@ COPY public.spree_store_payment_methods (id, store_id, payment_method_id, create
 
 
 --
--- TOC entry 6076 (class 0 OID 187771)
--- Dependencies: 406
+-- TOC entry 6051 (class 0 OID 192079)
+-- Dependencies: 381
 -- Data for Name: spree_store_shipping_methods; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10863,19 +10884,19 @@ COPY public.spree_store_shipping_methods (id, store_id, shipping_method_id, crea
 
 
 --
--- TOC entry 6040 (class 0 OID 187537)
--- Dependencies: 370
+-- TOC entry 6053 (class 0 OID 192083)
+-- Dependencies: 383
 -- Data for Name: spree_stores; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.spree_stores (id, name, url, meta_description, meta_keywords, seo_title, mail_from_address, default_currency, code, "default", created_at, updated_at, cart_tax_country_iso, available_locales, bcc_email) FROM stdin;
-1	Sample Store	example.com	\N	\N	\N	store@example.com	\N	sample-store	t	2025-03-22 05:25:54.803439	2025-03-22 05:25:54.803439	\N	\N	\N
+1	Sample Store	example.com				store@example.com	RON	sample-store	t	2025-03-22 05:25:54.803439	2025-03-25 23:39:17.336396		en	
 \.
 
 
 --
--- TOC entry 6042 (class 0 OID 187549)
--- Dependencies: 372
+-- TOC entry 6055 (class 0 OID 192090)
+-- Dependencies: 385
 -- Data for Name: spree_tax_categories; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10885,8 +10906,8 @@ COPY public.spree_tax_categories (id, name, description, is_default, deleted_at,
 
 
 --
--- TOC entry 6072 (class 0 OID 187741)
--- Dependencies: 402
+-- TOC entry 6057 (class 0 OID 192097)
+-- Dependencies: 387
 -- Data for Name: spree_tax_rate_tax_categories; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10896,8 +10917,8 @@ COPY public.spree_tax_rate_tax_categories (id, tax_category_id, tax_rate_id) FRO
 
 
 --
--- TOC entry 6044 (class 0 OID 187559)
--- Dependencies: 374
+-- TOC entry 6059 (class 0 OID 192101)
+-- Dependencies: 389
 -- Data for Name: spree_tax_rates; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10907,8 +10928,8 @@ COPY public.spree_tax_rates (id, amount, zone_id, included_in_price, created_at,
 
 
 --
--- TOC entry 6046 (class 0 OID 187573)
--- Dependencies: 376
+-- TOC entry 6061 (class 0 OID 192110)
+-- Dependencies: 391
 -- Data for Name: spree_taxonomies; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10919,8 +10940,8 @@ COPY public.spree_taxonomies (id, name, created_at, updated_at, "position") FROM
 
 
 --
--- TOC entry 6048 (class 0 OID 187584)
--- Dependencies: 378
+-- TOC entry 6063 (class 0 OID 192117)
+-- Dependencies: 393
 -- Data for Name: spree_taxons; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10939,8 +10960,8 @@ COPY public.spree_taxons (id, parent_id, name, permalink, taxonomy_id, lft, rgt,
 
 
 --
--- TOC entry 6050 (class 0 OID 187598)
--- Dependencies: 380
+-- TOC entry 6065 (class 0 OID 192123)
+-- Dependencies: 395
 -- Data for Name: spree_unit_cancels; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10949,8 +10970,8 @@ COPY public.spree_unit_cancels (id, inventory_unit_id, reason, created_by, creat
 
 
 --
--- TOC entry 6052 (class 0 OID 187608)
--- Dependencies: 382
+-- TOC entry 6067 (class 0 OID 192129)
+-- Dependencies: 397
 -- Data for Name: spree_user_addresses; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10959,8 +10980,8 @@ COPY public.spree_user_addresses (id, user_id, address_id, "default", archived, 
 
 
 --
--- TOC entry 6054 (class 0 OID 187620)
--- Dependencies: 384
+-- TOC entry 6069 (class 0 OID 192136)
+-- Dependencies: 399
 -- Data for Name: spree_user_stock_locations; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10969,19 +10990,25 @@ COPY public.spree_user_stock_locations (id, user_id, stock_location_id, created_
 
 
 --
--- TOC entry 5898 (class 0 OID 186711)
--- Dependencies: 228
+-- TOC entry 6071 (class 0 OID 192140)
+-- Dependencies: 401
 -- Data for Name: spree_users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.spree_users (id, encrypted_password, password_salt, email, remember_token, persistence_token, reset_password_token, perishable_token, sign_in_count, failed_attempts, last_request_at, current_sign_in_at, last_sign_in_at, current_sign_in_ip, last_sign_in_ip, login, ship_address_id, bill_address_id, created_at, updated_at, spree_api_key, authentication_token, unlock_token, locked_at, remember_created_at, reset_password_sent_at, deleted_at, confirmation_token, confirmed_at, confirmation_sent_at, unconfirmed_email) FROM stdin;
-1	00bfd976eed315473deba987331b2563a53e3e1cfb4b7b4b66e02a281772fb6bd9a4a2a190f49c0da897db360c78ed90f95eabf30c8fed4f3c034e4b5aca12a8	AHxiFs1oJN2XmgA-3xHZ	admin@example.com	LrLuvM_hxx-XLngoSqCG	\N	\N	\N	1	0	\N	2025-03-22 05:40:00.334369	2025-03-22 05:40:00.334369	::1	::1	admin@example.com	\N	\N	2025-03-22 05:26:16.480603	2025-03-22 05:40:00.334512	0bbd7918267538b83ded9b3869b38b487abd17e5c329f4e8	\N	\N	\N	2025-03-22 05:40:00.324375	\N	\N	\N	\N	\N	\N
+COPY public.spree_users (id, encrypted_password, password_salt, email, remember_token, persistence_token, reset_password_token, perishable_token, sign_in_count, failed_attempts, last_request_at, current_sign_in_at, last_sign_in_at, current_sign_in_ip, last_sign_in_ip, login, ship_address_id, bill_address_id, created_at, updated_at, spree_api_key, authentication_token, unlock_token, locked_at, remember_created_at, reset_password_sent_at, deleted_at, confirmation_token, confirmed_at, confirmation_sent_at, unconfirmed_email, name) FROM stdin;
+1	00bfd976eed315473deba987331b2563a53e3e1cfb4b7b4b66e02a281772fb6bd9a4a2a190f49c0da897db360c78ed90f95eabf30c8fed4f3c034e4b5aca12a8	AHxiFs1oJN2XmgA-3xHZ	admin@example.com	\N	\N	\N	\N	3	0	\N	2025-03-27 01:35:57.1089	2025-03-25 22:16:39.257559	::1	::1	admin@example.com	\N	\N	2025-03-22 05:26:16.480603	2025-03-27 01:35:57.109189	0bbd7918267538b83ded9b3869b38b487abd17e5c329f4e8	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+2	098382ccbeb36b68994e019694a3becb5d90ee0e84bc10ffcd7bb497795e079a9f29988b828118307050b2784cca1051c2231e7373573bfa4622ea30462a090c	HG5vgqN5JwfYQ6DetfU2	ilates@yahoo.com	\N	\N	\N	\N	49	0	\N	2025-03-27 18:40:12.775589	2025-03-27 05:20:34.051562	::1	::1	ilates@yahoo.com	\N	\N	2025-03-25 21:01:59.061078	2025-03-27 18:40:12.775977	108ef1c9588ed7b18241481d16a602c760b830a0baff30c5	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+6	d3e1ef67808491615214046a4b77e0af50def819f6bcbe678b7ab3e9e15f5d9f872300a494abc2bdcf53388377510d547803b019eb37bde0a828945b334df9ff	uDuUrPa3KhwQ2Bng55Vo	469f5f78-2e54-4faf-82de-d2e472744930@example.net	\N	\N	\N	\N	0	0	\N	\N	\N	\N	\N	469f5f78-2e54-4faf-82de-d2e472744930@example.net	\N	\N	2025-03-27 05:17:50.847999	2025-03-27 18:40:42.857649	08ee7488a30023d31f198826c2f58e2045e0293fb5cc8c9a	\N	\N	\N	\N	\N	2025-03-27 18:40:42.846165	\N	\N	\N	\N	abc
+3	cd6393215b4ddb775baf27e650103ff33242bd3b4ae8710a59df8e3e38b4eac881bcecf7994452c80d66d85a2e354b89daacb1fb497c021edf2ef8845c9312a8	yturoHizD4JY-dSR9Xjb	032cf6c4-4eab-4b53-ab43-cc09923418c2@example.net	\N	\N	\N	\N	1	0	\N	2025-03-27 03:47:23.060093	2025-03-27 03:47:23.060093	::1	::1	032cf6c4-4eab-4b53-ab43-cc09923418c2@example.net	\N	\N	2025-03-27 03:47:22.881441	2025-03-27 04:59:38.422813	1b8418eff684679bdf7be52188b2fc8e5a189393f37b1f4e	\N	\N	\N	\N	\N	2025-03-27 04:59:38.279347	\N	\N	\N	\N	Lates Iulian
+4	bd058dd76d7cca22b11ee880b4c76018a40783cfdc4a6e1bdd143fc8ea362190fe87b375f3d22e82a3df20aa2f808a7f7b3b5b79b7e8a631edda5081ba0a7653	5B4L-gbTS9q_urmKFVgr	f31905e7-32ec-43e0-b2a3-ce8f22681b48@example.net	\N	\N	\N	\N	1	0	\N	2025-03-27 05:00:29.163692	2025-03-27 05:00:29.163692	::1	::1	f31905e7-32ec-43e0-b2a3-ce8f22681b48@example.net	\N	\N	2025-03-27 05:00:29.151276	2025-03-27 18:40:48.510978	\N	\N	\N	\N	\N	\N	2025-03-27 18:40:48.498919	\N	\N	\N	\N	abc
+5	7d018005321e97f8b5645d3d47bbc8dbaf661110eba66b7141709f8f85b07e9260e3bd68b658827970df28fede185702d3462ff9abdc4698267002988c61b254	RNBNgo5PyKSquMqcMdxS	ac2ad5cb-04f9-4fe6-aa52-7aab787eb1f8@example.net	\N	\N	\N	\N	0	0	\N	\N	\N	\N	\N	ac2ad5cb-04f9-4fe6-aa52-7aab787eb1f8@example.net	\N	\N	2025-03-27 05:17:04.599933	2025-03-27 05:17:34.296424	9cf6fbc197680bdd2fb10a0887bc7b5eb34cf01a44bdbdd5	\N	\N	\N	\N	\N	2025-03-27 05:17:34.283095	\N	\N	\N	\N	il
+7	6cb4f3aa70885b90d20461d9a342e9f90a4270f7cf7ed7180c77071e5db6c5302e9c3bb6e1d1bac7899efa0d956f26955e2e490b972e132ed8f6a891e630eebb	xyxQjkyBf7_pA9UQn-Z-	costelaioanei@yahoo.com	\N	\N	\N	\N	0	0	\N	\N	\N	\N	\N	costelaioanei@yahoo.com	\N	\N	2025-03-27 18:41:22.879472	2025-03-27 18:41:22.906405	0ff9da585c1f8cbbd4c8b79db05c431c822dc883f89b4961	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	
 \.
 
 
 --
--- TOC entry 6056 (class 0 OID 187628)
--- Dependencies: 386
+-- TOC entry 6073 (class 0 OID 192148)
+-- Dependencies: 403
 -- Data for Name: spree_variant_property_rule_conditions; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -10990,8 +11017,8 @@ COPY public.spree_variant_property_rule_conditions (id, option_value_id, variant
 
 
 --
--- TOC entry 6058 (class 0 OID 187636)
--- Dependencies: 388
+-- TOC entry 6075 (class 0 OID 192152)
+-- Dependencies: 405
 -- Data for Name: spree_variant_property_rule_values; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -11000,8 +11027,8 @@ COPY public.spree_variant_property_rule_values (id, value, "position", property_
 
 
 --
--- TOC entry 6060 (class 0 OID 187648)
--- Dependencies: 390
+-- TOC entry 6077 (class 0 OID 192159)
+-- Dependencies: 407
 -- Data for Name: spree_variant_property_rules; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -11010,8 +11037,8 @@ COPY public.spree_variant_property_rules (id, product_id, created_at, updated_at
 
 
 --
--- TOC entry 6062 (class 0 OID 187656)
--- Dependencies: 392
+-- TOC entry 6079 (class 0 OID 192164)
+-- Dependencies: 409
 -- Data for Name: spree_variants; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -11071,8 +11098,8 @@ COPY public.spree_variants (id, sku, weight, height, width, depth, deleted_at, i
 
 
 --
--- TOC entry 6068 (class 0 OID 187696)
--- Dependencies: 398
+-- TOC entry 6081 (class 0 OID 192174)
+-- Dependencies: 411
 -- Data for Name: spree_wallet_payment_sources; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -11081,8 +11108,8 @@ COPY public.spree_wallet_payment_sources (id, user_id, payment_source_type, paym
 
 
 --
--- TOC entry 6064 (class 0 OID 187674)
--- Dependencies: 394
+-- TOC entry 6083 (class 0 OID 192181)
+-- Dependencies: 413
 -- Data for Name: spree_zone_members; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -11121,8 +11148,8 @@ COPY public.spree_zone_members (id, zoneable_type, zoneable_id, zone_id, created
 
 
 --
--- TOC entry 6066 (class 0 OID 187685)
--- Dependencies: 396
+-- TOC entry 6085 (class 0 OID 192187)
+-- Dependencies: 415
 -- Data for Name: spree_zones; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -11134,7 +11161,7 @@ COPY public.spree_zones (id, name, description, zone_members_count, created_at, 
 
 --
 -- TOC entry 6192 (class 0 OID 0)
--- Dependencies: 223
+-- Dependencies: 216
 -- Name: action_mailbox_inbound_emails_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11143,7 +11170,7 @@ SELECT pg_catalog.setval('public.action_mailbox_inbound_emails_id_seq', 1, false
 
 --
 -- TOC entry 6193 (class 0 OID 0)
--- Dependencies: 225
+-- Dependencies: 218
 -- Name: action_text_rich_texts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11152,7 +11179,7 @@ SELECT pg_catalog.setval('public.action_text_rich_texts_id_seq', 1, false);
 
 --
 -- TOC entry 6194 (class 0 OID 0)
--- Dependencies: 219
+-- Dependencies: 220
 -- Name: active_storage_attachments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11161,7 +11188,7 @@ SELECT pg_catalog.setval('public.active_storage_attachments_id_seq', 92, true);
 
 --
 -- TOC entry 6195 (class 0 OID 0)
--- Dependencies: 217
+-- Dependencies: 222
 -- Name: active_storage_blobs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11170,7 +11197,7 @@ SELECT pg_catalog.setval('public.active_storage_blobs_id_seq', 92, true);
 
 --
 -- TOC entry 6196 (class 0 OID 0)
--- Dependencies: 221
+-- Dependencies: 224
 -- Name: active_storage_variant_records_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11179,7 +11206,7 @@ SELECT pg_catalog.setval('public.active_storage_variant_records_id_seq', 34, tru
 
 --
 -- TOC entry 6197 (class 0 OID 0)
--- Dependencies: 229
+-- Dependencies: 227
 -- Name: friendly_id_slugs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11188,7 +11215,7 @@ SELECT pg_catalog.setval('public.friendly_id_slugs_id_seq', 12, true);
 
 --
 -- TOC entry 6198 (class 0 OID 0)
--- Dependencies: 415
+-- Dependencies: 230
 -- Name: solidus_stripe_customers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11197,7 +11224,7 @@ SELECT pg_catalog.setval('public.solidus_stripe_customers_id_seq', 1, false);
 
 --
 -- TOC entry 6199 (class 0 OID 0)
--- Dependencies: 411
+-- Dependencies: 232
 -- Name: solidus_stripe_payment_intents_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11206,7 +11233,7 @@ SELECT pg_catalog.setval('public.solidus_stripe_payment_intents_id_seq', 1, fals
 
 --
 -- TOC entry 6200 (class 0 OID 0)
--- Dependencies: 409
+-- Dependencies: 234
 -- Name: solidus_stripe_payment_sources_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11215,7 +11242,7 @@ SELECT pg_catalog.setval('public.solidus_stripe_payment_sources_id_seq', 1, fals
 
 --
 -- TOC entry 6201 (class 0 OID 0)
--- Dependencies: 413
+-- Dependencies: 236
 -- Name: solidus_stripe_slug_entries_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11224,7 +11251,7 @@ SELECT pg_catalog.setval('public.solidus_stripe_slug_entries_id_seq', 1, false);
 
 --
 -- TOC entry 6202 (class 0 OID 0)
--- Dependencies: 231
+-- Dependencies: 238
 -- Name: spree_addresses_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11233,7 +11260,7 @@ SELECT pg_catalog.setval('public.spree_addresses_id_seq', 2, true);
 
 --
 -- TOC entry 6203 (class 0 OID 0)
--- Dependencies: 233
+-- Dependencies: 240
 -- Name: spree_adjustment_reasons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11242,7 +11269,7 @@ SELECT pg_catalog.setval('public.spree_adjustment_reasons_id_seq', 1, false);
 
 --
 -- TOC entry 6204 (class 0 OID 0)
--- Dependencies: 235
+-- Dependencies: 242
 -- Name: spree_adjustments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11251,7 +11278,7 @@ SELECT pg_catalog.setval('public.spree_adjustments_id_seq', 4, true);
 
 --
 -- TOC entry 6205 (class 0 OID 0)
--- Dependencies: 237
+-- Dependencies: 244
 -- Name: spree_assets_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11260,7 +11287,7 @@ SELECT pg_catalog.setval('public.spree_assets_id_seq', 58, true);
 
 --
 -- TOC entry 6206 (class 0 OID 0)
--- Dependencies: 239
+-- Dependencies: 246
 -- Name: spree_calculators_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11269,7 +11296,7 @@ SELECT pg_catalog.setval('public.spree_calculators_id_seq', 6, true);
 
 --
 -- TOC entry 6207 (class 0 OID 0)
--- Dependencies: 241
+-- Dependencies: 248
 -- Name: spree_cartons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11278,7 +11305,7 @@ SELECT pg_catalog.setval('public.spree_cartons_id_seq', 1, true);
 
 --
 -- TOC entry 6208 (class 0 OID 0)
--- Dependencies: 243
+-- Dependencies: 250
 -- Name: spree_countries_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11287,7 +11314,7 @@ SELECT pg_catalog.setval('public.spree_countries_id_seq', 249, true);
 
 --
 -- TOC entry 6209 (class 0 OID 0)
--- Dependencies: 245
+-- Dependencies: 252
 -- Name: spree_credit_cards_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11296,7 +11323,7 @@ SELECT pg_catalog.setval('public.spree_credit_cards_id_seq', 1, true);
 
 --
 -- TOC entry 6210 (class 0 OID 0)
--- Dependencies: 247
+-- Dependencies: 254
 -- Name: spree_customer_returns_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11305,7 +11332,7 @@ SELECT pg_catalog.setval('public.spree_customer_returns_id_seq', 1, true);
 
 --
 -- TOC entry 6211 (class 0 OID 0)
--- Dependencies: 249
+-- Dependencies: 256
 -- Name: spree_inventory_units_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11314,7 +11341,7 @@ SELECT pg_catalog.setval('public.spree_inventory_units_id_seq', 2, true);
 
 --
 -- TOC entry 6212 (class 0 OID 0)
--- Dependencies: 251
+-- Dependencies: 258
 -- Name: spree_line_item_actions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11323,16 +11350,16 @@ SELECT pg_catalog.setval('public.spree_line_item_actions_id_seq', 1, false);
 
 --
 -- TOC entry 6213 (class 0 OID 0)
--- Dependencies: 253
+-- Dependencies: 260
 -- Name: spree_line_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.spree_line_items_id_seq', 8, true);
+SELECT pg_catalog.setval('public.spree_line_items_id_seq', 11, true);
 
 
 --
 -- TOC entry 6214 (class 0 OID 0)
--- Dependencies: 255
+-- Dependencies: 262
 -- Name: spree_log_entries_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11341,7 +11368,7 @@ SELECT pg_catalog.setval('public.spree_log_entries_id_seq', 1, true);
 
 --
 -- TOC entry 6215 (class 0 OID 0)
--- Dependencies: 257
+-- Dependencies: 264
 -- Name: spree_option_type_prototypes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11350,7 +11377,7 @@ SELECT pg_catalog.setval('public.spree_option_type_prototypes_id_seq', 1, false)
 
 --
 -- TOC entry 6216 (class 0 OID 0)
--- Dependencies: 259
+-- Dependencies: 266
 -- Name: spree_option_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11359,7 +11386,7 @@ SELECT pg_catalog.setval('public.spree_option_types_id_seq', 2, true);
 
 --
 -- TOC entry 6217 (class 0 OID 0)
--- Dependencies: 261
+-- Dependencies: 268
 -- Name: spree_option_values_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11368,7 +11395,7 @@ SELECT pg_catalog.setval('public.spree_option_values_id_seq', 8, true);
 
 --
 -- TOC entry 6218 (class 0 OID 0)
--- Dependencies: 263
+-- Dependencies: 270
 -- Name: spree_option_values_variants_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11377,7 +11404,7 @@ SELECT pg_catalog.setval('public.spree_option_values_variants_id_seq', 78, true)
 
 --
 -- TOC entry 6219 (class 0 OID 0)
--- Dependencies: 265
+-- Dependencies: 272
 -- Name: spree_order_mutexes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11386,16 +11413,16 @@ SELECT pg_catalog.setval('public.spree_order_mutexes_id_seq', 1, false);
 
 --
 -- TOC entry 6220 (class 0 OID 0)
--- Dependencies: 267
+-- Dependencies: 274
 -- Name: spree_orders_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.spree_orders_id_seq', 4, true);
+SELECT pg_catalog.setval('public.spree_orders_id_seq', 17, true);
 
 
 --
 -- TOC entry 6221 (class 0 OID 0)
--- Dependencies: 269
+-- Dependencies: 276
 -- Name: spree_orders_promotions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11404,7 +11431,7 @@ SELECT pg_catalog.setval('public.spree_orders_promotions_id_seq', 1, false);
 
 --
 -- TOC entry 6222 (class 0 OID 0)
--- Dependencies: 271
+-- Dependencies: 278
 -- Name: spree_payment_capture_events_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11413,7 +11440,7 @@ SELECT pg_catalog.setval('public.spree_payment_capture_events_id_seq', 1, false)
 
 --
 -- TOC entry 6223 (class 0 OID 0)
--- Dependencies: 273
+-- Dependencies: 280
 -- Name: spree_payment_methods_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11422,7 +11449,7 @@ SELECT pg_catalog.setval('public.spree_payment_methods_id_seq', 5, true);
 
 --
 -- TOC entry 6224 (class 0 OID 0)
--- Dependencies: 275
+-- Dependencies: 282
 -- Name: spree_payments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11431,7 +11458,7 @@ SELECT pg_catalog.setval('public.spree_payments_id_seq', 4, true);
 
 --
 -- TOC entry 6225 (class 0 OID 0)
--- Dependencies: 277
+-- Dependencies: 284
 -- Name: spree_preferences_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11440,7 +11467,7 @@ SELECT pg_catalog.setval('public.spree_preferences_id_seq', 1, false);
 
 --
 -- TOC entry 6226 (class 0 OID 0)
--- Dependencies: 279
+-- Dependencies: 286
 -- Name: spree_prices_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11449,7 +11476,7 @@ SELECT pg_catalog.setval('public.spree_prices_id_seq', 63, true);
 
 --
 -- TOC entry 6227 (class 0 OID 0)
--- Dependencies: 281
+-- Dependencies: 288
 -- Name: spree_product_option_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11458,7 +11485,7 @@ SELECT pg_catalog.setval('public.spree_product_option_types_id_seq', 4, true);
 
 --
 -- TOC entry 6228 (class 0 OID 0)
--- Dependencies: 283
+-- Dependencies: 290
 -- Name: spree_product_promotion_rules_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11467,7 +11494,7 @@ SELECT pg_catalog.setval('public.spree_product_promotion_rules_id_seq', 1, false
 
 --
 -- TOC entry 6229 (class 0 OID 0)
--- Dependencies: 285
+-- Dependencies: 292
 -- Name: spree_product_properties_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11476,7 +11503,7 @@ SELECT pg_catalog.setval('public.spree_product_properties_id_seq', 43, true);
 
 --
 -- TOC entry 6230 (class 0 OID 0)
--- Dependencies: 287
+-- Dependencies: 294
 -- Name: spree_products_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11485,7 +11512,7 @@ SELECT pg_catalog.setval('public.spree_products_id_seq', 12, true);
 
 --
 -- TOC entry 6231 (class 0 OID 0)
--- Dependencies: 289
+-- Dependencies: 296
 -- Name: spree_products_taxons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11494,7 +11521,7 @@ SELECT pg_catalog.setval('public.spree_products_taxons_id_seq', 10, true);
 
 --
 -- TOC entry 6232 (class 0 OID 0)
--- Dependencies: 291
+-- Dependencies: 298
 -- Name: spree_promotion_actions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11503,7 +11530,7 @@ SELECT pg_catalog.setval('public.spree_promotion_actions_id_seq', 1, false);
 
 --
 -- TOC entry 6233 (class 0 OID 0)
--- Dependencies: 293
+-- Dependencies: 300
 -- Name: spree_promotion_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11512,7 +11539,7 @@ SELECT pg_catalog.setval('public.spree_promotion_categories_id_seq', 1, false);
 
 --
 -- TOC entry 6234 (class 0 OID 0)
--- Dependencies: 399
+-- Dependencies: 302
 -- Name: spree_promotion_code_batches_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11521,7 +11548,7 @@ SELECT pg_catalog.setval('public.spree_promotion_code_batches_id_seq', 1, false)
 
 --
 -- TOC entry 6235 (class 0 OID 0)
--- Dependencies: 295
+-- Dependencies: 304
 -- Name: spree_promotion_codes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11530,7 +11557,7 @@ SELECT pg_catalog.setval('public.spree_promotion_codes_id_seq', 1, false);
 
 --
 -- TOC entry 6236 (class 0 OID 0)
--- Dependencies: 297
+-- Dependencies: 306
 -- Name: spree_promotion_rule_taxons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11539,7 +11566,7 @@ SELECT pg_catalog.setval('public.spree_promotion_rule_taxons_id_seq', 1, false);
 
 --
 -- TOC entry 6237 (class 0 OID 0)
--- Dependencies: 299
+-- Dependencies: 308
 -- Name: spree_promotion_rules_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11548,7 +11575,7 @@ SELECT pg_catalog.setval('public.spree_promotion_rules_id_seq', 1, false);
 
 --
 -- TOC entry 6238 (class 0 OID 0)
--- Dependencies: 403
+-- Dependencies: 310
 -- Name: spree_promotion_rules_stores_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11557,7 +11584,7 @@ SELECT pg_catalog.setval('public.spree_promotion_rules_stores_id_seq', 1, false)
 
 --
 -- TOC entry 6239 (class 0 OID 0)
--- Dependencies: 301
+-- Dependencies: 312
 -- Name: spree_promotion_rules_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11566,7 +11593,7 @@ SELECT pg_catalog.setval('public.spree_promotion_rules_users_id_seq', 1, false);
 
 --
 -- TOC entry 6240 (class 0 OID 0)
--- Dependencies: 303
+-- Dependencies: 314
 -- Name: spree_promotions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11575,7 +11602,7 @@ SELECT pg_catalog.setval('public.spree_promotions_id_seq', 1, false);
 
 --
 -- TOC entry 6241 (class 0 OID 0)
--- Dependencies: 305
+-- Dependencies: 316
 -- Name: spree_properties_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11584,7 +11611,7 @@ SELECT pg_catalog.setval('public.spree_properties_id_seq', 11, true);
 
 --
 -- TOC entry 6242 (class 0 OID 0)
--- Dependencies: 307
+-- Dependencies: 318
 -- Name: spree_property_prototypes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11593,7 +11620,7 @@ SELECT pg_catalog.setval('public.spree_property_prototypes_id_seq', 1, false);
 
 --
 -- TOC entry 6243 (class 0 OID 0)
--- Dependencies: 309
+-- Dependencies: 320
 -- Name: spree_prototype_taxons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11602,7 +11629,7 @@ SELECT pg_catalog.setval('public.spree_prototype_taxons_id_seq', 1, false);
 
 --
 -- TOC entry 6244 (class 0 OID 0)
--- Dependencies: 311
+-- Dependencies: 322
 -- Name: spree_prototypes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11611,7 +11638,7 @@ SELECT pg_catalog.setval('public.spree_prototypes_id_seq', 1, false);
 
 --
 -- TOC entry 6245 (class 0 OID 0)
--- Dependencies: 313
+-- Dependencies: 324
 -- Name: spree_refund_reasons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11620,7 +11647,7 @@ SELECT pg_catalog.setval('public.spree_refund_reasons_id_seq', 1, true);
 
 --
 -- TOC entry 6246 (class 0 OID 0)
--- Dependencies: 315
+-- Dependencies: 326
 -- Name: spree_refunds_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11629,7 +11656,7 @@ SELECT pg_catalog.setval('public.spree_refunds_id_seq', 1, true);
 
 --
 -- TOC entry 6247 (class 0 OID 0)
--- Dependencies: 317
+-- Dependencies: 328
 -- Name: spree_reimbursement_credits_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11638,7 +11665,7 @@ SELECT pg_catalog.setval('public.spree_reimbursement_credits_id_seq', 1, false);
 
 --
 -- TOC entry 6248 (class 0 OID 0)
--- Dependencies: 319
+-- Dependencies: 330
 -- Name: spree_reimbursement_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11647,7 +11674,7 @@ SELECT pg_catalog.setval('public.spree_reimbursement_types_id_seq', 2, true);
 
 --
 -- TOC entry 6249 (class 0 OID 0)
--- Dependencies: 321
+-- Dependencies: 332
 -- Name: spree_reimbursements_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11656,7 +11683,7 @@ SELECT pg_catalog.setval('public.spree_reimbursements_id_seq', 1, true);
 
 --
 -- TOC entry 6250 (class 0 OID 0)
--- Dependencies: 323
+-- Dependencies: 334
 -- Name: spree_return_authorizations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11665,7 +11692,7 @@ SELECT pg_catalog.setval('public.spree_return_authorizations_id_seq', 1, true);
 
 --
 -- TOC entry 6251 (class 0 OID 0)
--- Dependencies: 325
+-- Dependencies: 336
 -- Name: spree_return_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11674,7 +11701,7 @@ SELECT pg_catalog.setval('public.spree_return_items_id_seq', 1, true);
 
 --
 -- TOC entry 6252 (class 0 OID 0)
--- Dependencies: 327
+-- Dependencies: 338
 -- Name: spree_return_reasons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11683,7 +11710,7 @@ SELECT pg_catalog.setval('public.spree_return_reasons_id_seq', 9, true);
 
 --
 -- TOC entry 6253 (class 0 OID 0)
--- Dependencies: 329
+-- Dependencies: 340
 -- Name: spree_roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11692,16 +11719,16 @@ SELECT pg_catalog.setval('public.spree_roles_id_seq', 1, true);
 
 --
 -- TOC entry 6254 (class 0 OID 0)
--- Dependencies: 331
+-- Dependencies: 342
 -- Name: spree_roles_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.spree_roles_users_id_seq', 1, true);
+SELECT pg_catalog.setval('public.spree_roles_users_id_seq', 9, true);
 
 
 --
 -- TOC entry 6255 (class 0 OID 0)
--- Dependencies: 333
+-- Dependencies: 344
 -- Name: spree_shipments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11710,7 +11737,7 @@ SELECT pg_catalog.setval('public.spree_shipments_id_seq', 2, true);
 
 --
 -- TOC entry 6256 (class 0 OID 0)
--- Dependencies: 335
+-- Dependencies: 346
 -- Name: spree_shipping_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11719,7 +11746,7 @@ SELECT pg_catalog.setval('public.spree_shipping_categories_id_seq', 1, true);
 
 --
 -- TOC entry 6257 (class 0 OID 0)
--- Dependencies: 337
+-- Dependencies: 348
 -- Name: spree_shipping_method_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11728,7 +11755,7 @@ SELECT pg_catalog.setval('public.spree_shipping_method_categories_id_seq', 5, tr
 
 --
 -- TOC entry 6258 (class 0 OID 0)
--- Dependencies: 339
+-- Dependencies: 350
 -- Name: spree_shipping_method_stock_locations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11737,7 +11764,7 @@ SELECT pg_catalog.setval('public.spree_shipping_method_stock_locations_id_seq', 
 
 --
 -- TOC entry 6259 (class 0 OID 0)
--- Dependencies: 341
+-- Dependencies: 352
 -- Name: spree_shipping_method_zones_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11746,7 +11773,7 @@ SELECT pg_catalog.setval('public.spree_shipping_method_zones_id_seq', 5, true);
 
 --
 -- TOC entry 6260 (class 0 OID 0)
--- Dependencies: 343
+-- Dependencies: 354
 -- Name: spree_shipping_methods_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11755,7 +11782,7 @@ SELECT pg_catalog.setval('public.spree_shipping_methods_id_seq', 5, true);
 
 --
 -- TOC entry 6261 (class 0 OID 0)
--- Dependencies: 345
+-- Dependencies: 356
 -- Name: spree_shipping_rate_taxes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11764,7 +11791,7 @@ SELECT pg_catalog.setval('public.spree_shipping_rate_taxes_id_seq', 6, true);
 
 --
 -- TOC entry 6262 (class 0 OID 0)
--- Dependencies: 347
+-- Dependencies: 358
 -- Name: spree_shipping_rates_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11773,7 +11800,7 @@ SELECT pg_catalog.setval('public.spree_shipping_rates_id_seq', 6, true);
 
 --
 -- TOC entry 6263 (class 0 OID 0)
--- Dependencies: 349
+-- Dependencies: 360
 -- Name: spree_state_changes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11782,7 +11809,7 @@ SELECT pg_catalog.setval('public.spree_state_changes_id_seq', 22, true);
 
 --
 -- TOC entry 6264 (class 0 OID 0)
--- Dependencies: 351
+-- Dependencies: 362
 -- Name: spree_states_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11791,7 +11818,7 @@ SELECT pg_catalog.setval('public.spree_states_id_seq', 3686, true);
 
 --
 -- TOC entry 6265 (class 0 OID 0)
--- Dependencies: 353
+-- Dependencies: 364
 -- Name: spree_stock_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11800,7 +11827,7 @@ SELECT pg_catalog.setval('public.spree_stock_items_id_seq', 51, true);
 
 --
 -- TOC entry 6266 (class 0 OID 0)
--- Dependencies: 355
+-- Dependencies: 366
 -- Name: spree_stock_locations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11809,7 +11836,7 @@ SELECT pg_catalog.setval('public.spree_stock_locations_id_seq', 1, true);
 
 --
 -- TOC entry 6267 (class 0 OID 0)
--- Dependencies: 357
+-- Dependencies: 368
 -- Name: spree_stock_movements_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11818,7 +11845,7 @@ SELECT pg_catalog.setval('public.spree_stock_movements_id_seq', 54, true);
 
 --
 -- TOC entry 6268 (class 0 OID 0)
--- Dependencies: 359
+-- Dependencies: 370
 -- Name: spree_store_credit_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11827,7 +11854,7 @@ SELECT pg_catalog.setval('public.spree_store_credit_categories_id_seq', 2, true)
 
 --
 -- TOC entry 6269 (class 0 OID 0)
--- Dependencies: 361
+-- Dependencies: 372
 -- Name: spree_store_credit_events_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11836,7 +11863,7 @@ SELECT pg_catalog.setval('public.spree_store_credit_events_id_seq', 1, false);
 
 --
 -- TOC entry 6270 (class 0 OID 0)
--- Dependencies: 407
+-- Dependencies: 374
 -- Name: spree_store_credit_reasons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11845,7 +11872,7 @@ SELECT pg_catalog.setval('public.spree_store_credit_reasons_id_seq', 1, true);
 
 --
 -- TOC entry 6271 (class 0 OID 0)
--- Dependencies: 363
+-- Dependencies: 376
 -- Name: spree_store_credit_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11854,7 +11881,7 @@ SELECT pg_catalog.setval('public.spree_store_credit_types_id_seq', 2, true);
 
 --
 -- TOC entry 6272 (class 0 OID 0)
--- Dependencies: 365
+-- Dependencies: 378
 -- Name: spree_store_credits_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11863,7 +11890,7 @@ SELECT pg_catalog.setval('public.spree_store_credits_id_seq', 1, false);
 
 --
 -- TOC entry 6273 (class 0 OID 0)
--- Dependencies: 367
+-- Dependencies: 380
 -- Name: spree_store_payment_methods_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11872,7 +11899,7 @@ SELECT pg_catalog.setval('public.spree_store_payment_methods_id_seq', 1, false);
 
 --
 -- TOC entry 6274 (class 0 OID 0)
--- Dependencies: 405
+-- Dependencies: 382
 -- Name: spree_store_shipping_methods_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11881,7 +11908,7 @@ SELECT pg_catalog.setval('public.spree_store_shipping_methods_id_seq', 1, false)
 
 --
 -- TOC entry 6275 (class 0 OID 0)
--- Dependencies: 369
+-- Dependencies: 384
 -- Name: spree_stores_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11890,7 +11917,7 @@ SELECT pg_catalog.setval('public.spree_stores_id_seq', 1, true);
 
 --
 -- TOC entry 6276 (class 0 OID 0)
--- Dependencies: 371
+-- Dependencies: 386
 -- Name: spree_tax_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11899,7 +11926,7 @@ SELECT pg_catalog.setval('public.spree_tax_categories_id_seq', 1, true);
 
 --
 -- TOC entry 6277 (class 0 OID 0)
--- Dependencies: 401
+-- Dependencies: 388
 -- Name: spree_tax_rate_tax_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11908,7 +11935,7 @@ SELECT pg_catalog.setval('public.spree_tax_rate_tax_categories_id_seq', 1, true)
 
 --
 -- TOC entry 6278 (class 0 OID 0)
--- Dependencies: 373
+-- Dependencies: 390
 -- Name: spree_tax_rates_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11917,7 +11944,7 @@ SELECT pg_catalog.setval('public.spree_tax_rates_id_seq', 1, true);
 
 --
 -- TOC entry 6279 (class 0 OID 0)
--- Dependencies: 375
+-- Dependencies: 392
 -- Name: spree_taxonomies_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11926,7 +11953,7 @@ SELECT pg_catalog.setval('public.spree_taxonomies_id_seq', 2, true);
 
 --
 -- TOC entry 6280 (class 0 OID 0)
--- Dependencies: 377
+-- Dependencies: 394
 -- Name: spree_taxons_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11935,7 +11962,7 @@ SELECT pg_catalog.setval('public.spree_taxons_id_seq', 10, true);
 
 --
 -- TOC entry 6281 (class 0 OID 0)
--- Dependencies: 379
+-- Dependencies: 396
 -- Name: spree_unit_cancels_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11944,7 +11971,7 @@ SELECT pg_catalog.setval('public.spree_unit_cancels_id_seq', 1, false);
 
 --
 -- TOC entry 6282 (class 0 OID 0)
--- Dependencies: 381
+-- Dependencies: 398
 -- Name: spree_user_addresses_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11953,7 +11980,7 @@ SELECT pg_catalog.setval('public.spree_user_addresses_id_seq', 1, false);
 
 --
 -- TOC entry 6283 (class 0 OID 0)
--- Dependencies: 383
+-- Dependencies: 400
 -- Name: spree_user_stock_locations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11962,16 +11989,16 @@ SELECT pg_catalog.setval('public.spree_user_stock_locations_id_seq', 1, false);
 
 --
 -- TOC entry 6284 (class 0 OID 0)
--- Dependencies: 227
+-- Dependencies: 402
 -- Name: spree_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.spree_users_id_seq', 1, true);
+SELECT pg_catalog.setval('public.spree_users_id_seq', 7, true);
 
 
 --
 -- TOC entry 6285 (class 0 OID 0)
--- Dependencies: 385
+-- Dependencies: 404
 -- Name: spree_variant_property_rule_conditions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11980,7 +12007,7 @@ SELECT pg_catalog.setval('public.spree_variant_property_rule_conditions_id_seq',
 
 --
 -- TOC entry 6286 (class 0 OID 0)
--- Dependencies: 387
+-- Dependencies: 406
 -- Name: spree_variant_property_rule_values_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11989,7 +12016,7 @@ SELECT pg_catalog.setval('public.spree_variant_property_rule_values_id_seq', 1, 
 
 --
 -- TOC entry 6287 (class 0 OID 0)
--- Dependencies: 389
+-- Dependencies: 408
 -- Name: spree_variant_property_rules_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -11998,7 +12025,7 @@ SELECT pg_catalog.setval('public.spree_variant_property_rules_id_seq', 1, false)
 
 --
 -- TOC entry 6288 (class 0 OID 0)
--- Dependencies: 391
+-- Dependencies: 410
 -- Name: spree_variants_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -12007,7 +12034,7 @@ SELECT pg_catalog.setval('public.spree_variants_id_seq', 51, true);
 
 --
 -- TOC entry 6289 (class 0 OID 0)
--- Dependencies: 397
+-- Dependencies: 412
 -- Name: spree_wallet_payment_sources_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -12016,7 +12043,7 @@ SELECT pg_catalog.setval('public.spree_wallet_payment_sources_id_seq', 1, false)
 
 --
 -- TOC entry 6290 (class 0 OID 0)
--- Dependencies: 393
+-- Dependencies: 414
 -- Name: spree_zone_members_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -12025,7 +12052,7 @@ SELECT pg_catalog.setval('public.spree_zone_members_id_seq', 30, true);
 
 --
 -- TOC entry 6291 (class 0 OID 0)
--- Dependencies: 395
+-- Dependencies: 416
 -- Name: spree_zones_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -12033,7 +12060,7 @@ SELECT pg_catalog.setval('public.spree_zones_id_seq', 2, true);
 
 
 --
--- TOC entry 5349 (class 2606 OID 186698)
+-- TOC entry 5335 (class 2606 OID 192295)
 -- Name: action_mailbox_inbound_emails action_mailbox_inbound_emails_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12042,7 +12069,7 @@ ALTER TABLE ONLY public.action_mailbox_inbound_emails
 
 
 --
--- TOC entry 5352 (class 2606 OID 186708)
+-- TOC entry 5338 (class 2606 OID 192297)
 -- Name: action_text_rich_texts action_text_rich_texts_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12051,7 +12078,7 @@ ALTER TABLE ONLY public.action_text_rich_texts
 
 
 --
--- TOC entry 5342 (class 2606 OID 186666)
+-- TOC entry 5341 (class 2606 OID 192299)
 -- Name: active_storage_attachments active_storage_attachments_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12060,7 +12087,7 @@ ALTER TABLE ONLY public.active_storage_attachments
 
 
 --
--- TOC entry 5339 (class 2606 OID 186656)
+-- TOC entry 5345 (class 2606 OID 192301)
 -- Name: active_storage_blobs active_storage_blobs_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12069,7 +12096,7 @@ ALTER TABLE ONLY public.active_storage_blobs
 
 
 --
--- TOC entry 5346 (class 2606 OID 186682)
+-- TOC entry 5348 (class 2606 OID 192303)
 -- Name: active_storage_variant_records active_storage_variant_records_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12078,7 +12105,7 @@ ALTER TABLE ONLY public.active_storage_variant_records
 
 
 --
--- TOC entry 5337 (class 2606 OID 186647)
+-- TOC entry 5351 (class 2606 OID 192305)
 -- Name: ar_internal_metadata ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12087,7 +12114,7 @@ ALTER TABLE ONLY public.ar_internal_metadata
 
 
 --
--- TOC entry 5361 (class 2606 OID 186729)
+-- TOC entry 5353 (class 2606 OID 192307)
 -- Name: friendly_id_slugs friendly_id_slugs_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12096,7 +12123,7 @@ ALTER TABLE ONLY public.friendly_id_slugs
 
 
 --
--- TOC entry 5335 (class 2606 OID 186640)
+-- TOC entry 5359 (class 2606 OID 192309)
 -- Name: schema_migrations schema_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12105,7 +12132,7 @@ ALTER TABLE ONLY public.schema_migrations
 
 
 --
--- TOC entry 5728 (class 2606 OID 187868)
+-- TOC entry 5363 (class 2606 OID 192311)
 -- Name: solidus_stripe_customers solidus_stripe_customers_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12114,7 +12141,7 @@ ALTER TABLE ONLY public.solidus_stripe_customers
 
 
 --
--- TOC entry 5720 (class 2606 OID 187831)
+-- TOC entry 5367 (class 2606 OID 192313)
 -- Name: solidus_stripe_payment_intents solidus_stripe_payment_intents_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12123,7 +12150,7 @@ ALTER TABLE ONLY public.solidus_stripe_payment_intents
 
 
 --
--- TOC entry 5716 (class 2606 OID 187822)
+-- TOC entry 5369 (class 2606 OID 192315)
 -- Name: solidus_stripe_payment_sources solidus_stripe_payment_sources_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12132,7 +12159,7 @@ ALTER TABLE ONLY public.solidus_stripe_payment_sources
 
 
 --
--- TOC entry 5724 (class 2606 OID 187852)
+-- TOC entry 5373 (class 2606 OID 192317)
 -- Name: solidus_stripe_slug_entries solidus_stripe_slug_entries_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12141,7 +12168,7 @@ ALTER TABLE ONLY public.solidus_stripe_slug_entries
 
 
 --
--- TOC entry 5372 (class 2606 OID 186742)
+-- TOC entry 5380 (class 2606 OID 192319)
 -- Name: spree_addresses spree_addresses_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12150,7 +12177,7 @@ ALTER TABLE ONLY public.spree_addresses
 
 
 --
--- TOC entry 5376 (class 2606 OID 186756)
+-- TOC entry 5384 (class 2606 OID 192321)
 -- Name: spree_adjustment_reasons spree_adjustment_reasons_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12159,7 +12186,7 @@ ALTER TABLE ONLY public.spree_adjustment_reasons
 
 
 --
--- TOC entry 5384 (class 2606 OID 186770)
+-- TOC entry 5392 (class 2606 OID 192323)
 -- Name: spree_adjustments spree_adjustments_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12168,7 +12195,7 @@ ALTER TABLE ONLY public.spree_adjustments
 
 
 --
--- TOC entry 5388 (class 2606 OID 186785)
+-- TOC entry 5396 (class 2606 OID 192325)
 -- Name: spree_assets spree_assets_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12177,7 +12204,7 @@ ALTER TABLE ONLY public.spree_assets
 
 
 --
--- TOC entry 5392 (class 2606 OID 186796)
+-- TOC entry 5400 (class 2606 OID 192327)
 -- Name: spree_calculators spree_calculators_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12186,7 +12213,7 @@ ALTER TABLE ONLY public.spree_calculators
 
 
 --
--- TOC entry 5398 (class 2606 OID 186807)
+-- TOC entry 5406 (class 2606 OID 192329)
 -- Name: spree_cartons spree_cartons_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12195,7 +12222,7 @@ ALTER TABLE ONLY public.spree_cartons
 
 
 --
--- TOC entry 5401 (class 2606 OID 186821)
+-- TOC entry 5409 (class 2606 OID 192331)
 -- Name: spree_countries spree_countries_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12204,7 +12231,7 @@ ALTER TABLE ONLY public.spree_countries
 
 
 --
--- TOC entry 5405 (class 2606 OID 186832)
+-- TOC entry 5413 (class 2606 OID 192333)
 -- Name: spree_credit_cards spree_credit_cards_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12213,7 +12240,7 @@ ALTER TABLE ONLY public.spree_credit_cards
 
 
 --
--- TOC entry 5407 (class 2606 OID 186843)
+-- TOC entry 5415 (class 2606 OID 192335)
 -- Name: spree_customer_returns spree_customer_returns_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12222,7 +12249,7 @@ ALTER TABLE ONLY public.spree_customer_returns
 
 
 --
--- TOC entry 5413 (class 2606 OID 186853)
+-- TOC entry 5421 (class 2606 OID 192337)
 -- Name: spree_inventory_units spree_inventory_units_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12231,7 +12258,7 @@ ALTER TABLE ONLY public.spree_inventory_units
 
 
 --
--- TOC entry 5417 (class 2606 OID 186866)
+-- TOC entry 5425 (class 2606 OID 192339)
 -- Name: spree_line_item_actions spree_line_item_actions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12240,7 +12267,7 @@ ALTER TABLE ONLY public.spree_line_item_actions
 
 
 --
--- TOC entry 5421 (class 2606 OID 186881)
+-- TOC entry 5429 (class 2606 OID 192341)
 -- Name: spree_line_items spree_line_items_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12249,7 +12276,7 @@ ALTER TABLE ONLY public.spree_line_items
 
 
 --
--- TOC entry 5424 (class 2606 OID 186892)
+-- TOC entry 5432 (class 2606 OID 192343)
 -- Name: spree_log_entries spree_log_entries_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12258,7 +12285,7 @@ ALTER TABLE ONLY public.spree_log_entries
 
 
 --
--- TOC entry 5426 (class 2606 OID 186900)
+-- TOC entry 5434 (class 2606 OID 192345)
 -- Name: spree_option_type_prototypes spree_option_type_prototypes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12267,7 +12294,7 @@ ALTER TABLE ONLY public.spree_option_type_prototypes
 
 
 --
--- TOC entry 5429 (class 2606 OID 186908)
+-- TOC entry 5437 (class 2606 OID 192347)
 -- Name: spree_option_types spree_option_types_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12276,7 +12303,7 @@ ALTER TABLE ONLY public.spree_option_types
 
 
 --
--- TOC entry 5433 (class 2606 OID 186918)
+-- TOC entry 5441 (class 2606 OID 192349)
 -- Name: spree_option_values spree_option_values_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12285,7 +12312,7 @@ ALTER TABLE ONLY public.spree_option_values
 
 
 --
--- TOC entry 5437 (class 2606 OID 186927)
+-- TOC entry 5445 (class 2606 OID 192351)
 -- Name: spree_option_values_variants spree_option_values_variants_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12294,7 +12321,7 @@ ALTER TABLE ONLY public.spree_option_values_variants
 
 
 --
--- TOC entry 5440 (class 2606 OID 186936)
+-- TOC entry 5448 (class 2606 OID 192353)
 -- Name: spree_order_mutexes spree_order_mutexes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12303,7 +12330,7 @@ ALTER TABLE ONLY public.spree_order_mutexes
 
 
 --
--- TOC entry 5451 (class 2606 OID 186958)
+-- TOC entry 5459 (class 2606 OID 192355)
 -- Name: spree_orders spree_orders_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12312,7 +12339,7 @@ ALTER TABLE ONLY public.spree_orders
 
 
 --
--- TOC entry 5455 (class 2606 OID 186974)
+-- TOC entry 5463 (class 2606 OID 192357)
 -- Name: spree_orders_promotions spree_orders_promotions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12321,7 +12348,7 @@ ALTER TABLE ONLY public.spree_orders_promotions
 
 
 --
--- TOC entry 5458 (class 2606 OID 186984)
+-- TOC entry 5466 (class 2606 OID 192359)
 -- Name: spree_payment_capture_events spree_payment_capture_events_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12330,7 +12357,7 @@ ALTER TABLE ONLY public.spree_payment_capture_events
 
 
 --
--- TOC entry 5461 (class 2606 OID 186996)
+-- TOC entry 5469 (class 2606 OID 192361)
 -- Name: spree_payment_methods spree_payment_methods_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12339,7 +12366,7 @@ ALTER TABLE ONLY public.spree_payment_methods
 
 
 --
--- TOC entry 5467 (class 2606 OID 187007)
+-- TOC entry 5475 (class 2606 OID 192363)
 -- Name: spree_payments spree_payments_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12348,7 +12375,7 @@ ALTER TABLE ONLY public.spree_payments
 
 
 --
--- TOC entry 5470 (class 2606 OID 187019)
+-- TOC entry 5478 (class 2606 OID 192365)
 -- Name: spree_preferences spree_preferences_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12357,7 +12384,7 @@ ALTER TABLE ONLY public.spree_preferences
 
 
 --
--- TOC entry 5474 (class 2606 OID 187030)
+-- TOC entry 5482 (class 2606 OID 192367)
 -- Name: spree_prices spree_prices_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12366,7 +12393,7 @@ ALTER TABLE ONLY public.spree_prices
 
 
 --
--- TOC entry 5479 (class 2606 OID 187039)
+-- TOC entry 5487 (class 2606 OID 192369)
 -- Name: spree_product_option_types spree_product_option_types_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12375,7 +12402,7 @@ ALTER TABLE ONLY public.spree_product_option_types
 
 
 --
--- TOC entry 5483 (class 2606 OID 187049)
+-- TOC entry 5491 (class 2606 OID 192371)
 -- Name: spree_product_promotion_rules spree_product_promotion_rules_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12384,7 +12411,7 @@ ALTER TABLE ONLY public.spree_product_promotion_rules
 
 
 --
--- TOC entry 5488 (class 2606 OID 187061)
+-- TOC entry 5496 (class 2606 OID 192373)
 -- Name: spree_product_properties spree_product_properties_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12393,7 +12420,7 @@ ALTER TABLE ONLY public.spree_product_properties
 
 
 --
--- TOC entry 5494 (class 2606 OID 187075)
+-- TOC entry 5502 (class 2606 OID 192375)
 -- Name: spree_products spree_products_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12402,7 +12429,7 @@ ALTER TABLE ONLY public.spree_products
 
 
 --
--- TOC entry 5499 (class 2606 OID 187086)
+-- TOC entry 5507 (class 2606 OID 192377)
 -- Name: spree_products_taxons spree_products_taxons_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12411,7 +12438,7 @@ ALTER TABLE ONLY public.spree_products_taxons
 
 
 --
--- TOC entry 5504 (class 2606 OID 187108)
+-- TOC entry 5512 (class 2606 OID 192379)
 -- Name: spree_promotion_actions spree_promotion_actions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12420,7 +12447,7 @@ ALTER TABLE ONLY public.spree_promotion_actions
 
 
 --
--- TOC entry 5506 (class 2606 OID 187120)
+-- TOC entry 5514 (class 2606 OID 192381)
 -- Name: spree_promotion_categories spree_promotion_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12429,7 +12456,7 @@ ALTER TABLE ONLY public.spree_promotion_categories
 
 
 --
--- TOC entry 5700 (class 2606 OID 187723)
+-- TOC entry 5517 (class 2606 OID 192383)
 -- Name: spree_promotion_code_batches spree_promotion_code_batches_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12438,7 +12465,7 @@ ALTER TABLE ONLY public.spree_promotion_code_batches
 
 
 --
--- TOC entry 5511 (class 2606 OID 187129)
+-- TOC entry 5522 (class 2606 OID 192385)
 -- Name: spree_promotion_codes spree_promotion_codes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12447,7 +12474,7 @@ ALTER TABLE ONLY public.spree_promotion_codes
 
 
 --
--- TOC entry 5515 (class 2606 OID 187138)
+-- TOC entry 5526 (class 2606 OID 192387)
 -- Name: spree_promotion_rule_taxons spree_promotion_rule_taxons_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12456,7 +12483,7 @@ ALTER TABLE ONLY public.spree_promotion_rule_taxons
 
 
 --
--- TOC entry 5518 (class 2606 OID 187149)
+-- TOC entry 5529 (class 2606 OID 192389)
 -- Name: spree_promotion_rules spree_promotion_rules_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12465,7 +12492,7 @@ ALTER TABLE ONLY public.spree_promotion_rules
 
 
 --
--- TOC entry 5708 (class 2606 OID 187767)
+-- TOC entry 5533 (class 2606 OID 192391)
 -- Name: spree_promotion_rules_stores spree_promotion_rules_stores_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12474,7 +12501,7 @@ ALTER TABLE ONLY public.spree_promotion_rules_stores
 
 
 --
--- TOC entry 5522 (class 2606 OID 187158)
+-- TOC entry 5537 (class 2606 OID 192393)
 -- Name: spree_promotion_rules_users spree_promotion_rules_users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12483,7 +12510,7 @@ ALTER TABLE ONLY public.spree_promotion_rules_users
 
 
 --
--- TOC entry 5530 (class 2606 OID 187172)
+-- TOC entry 5545 (class 2606 OID 192395)
 -- Name: spree_promotions spree_promotions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12492,7 +12519,7 @@ ALTER TABLE ONLY public.spree_promotions
 
 
 --
--- TOC entry 5532 (class 2606 OID 187188)
+-- TOC entry 5547 (class 2606 OID 192397)
 -- Name: spree_properties spree_properties_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12501,7 +12528,7 @@ ALTER TABLE ONLY public.spree_properties
 
 
 --
--- TOC entry 5534 (class 2606 OID 187195)
+-- TOC entry 5549 (class 2606 OID 192399)
 -- Name: spree_property_prototypes spree_property_prototypes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12510,7 +12537,7 @@ ALTER TABLE ONLY public.spree_property_prototypes
 
 
 --
--- TOC entry 5538 (class 2606 OID 187202)
+-- TOC entry 5553 (class 2606 OID 192401)
 -- Name: spree_prototype_taxons spree_prototype_taxons_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12519,7 +12546,7 @@ ALTER TABLE ONLY public.spree_prototype_taxons
 
 
 --
--- TOC entry 5540 (class 2606 OID 187213)
+-- TOC entry 5555 (class 2606 OID 192403)
 -- Name: spree_prototypes spree_prototypes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12528,7 +12555,7 @@ ALTER TABLE ONLY public.spree_prototypes
 
 
 --
--- TOC entry 5542 (class 2606 OID 187224)
+-- TOC entry 5557 (class 2606 OID 192405)
 -- Name: spree_refund_reasons spree_refund_reasons_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12537,7 +12564,7 @@ ALTER TABLE ONLY public.spree_refund_reasons
 
 
 --
--- TOC entry 5547 (class 2606 OID 187234)
+-- TOC entry 5562 (class 2606 OID 192407)
 -- Name: spree_refunds spree_refunds_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12546,7 +12573,7 @@ ALTER TABLE ONLY public.spree_refunds
 
 
 --
--- TOC entry 5549 (class 2606 OID 187247)
+-- TOC entry 5564 (class 2606 OID 192409)
 -- Name: spree_reimbursement_credits spree_reimbursement_credits_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12555,7 +12582,7 @@ ALTER TABLE ONLY public.spree_reimbursement_credits
 
 
 --
--- TOC entry 5552 (class 2606 OID 187258)
+-- TOC entry 5567 (class 2606 OID 192411)
 -- Name: spree_reimbursement_types spree_reimbursement_types_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12564,7 +12591,7 @@ ALTER TABLE ONLY public.spree_reimbursement_types
 
 
 --
--- TOC entry 5556 (class 2606 OID 187268)
+-- TOC entry 5571 (class 2606 OID 192413)
 -- Name: spree_reimbursements spree_reimbursements_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12573,7 +12600,7 @@ ALTER TABLE ONLY public.spree_reimbursements
 
 
 --
--- TOC entry 5559 (class 2606 OID 187279)
+-- TOC entry 5574 (class 2606 OID 192415)
 -- Name: spree_return_authorizations spree_return_authorizations_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12582,7 +12609,7 @@ ALTER TABLE ONLY public.spree_return_authorizations
 
 
 --
--- TOC entry 5563 (class 2606 OID 187293)
+-- TOC entry 5578 (class 2606 OID 192417)
 -- Name: spree_return_items spree_return_items_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12591,7 +12618,7 @@ ALTER TABLE ONLY public.spree_return_items
 
 
 --
--- TOC entry 5565 (class 2606 OID 187306)
+-- TOC entry 5580 (class 2606 OID 192419)
 -- Name: spree_return_reasons spree_return_reasons_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12600,7 +12627,7 @@ ALTER TABLE ONLY public.spree_return_reasons
 
 
 --
--- TOC entry 5568 (class 2606 OID 187315)
+-- TOC entry 5583 (class 2606 OID 192421)
 -- Name: spree_roles spree_roles_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12609,7 +12636,7 @@ ALTER TABLE ONLY public.spree_roles
 
 
 --
--- TOC entry 5573 (class 2606 OID 187322)
+-- TOC entry 5588 (class 2606 OID 192423)
 -- Name: spree_roles_users spree_roles_users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12618,7 +12645,7 @@ ALTER TABLE ONLY public.spree_roles_users
 
 
 --
--- TOC entry 5578 (class 2606 OID 187338)
+-- TOC entry 5593 (class 2606 OID 192425)
 -- Name: spree_shipments spree_shipments_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12627,7 +12654,7 @@ ALTER TABLE ONLY public.spree_shipments
 
 
 --
--- TOC entry 5580 (class 2606 OID 187351)
+-- TOC entry 5595 (class 2606 OID 192427)
 -- Name: spree_shipping_categories spree_shipping_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12636,7 +12663,7 @@ ALTER TABLE ONLY public.spree_shipping_categories
 
 
 --
--- TOC entry 5583 (class 2606 OID 187358)
+-- TOC entry 5598 (class 2606 OID 192429)
 -- Name: spree_shipping_method_categories spree_shipping_method_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12645,7 +12672,7 @@ ALTER TABLE ONLY public.spree_shipping_method_categories
 
 
 --
--- TOC entry 5587 (class 2606 OID 187367)
+-- TOC entry 5602 (class 2606 OID 192431)
 -- Name: spree_shipping_method_stock_locations spree_shipping_method_stock_locations_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12654,7 +12681,7 @@ ALTER TABLE ONLY public.spree_shipping_method_stock_locations
 
 
 --
--- TOC entry 5590 (class 2606 OID 187376)
+-- TOC entry 5605 (class 2606 OID 192433)
 -- Name: spree_shipping_method_zones spree_shipping_method_zones_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12663,7 +12690,7 @@ ALTER TABLE ONLY public.spree_shipping_method_zones
 
 
 --
--- TOC entry 5593 (class 2606 OID 187386)
+-- TOC entry 5608 (class 2606 OID 192435)
 -- Name: spree_shipping_methods spree_shipping_methods_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12672,7 +12699,7 @@ ALTER TABLE ONLY public.spree_shipping_methods
 
 
 --
--- TOC entry 5597 (class 2606 OID 187395)
+-- TOC entry 5612 (class 2606 OID 192437)
 -- Name: spree_shipping_rate_taxes spree_shipping_rate_taxes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12681,7 +12708,7 @@ ALTER TABLE ONLY public.spree_shipping_rate_taxes
 
 
 --
--- TOC entry 5600 (class 2606 OID 187406)
+-- TOC entry 5615 (class 2606 OID 192439)
 -- Name: spree_shipping_rates spree_shipping_rates_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12690,7 +12717,7 @@ ALTER TABLE ONLY public.spree_shipping_rates
 
 
 --
--- TOC entry 5604 (class 2606 OID 187416)
+-- TOC entry 5619 (class 2606 OID 192441)
 -- Name: spree_state_changes spree_state_changes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12699,7 +12726,7 @@ ALTER TABLE ONLY public.spree_state_changes
 
 
 --
--- TOC entry 5607 (class 2606 OID 187427)
+-- TOC entry 5622 (class 2606 OID 192443)
 -- Name: spree_states spree_states_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12708,7 +12735,7 @@ ALTER TABLE ONLY public.spree_states
 
 
 --
--- TOC entry 5612 (class 2606 OID 187437)
+-- TOC entry 5627 (class 2606 OID 192445)
 -- Name: spree_stock_items spree_stock_items_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12717,7 +12744,7 @@ ALTER TABLE ONLY public.spree_stock_items
 
 
 --
--- TOC entry 5617 (class 2606 OID 187458)
+-- TOC entry 5632 (class 2606 OID 192447)
 -- Name: spree_stock_locations spree_stock_locations_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12726,7 +12753,7 @@ ALTER TABLE ONLY public.spree_stock_locations
 
 
 --
--- TOC entry 5620 (class 2606 OID 187470)
+-- TOC entry 5635 (class 2606 OID 192449)
 -- Name: spree_stock_movements spree_stock_movements_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12735,7 +12762,7 @@ ALTER TABLE ONLY public.spree_stock_movements
 
 
 --
--- TOC entry 5622 (class 2606 OID 187480)
+-- TOC entry 5637 (class 2606 OID 192451)
 -- Name: spree_store_credit_categories spree_store_credit_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12744,7 +12771,7 @@ ALTER TABLE ONLY public.spree_store_credit_categories
 
 
 --
--- TOC entry 5626 (class 2606 OID 187490)
+-- TOC entry 5641 (class 2606 OID 192453)
 -- Name: spree_store_credit_events spree_store_credit_events_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12753,7 +12780,7 @@ ALTER TABLE ONLY public.spree_store_credit_events
 
 
 --
--- TOC entry 5714 (class 2606 OID 187793)
+-- TOC entry 5643 (class 2606 OID 192455)
 -- Name: spree_store_credit_reasons spree_store_credit_reasons_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12762,7 +12789,7 @@ ALTER TABLE ONLY public.spree_store_credit_reasons
 
 
 --
--- TOC entry 5629 (class 2606 OID 187501)
+-- TOC entry 5646 (class 2606 OID 192457)
 -- Name: spree_store_credit_types spree_store_credit_types_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12771,7 +12798,7 @@ ALTER TABLE ONLY public.spree_store_credit_types
 
 
 --
--- TOC entry 5634 (class 2606 OID 187523)
+-- TOC entry 5651 (class 2606 OID 192459)
 -- Name: spree_store_credits spree_store_credits_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12780,7 +12807,7 @@ ALTER TABLE ONLY public.spree_store_credits
 
 
 --
--- TOC entry 5638 (class 2606 OID 187533)
+-- TOC entry 5655 (class 2606 OID 192461)
 -- Name: spree_store_payment_methods spree_store_payment_methods_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12789,7 +12816,7 @@ ALTER TABLE ONLY public.spree_store_payment_methods
 
 
 --
--- TOC entry 5712 (class 2606 OID 187776)
+-- TOC entry 5659 (class 2606 OID 192463)
 -- Name: spree_store_shipping_methods spree_store_shipping_methods_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12798,7 +12825,7 @@ ALTER TABLE ONLY public.spree_store_shipping_methods
 
 
 --
--- TOC entry 5642 (class 2606 OID 187545)
+-- TOC entry 5663 (class 2606 OID 192465)
 -- Name: spree_stores spree_stores_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12807,7 +12834,7 @@ ALTER TABLE ONLY public.spree_stores
 
 
 --
--- TOC entry 5644 (class 2606 OID 187557)
+-- TOC entry 5665 (class 2606 OID 192467)
 -- Name: spree_tax_categories spree_tax_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12816,7 +12843,7 @@ ALTER TABLE ONLY public.spree_tax_categories
 
 
 --
--- TOC entry 5704 (class 2606 OID 187746)
+-- TOC entry 5669 (class 2606 OID 192469)
 -- Name: spree_tax_rate_tax_categories spree_tax_rate_tax_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12825,7 +12852,7 @@ ALTER TABLE ONLY public.spree_tax_rate_tax_categories
 
 
 --
--- TOC entry 5648 (class 2606 OID 187568)
+-- TOC entry 5673 (class 2606 OID 192471)
 -- Name: spree_tax_rates spree_tax_rates_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12834,7 +12861,7 @@ ALTER TABLE ONLY public.spree_tax_rates
 
 
 --
--- TOC entry 5651 (class 2606 OID 187581)
+-- TOC entry 5676 (class 2606 OID 192473)
 -- Name: spree_taxonomies spree_taxonomies_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12843,7 +12870,7 @@ ALTER TABLE ONLY public.spree_taxonomies
 
 
 --
--- TOC entry 5658 (class 2606 OID 187592)
+-- TOC entry 5683 (class 2606 OID 192475)
 -- Name: spree_taxons spree_taxons_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12852,7 +12879,7 @@ ALTER TABLE ONLY public.spree_taxons
 
 
 --
--- TOC entry 5661 (class 2606 OID 187605)
+-- TOC entry 5686 (class 2606 OID 192477)
 -- Name: spree_unit_cancels spree_unit_cancels_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12861,7 +12888,7 @@ ALTER TABLE ONLY public.spree_unit_cancels
 
 
 --
--- TOC entry 5666 (class 2606 OID 187615)
+-- TOC entry 5691 (class 2606 OID 192479)
 -- Name: spree_user_addresses spree_user_addresses_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12870,7 +12897,7 @@ ALTER TABLE ONLY public.spree_user_addresses
 
 
 --
--- TOC entry 5669 (class 2606 OID 187625)
+-- TOC entry 5694 (class 2606 OID 192481)
 -- Name: spree_user_stock_locations spree_user_stock_locations_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12879,7 +12906,7 @@ ALTER TABLE ONLY public.spree_user_stock_locations
 
 
 --
--- TOC entry 5359 (class 2606 OID 186720)
+-- TOC entry 5700 (class 2606 OID 192483)
 -- Name: spree_users spree_users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12888,7 +12915,7 @@ ALTER TABLE ONLY public.spree_users
 
 
 --
--- TOC entry 5672 (class 2606 OID 187633)
+-- TOC entry 5703 (class 2606 OID 192485)
 -- Name: spree_variant_property_rule_conditions spree_variant_property_rule_conditions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12897,7 +12924,7 @@ ALTER TABLE ONLY public.spree_variant_property_rule_conditions
 
 
 --
--- TOC entry 5676 (class 2606 OID 187644)
+-- TOC entry 5707 (class 2606 OID 192487)
 -- Name: spree_variant_property_rule_values spree_variant_property_rule_values_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12906,7 +12933,7 @@ ALTER TABLE ONLY public.spree_variant_property_rule_values
 
 
 --
--- TOC entry 5679 (class 2606 OID 187653)
+-- TOC entry 5710 (class 2606 OID 192489)
 -- Name: spree_variant_property_rules spree_variant_property_rules_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12915,7 +12942,7 @@ ALTER TABLE ONLY public.spree_variant_property_rules
 
 
 --
--- TOC entry 5687 (class 2606 OID 187667)
+-- TOC entry 5718 (class 2606 OID 192491)
 -- Name: spree_variants spree_variants_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12924,7 +12951,7 @@ ALTER TABLE ONLY public.spree_variants
 
 
 --
--- TOC entry 5697 (class 2606 OID 187704)
+-- TOC entry 5722 (class 2606 OID 192493)
 -- Name: spree_wallet_payment_sources spree_wallet_payment_sources_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12933,7 +12960,7 @@ ALTER TABLE ONLY public.spree_wallet_payment_sources
 
 
 --
--- TOC entry 5691 (class 2606 OID 187681)
+-- TOC entry 5726 (class 2606 OID 192495)
 -- Name: spree_zone_members spree_zone_members_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12942,7 +12969,7 @@ ALTER TABLE ONLY public.spree_zone_members
 
 
 --
--- TOC entry 5693 (class 2606 OID 187694)
+-- TOC entry 5728 (class 2606 OID 192497)
 -- Name: spree_zones spree_zones_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -12951,7 +12978,7 @@ ALTER TABLE ONLY public.spree_zones
 
 
 --
--- TOC entry 5354 (class 1259 OID 187810)
+-- TOC entry 5695 (class 1259 OID 192498)
 -- Name: email_idx_unique; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -12959,7 +12986,7 @@ CREATE UNIQUE INDEX email_idx_unique ON public.spree_users USING btree (email);
 
 
 --
--- TOC entry 5350 (class 1259 OID 186699)
+-- TOC entry 5336 (class 1259 OID 192499)
 -- Name: index_action_mailbox_inbound_emails_uniqueness; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -12967,7 +12994,7 @@ CREATE UNIQUE INDEX index_action_mailbox_inbound_emails_uniqueness ON public.act
 
 
 --
--- TOC entry 5353 (class 1259 OID 186709)
+-- TOC entry 5339 (class 1259 OID 192500)
 -- Name: index_action_text_rich_texts_uniqueness; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -12975,7 +13002,7 @@ CREATE UNIQUE INDEX index_action_text_rich_texts_uniqueness ON public.action_tex
 
 
 --
--- TOC entry 5343 (class 1259 OID 186672)
+-- TOC entry 5342 (class 1259 OID 192501)
 -- Name: index_active_storage_attachments_on_blob_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -12983,7 +13010,7 @@ CREATE INDEX index_active_storage_attachments_on_blob_id ON public.active_storag
 
 
 --
--- TOC entry 5344 (class 1259 OID 186673)
+-- TOC entry 5343 (class 1259 OID 192502)
 -- Name: index_active_storage_attachments_uniqueness; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -12991,7 +13018,7 @@ CREATE UNIQUE INDEX index_active_storage_attachments_uniqueness ON public.active
 
 
 --
--- TOC entry 5340 (class 1259 OID 186657)
+-- TOC entry 5346 (class 1259 OID 192503)
 -- Name: index_active_storage_blobs_on_key; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -12999,7 +13026,7 @@ CREATE UNIQUE INDEX index_active_storage_blobs_on_key ON public.active_storage_b
 
 
 --
--- TOC entry 5347 (class 1259 OID 186688)
+-- TOC entry 5349 (class 1259 OID 192504)
 -- Name: index_active_storage_variant_records_uniqueness; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13007,7 +13034,7 @@ CREATE UNIQUE INDEX index_active_storage_variant_records_uniqueness ON public.ac
 
 
 --
--- TOC entry 5366 (class 1259 OID 186744)
+-- TOC entry 5374 (class 1259 OID 192505)
 -- Name: index_addresses_on_firstname; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13015,7 +13042,7 @@ CREATE INDEX index_addresses_on_firstname ON public.spree_addresses USING btree 
 
 
 --
--- TOC entry 5367 (class 1259 OID 186745)
+-- TOC entry 5375 (class 1259 OID 192506)
 -- Name: index_addresses_on_lastname; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13023,7 +13050,7 @@ CREATE INDEX index_addresses_on_lastname ON public.spree_addresses USING btree (
 
 
 --
--- TOC entry 5377 (class 1259 OID 186772)
+-- TOC entry 5385 (class 1259 OID 192507)
 -- Name: index_adjustments_on_order_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13031,7 +13058,7 @@ CREATE INDEX index_adjustments_on_order_id ON public.spree_adjustments USING btr
 
 
 --
--- TOC entry 5385 (class 1259 OID 186786)
+-- TOC entry 5393 (class 1259 OID 192508)
 -- Name: index_assets_on_viewable_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13039,7 +13066,7 @@ CREATE INDEX index_assets_on_viewable_id ON public.spree_assets USING btree (vie
 
 
 --
--- TOC entry 5386 (class 1259 OID 186787)
+-- TOC entry 5394 (class 1259 OID 192509)
 -- Name: index_assets_on_viewable_type_and_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13047,7 +13074,7 @@ CREATE INDEX index_assets_on_viewable_type_and_type ON public.spree_assets USING
 
 
 --
--- TOC entry 5362 (class 1259 OID 186731)
+-- TOC entry 5354 (class 1259 OID 192510)
 -- Name: index_friendly_id_slugs_on_slug_and_sluggable_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13055,7 +13082,7 @@ CREATE INDEX index_friendly_id_slugs_on_slug_and_sluggable_type ON public.friend
 
 
 --
--- TOC entry 5363 (class 1259 OID 186730)
+-- TOC entry 5355 (class 1259 OID 192511)
 -- Name: index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13063,7 +13090,7 @@ CREATE UNIQUE INDEX index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope
 
 
 --
--- TOC entry 5364 (class 1259 OID 186732)
+-- TOC entry 5356 (class 1259 OID 192512)
 -- Name: index_friendly_id_slugs_on_sluggable_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13071,7 +13098,7 @@ CREATE INDEX index_friendly_id_slugs_on_sluggable_id ON public.friendly_id_slugs
 
 
 --
--- TOC entry 5365 (class 1259 OID 186733)
+-- TOC entry 5357 (class 1259 OID 192513)
 -- Name: index_friendly_id_slugs_on_sluggable_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13079,7 +13106,7 @@ CREATE INDEX index_friendly_id_slugs_on_sluggable_type ON public.friendly_id_slu
 
 
 --
--- TOC entry 5408 (class 1259 OID 186857)
+-- TOC entry 5416 (class 1259 OID 192514)
 -- Name: index_inventory_units_on_shipment_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13087,7 +13114,7 @@ CREATE INDEX index_inventory_units_on_shipment_id ON public.spree_inventory_unit
 
 
 --
--- TOC entry 5409 (class 1259 OID 186858)
+-- TOC entry 5417 (class 1259 OID 192515)
 -- Name: index_inventory_units_on_variant_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13095,7 +13122,7 @@ CREATE INDEX index_inventory_units_on_variant_id ON public.spree_inventory_units
 
 
 --
--- TOC entry 5434 (class 1259 OID 187796)
+-- TOC entry 5442 (class 1259 OID 192516)
 -- Name: index_option_values_variants_on_variant_id_and_option_value_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13103,7 +13130,7 @@ CREATE UNIQUE INDEX index_option_values_variants_on_variant_id_and_option_value_
 
 
 --
--- TOC entry 5484 (class 1259 OID 187063)
+-- TOC entry 5492 (class 1259 OID 192517)
 -- Name: index_product_properties_on_product_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13111,7 +13138,7 @@ CREATE INDEX index_product_properties_on_product_id ON public.spree_product_prop
 
 
 --
--- TOC entry 5480 (class 1259 OID 187050)
+-- TOC entry 5488 (class 1259 OID 192518)
 -- Name: index_products_promotion_rules_on_product_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13119,7 +13146,7 @@ CREATE INDEX index_products_promotion_rules_on_product_id ON public.spree_produc
 
 
 --
--- TOC entry 5481 (class 1259 OID 187051)
+-- TOC entry 5489 (class 1259 OID 192519)
 -- Name: index_products_promotion_rules_on_promotion_rule_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13127,7 +13154,7 @@ CREATE INDEX index_products_promotion_rules_on_promotion_rule_id ON public.spree
 
 
 --
--- TOC entry 5519 (class 1259 OID 187159)
+-- TOC entry 5534 (class 1259 OID 192520)
 -- Name: index_promotion_rules_users_on_promotion_rule_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13135,7 +13162,7 @@ CREATE INDEX index_promotion_rules_users_on_promotion_rule_id ON public.spree_pr
 
 
 --
--- TOC entry 5520 (class 1259 OID 187160)
+-- TOC entry 5535 (class 1259 OID 192521)
 -- Name: index_promotion_rules_users_on_user_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13143,7 +13170,7 @@ CREATE INDEX index_promotion_rules_users_on_user_id ON public.spree_promotion_ru
 
 
 --
--- TOC entry 5543 (class 1259 OID 187236)
+-- TOC entry 5558 (class 1259 OID 192522)
 -- Name: index_refunds_on_refund_reason_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13151,7 +13178,7 @@ CREATE INDEX index_refunds_on_refund_reason_id ON public.spree_refunds USING btr
 
 
 --
--- TOC entry 5557 (class 1259 OID 187280)
+-- TOC entry 5572 (class 1259 OID 192523)
 -- Name: index_return_authorizations_on_return_authorization_reason_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13159,7 +13186,7 @@ CREATE INDEX index_return_authorizations_on_return_authorization_reason_id ON pu
 
 
 --
--- TOC entry 5560 (class 1259 OID 187294)
+-- TOC entry 5575 (class 1259 OID 192524)
 -- Name: index_return_items_on_customer_return_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13167,7 +13194,7 @@ CREATE INDEX index_return_items_on_customer_return_id ON public.spree_return_ite
 
 
 --
--- TOC entry 5574 (class 1259 OID 187340)
+-- TOC entry 5589 (class 1259 OID 192525)
 -- Name: index_shipments_on_number; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13175,7 +13202,7 @@ CREATE INDEX index_shipments_on_number ON public.spree_shipments USING btree (nu
 
 
 --
--- TOC entry 5725 (class 1259 OID 187874)
+-- TOC entry 5360 (class 1259 OID 192526)
 -- Name: index_solidus_stripe_customers_on_stripe_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13183,7 +13210,7 @@ CREATE INDEX index_solidus_stripe_customers_on_stripe_id ON public.solidus_strip
 
 
 --
--- TOC entry 5717 (class 1259 OID 187842)
+-- TOC entry 5364 (class 1259 OID 192527)
 -- Name: index_solidus_stripe_payment_intents_on_order_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13191,7 +13218,7 @@ CREATE INDEX index_solidus_stripe_payment_intents_on_order_id ON public.solidus_
 
 
 --
--- TOC entry 5718 (class 1259 OID 187843)
+-- TOC entry 5365 (class 1259 OID 192528)
 -- Name: index_solidus_stripe_payment_intents_on_payment_method_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13199,7 +13226,7 @@ CREATE INDEX index_solidus_stripe_payment_intents_on_payment_method_id ON public
 
 
 --
--- TOC entry 5721 (class 1259 OID 187858)
+-- TOC entry 5370 (class 1259 OID 192529)
 -- Name: index_solidus_stripe_slug_entries_on_payment_method_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13207,7 +13234,7 @@ CREATE INDEX index_solidus_stripe_slug_entries_on_payment_method_id ON public.so
 
 
 --
--- TOC entry 5722 (class 1259 OID 187859)
+-- TOC entry 5371 (class 1259 OID 192530)
 -- Name: index_solidus_stripe_slug_entries_on_slug; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13215,7 +13242,7 @@ CREATE UNIQUE INDEX index_solidus_stripe_slug_entries_on_slug ON public.solidus_
 
 
 --
--- TOC entry 5368 (class 1259 OID 186743)
+-- TOC entry 5376 (class 1259 OID 192531)
 -- Name: index_spree_addresses_on_country_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13223,7 +13250,7 @@ CREATE INDEX index_spree_addresses_on_country_id ON public.spree_addresses USING
 
 
 --
--- TOC entry 5369 (class 1259 OID 187795)
+-- TOC entry 5377 (class 1259 OID 192532)
 -- Name: index_spree_addresses_on_name; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13231,7 +13258,7 @@ CREATE INDEX index_spree_addresses_on_name ON public.spree_addresses USING btree
 
 
 --
--- TOC entry 5370 (class 1259 OID 186746)
+-- TOC entry 5378 (class 1259 OID 192533)
 -- Name: index_spree_addresses_on_state_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13239,7 +13266,7 @@ CREATE INDEX index_spree_addresses_on_state_id ON public.spree_addresses USING b
 
 
 --
--- TOC entry 5373 (class 1259 OID 186757)
+-- TOC entry 5381 (class 1259 OID 192534)
 -- Name: index_spree_adjustment_reasons_on_active; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13247,7 +13274,7 @@ CREATE INDEX index_spree_adjustment_reasons_on_active ON public.spree_adjustment
 
 
 --
--- TOC entry 5374 (class 1259 OID 186758)
+-- TOC entry 5382 (class 1259 OID 192535)
 -- Name: index_spree_adjustment_reasons_on_code; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13255,7 +13282,7 @@ CREATE INDEX index_spree_adjustment_reasons_on_code ON public.spree_adjustment_r
 
 
 --
--- TOC entry 5378 (class 1259 OID 186771)
+-- TOC entry 5386 (class 1259 OID 192536)
 -- Name: index_spree_adjustments_on_adjustable_id_and_adjustable_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13263,7 +13290,7 @@ CREATE INDEX index_spree_adjustments_on_adjustable_id_and_adjustable_type ON pub
 
 
 --
--- TOC entry 5379 (class 1259 OID 186773)
+-- TOC entry 5387 (class 1259 OID 192537)
 -- Name: index_spree_adjustments_on_eligible; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13271,7 +13298,7 @@ CREATE INDEX index_spree_adjustments_on_eligible ON public.spree_adjustments USI
 
 
 --
--- TOC entry 5380 (class 1259 OID 186774)
+-- TOC entry 5388 (class 1259 OID 192538)
 -- Name: index_spree_adjustments_on_order_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13279,7 +13306,7 @@ CREATE INDEX index_spree_adjustments_on_order_id ON public.spree_adjustments USI
 
 
 --
--- TOC entry 5381 (class 1259 OID 186775)
+-- TOC entry 5389 (class 1259 OID 192539)
 -- Name: index_spree_adjustments_on_promotion_code_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13287,7 +13314,7 @@ CREATE INDEX index_spree_adjustments_on_promotion_code_id ON public.spree_adjust
 
 
 --
--- TOC entry 5382 (class 1259 OID 186776)
+-- TOC entry 5390 (class 1259 OID 192540)
 -- Name: index_spree_adjustments_on_source_id_and_source_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13295,7 +13322,7 @@ CREATE INDEX index_spree_adjustments_on_source_id_and_source_type ON public.spre
 
 
 --
--- TOC entry 5389 (class 1259 OID 186797)
+-- TOC entry 5397 (class 1259 OID 192541)
 -- Name: index_spree_calculators_on_calculable_id_and_calculable_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13303,7 +13330,7 @@ CREATE INDEX index_spree_calculators_on_calculable_id_and_calculable_type ON pub
 
 
 --
--- TOC entry 5390 (class 1259 OID 186798)
+-- TOC entry 5398 (class 1259 OID 192542)
 -- Name: index_spree_calculators_on_id_and_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13311,7 +13338,7 @@ CREATE INDEX index_spree_calculators_on_id_and_type ON public.spree_calculators 
 
 
 --
--- TOC entry 5393 (class 1259 OID 186808)
+-- TOC entry 5401 (class 1259 OID 192543)
 -- Name: index_spree_cartons_on_external_number; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13319,7 +13346,7 @@ CREATE INDEX index_spree_cartons_on_external_number ON public.spree_cartons USIN
 
 
 --
--- TOC entry 5394 (class 1259 OID 186809)
+-- TOC entry 5402 (class 1259 OID 192544)
 -- Name: index_spree_cartons_on_imported_from_shipment_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13327,7 +13354,7 @@ CREATE UNIQUE INDEX index_spree_cartons_on_imported_from_shipment_id ON public.s
 
 
 --
--- TOC entry 5395 (class 1259 OID 186810)
+-- TOC entry 5403 (class 1259 OID 192545)
 -- Name: index_spree_cartons_on_number; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13335,7 +13362,7 @@ CREATE UNIQUE INDEX index_spree_cartons_on_number ON public.spree_cartons USING 
 
 
 --
--- TOC entry 5396 (class 1259 OID 186811)
+-- TOC entry 5404 (class 1259 OID 192546)
 -- Name: index_spree_cartons_on_stock_location_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13343,7 +13370,7 @@ CREATE INDEX index_spree_cartons_on_stock_location_id ON public.spree_cartons US
 
 
 --
--- TOC entry 5399 (class 1259 OID 186822)
+-- TOC entry 5407 (class 1259 OID 192547)
 -- Name: index_spree_countries_on_iso; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13351,7 +13378,7 @@ CREATE INDEX index_spree_countries_on_iso ON public.spree_countries USING btree 
 
 
 --
--- TOC entry 5402 (class 1259 OID 186833)
+-- TOC entry 5410 (class 1259 OID 192548)
 -- Name: index_spree_credit_cards_on_payment_method_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13359,7 +13386,7 @@ CREATE INDEX index_spree_credit_cards_on_payment_method_id ON public.spree_credi
 
 
 --
--- TOC entry 5403 (class 1259 OID 186834)
+-- TOC entry 5411 (class 1259 OID 192549)
 -- Name: index_spree_credit_cards_on_user_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13367,7 +13394,7 @@ CREATE INDEX index_spree_credit_cards_on_user_id ON public.spree_credit_cards US
 
 
 --
--- TOC entry 5410 (class 1259 OID 186854)
+-- TOC entry 5418 (class 1259 OID 192550)
 -- Name: index_spree_inventory_units_on_carton_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13375,7 +13402,7 @@ CREATE INDEX index_spree_inventory_units_on_carton_id ON public.spree_inventory_
 
 
 --
--- TOC entry 5411 (class 1259 OID 186855)
+-- TOC entry 5419 (class 1259 OID 192551)
 -- Name: index_spree_inventory_units_on_line_item_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13383,7 +13410,7 @@ CREATE INDEX index_spree_inventory_units_on_line_item_id ON public.spree_invento
 
 
 --
--- TOC entry 5414 (class 1259 OID 186867)
+-- TOC entry 5422 (class 1259 OID 192552)
 -- Name: index_spree_line_item_actions_on_action_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13391,7 +13418,7 @@ CREATE INDEX index_spree_line_item_actions_on_action_id ON public.spree_line_ite
 
 
 --
--- TOC entry 5415 (class 1259 OID 186868)
+-- TOC entry 5423 (class 1259 OID 192553)
 -- Name: index_spree_line_item_actions_on_line_item_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13399,7 +13426,7 @@ CREATE INDEX index_spree_line_item_actions_on_line_item_id ON public.spree_line_
 
 
 --
--- TOC entry 5418 (class 1259 OID 186882)
+-- TOC entry 5426 (class 1259 OID 192554)
 -- Name: index_spree_line_items_on_order_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13407,7 +13434,7 @@ CREATE INDEX index_spree_line_items_on_order_id ON public.spree_line_items USING
 
 
 --
--- TOC entry 5419 (class 1259 OID 186883)
+-- TOC entry 5427 (class 1259 OID 192555)
 -- Name: index_spree_line_items_on_variant_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13415,7 +13442,7 @@ CREATE INDEX index_spree_line_items_on_variant_id ON public.spree_line_items USI
 
 
 --
--- TOC entry 5422 (class 1259 OID 186893)
+-- TOC entry 5430 (class 1259 OID 192556)
 -- Name: index_spree_log_entries_on_source_id_and_source_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13423,7 +13450,7 @@ CREATE INDEX index_spree_log_entries_on_source_id_and_source_type ON public.spre
 
 
 --
--- TOC entry 5427 (class 1259 OID 186909)
+-- TOC entry 5435 (class 1259 OID 192557)
 -- Name: index_spree_option_types_on_position; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13431,7 +13458,7 @@ CREATE INDEX index_spree_option_types_on_position ON public.spree_option_types U
 
 
 --
--- TOC entry 5430 (class 1259 OID 186919)
+-- TOC entry 5438 (class 1259 OID 192558)
 -- Name: index_spree_option_values_on_option_type_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13439,7 +13466,7 @@ CREATE INDEX index_spree_option_values_on_option_type_id ON public.spree_option_
 
 
 --
--- TOC entry 5431 (class 1259 OID 186920)
+-- TOC entry 5439 (class 1259 OID 192559)
 -- Name: index_spree_option_values_on_position; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13447,7 +13474,7 @@ CREATE INDEX index_spree_option_values_on_position ON public.spree_option_values
 
 
 --
--- TOC entry 5435 (class 1259 OID 186929)
+-- TOC entry 5443 (class 1259 OID 192560)
 -- Name: index_spree_option_values_variants_on_variant_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13455,7 +13482,7 @@ CREATE INDEX index_spree_option_values_variants_on_variant_id ON public.spree_op
 
 
 --
--- TOC entry 5438 (class 1259 OID 186937)
+-- TOC entry 5446 (class 1259 OID 192561)
 -- Name: index_spree_order_mutexes_on_order_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13463,7 +13490,7 @@ CREATE UNIQUE INDEX index_spree_order_mutexes_on_order_id ON public.spree_order_
 
 
 --
--- TOC entry 5441 (class 1259 OID 186959)
+-- TOC entry 5449 (class 1259 OID 192562)
 -- Name: index_spree_orders_on_approver_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13471,7 +13498,7 @@ CREATE INDEX index_spree_orders_on_approver_id ON public.spree_orders USING btre
 
 
 --
--- TOC entry 5442 (class 1259 OID 186960)
+-- TOC entry 5450 (class 1259 OID 192563)
 -- Name: index_spree_orders_on_bill_address_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13479,7 +13506,7 @@ CREATE INDEX index_spree_orders_on_bill_address_id ON public.spree_orders USING 
 
 
 --
--- TOC entry 5443 (class 1259 OID 186961)
+-- TOC entry 5451 (class 1259 OID 192564)
 -- Name: index_spree_orders_on_completed_at; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13487,7 +13514,7 @@ CREATE INDEX index_spree_orders_on_completed_at ON public.spree_orders USING btr
 
 
 --
--- TOC entry 5444 (class 1259 OID 186962)
+-- TOC entry 5452 (class 1259 OID 192565)
 -- Name: index_spree_orders_on_created_by_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13495,7 +13522,7 @@ CREATE INDEX index_spree_orders_on_created_by_id ON public.spree_orders USING bt
 
 
 --
--- TOC entry 5445 (class 1259 OID 186963)
+-- TOC entry 5453 (class 1259 OID 192566)
 -- Name: index_spree_orders_on_guest_token; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13503,7 +13530,7 @@ CREATE INDEX index_spree_orders_on_guest_token ON public.spree_orders USING btre
 
 
 --
--- TOC entry 5446 (class 1259 OID 186964)
+-- TOC entry 5454 (class 1259 OID 192567)
 -- Name: index_spree_orders_on_number; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13511,7 +13538,7 @@ CREATE INDEX index_spree_orders_on_number ON public.spree_orders USING btree (nu
 
 
 --
--- TOC entry 5447 (class 1259 OID 186965)
+-- TOC entry 5455 (class 1259 OID 192568)
 -- Name: index_spree_orders_on_ship_address_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13519,7 +13546,7 @@ CREATE INDEX index_spree_orders_on_ship_address_id ON public.spree_orders USING 
 
 
 --
--- TOC entry 5448 (class 1259 OID 186967)
+-- TOC entry 5456 (class 1259 OID 192569)
 -- Name: index_spree_orders_on_user_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13527,7 +13554,7 @@ CREATE INDEX index_spree_orders_on_user_id ON public.spree_orders USING btree (u
 
 
 --
--- TOC entry 5449 (class 1259 OID 186966)
+-- TOC entry 5457 (class 1259 OID 192570)
 -- Name: index_spree_orders_on_user_id_and_created_by_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13535,7 +13562,7 @@ CREATE INDEX index_spree_orders_on_user_id_and_created_by_id ON public.spree_ord
 
 
 --
--- TOC entry 5452 (class 1259 OID 186975)
+-- TOC entry 5460 (class 1259 OID 192571)
 -- Name: index_spree_orders_promotions_on_order_id_and_promotion_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13543,7 +13570,7 @@ CREATE INDEX index_spree_orders_promotions_on_order_id_and_promotion_id ON publi
 
 
 --
--- TOC entry 5453 (class 1259 OID 186976)
+-- TOC entry 5461 (class 1259 OID 192572)
 -- Name: index_spree_orders_promotions_on_promotion_code_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13551,7 +13578,7 @@ CREATE INDEX index_spree_orders_promotions_on_promotion_code_id ON public.spree_
 
 
 --
--- TOC entry 5456 (class 1259 OID 186985)
+-- TOC entry 5464 (class 1259 OID 192573)
 -- Name: index_spree_payment_capture_events_on_payment_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13559,7 +13586,7 @@ CREATE INDEX index_spree_payment_capture_events_on_payment_id ON public.spree_pa
 
 
 --
--- TOC entry 5459 (class 1259 OID 186997)
+-- TOC entry 5467 (class 1259 OID 192574)
 -- Name: index_spree_payment_methods_on_id_and_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13567,7 +13594,7 @@ CREATE INDEX index_spree_payment_methods_on_id_and_type ON public.spree_payment_
 
 
 --
--- TOC entry 5462 (class 1259 OID 187737)
+-- TOC entry 5470 (class 1259 OID 192575)
 -- Name: index_spree_payments_on_number; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13575,7 +13602,7 @@ CREATE UNIQUE INDEX index_spree_payments_on_number ON public.spree_payments USIN
 
 
 --
--- TOC entry 5463 (class 1259 OID 187008)
+-- TOC entry 5471 (class 1259 OID 192576)
 -- Name: index_spree_payments_on_order_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13583,7 +13610,7 @@ CREATE INDEX index_spree_payments_on_order_id ON public.spree_payments USING btr
 
 
 --
--- TOC entry 5464 (class 1259 OID 187009)
+-- TOC entry 5472 (class 1259 OID 192577)
 -- Name: index_spree_payments_on_payment_method_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13591,7 +13618,7 @@ CREATE INDEX index_spree_payments_on_payment_method_id ON public.spree_payments 
 
 
 --
--- TOC entry 5465 (class 1259 OID 187010)
+-- TOC entry 5473 (class 1259 OID 192578)
 -- Name: index_spree_payments_on_source_id_and_source_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13599,7 +13626,7 @@ CREATE INDEX index_spree_payments_on_source_id_and_source_type ON public.spree_p
 
 
 --
--- TOC entry 5468 (class 1259 OID 187020)
+-- TOC entry 5476 (class 1259 OID 192579)
 -- Name: index_spree_preferences_on_key; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13607,7 +13634,7 @@ CREATE UNIQUE INDEX index_spree_preferences_on_key ON public.spree_preferences U
 
 
 --
--- TOC entry 5471 (class 1259 OID 187031)
+-- TOC entry 5479 (class 1259 OID 192580)
 -- Name: index_spree_prices_on_country_iso; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13615,7 +13642,7 @@ CREATE INDEX index_spree_prices_on_country_iso ON public.spree_prices USING btre
 
 
 --
--- TOC entry 5472 (class 1259 OID 187032)
+-- TOC entry 5480 (class 1259 OID 192581)
 -- Name: index_spree_prices_on_variant_id_and_currency; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13623,7 +13650,7 @@ CREATE INDEX index_spree_prices_on_variant_id_and_currency ON public.spree_price
 
 
 --
--- TOC entry 5475 (class 1259 OID 187040)
+-- TOC entry 5483 (class 1259 OID 192582)
 -- Name: index_spree_product_option_types_on_option_type_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13631,7 +13658,7 @@ CREATE INDEX index_spree_product_option_types_on_option_type_id ON public.spree_
 
 
 --
--- TOC entry 5476 (class 1259 OID 187041)
+-- TOC entry 5484 (class 1259 OID 192583)
 -- Name: index_spree_product_option_types_on_position; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13639,7 +13666,7 @@ CREATE INDEX index_spree_product_option_types_on_position ON public.spree_produc
 
 
 --
--- TOC entry 5477 (class 1259 OID 187042)
+-- TOC entry 5485 (class 1259 OID 192584)
 -- Name: index_spree_product_option_types_on_product_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13647,7 +13674,7 @@ CREATE INDEX index_spree_product_option_types_on_product_id ON public.spree_prod
 
 
 --
--- TOC entry 5485 (class 1259 OID 187062)
+-- TOC entry 5493 (class 1259 OID 192585)
 -- Name: index_spree_product_properties_on_position; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13655,7 +13682,7 @@ CREATE INDEX index_spree_product_properties_on_position ON public.spree_product_
 
 
 --
--- TOC entry 5486 (class 1259 OID 187064)
+-- TOC entry 5494 (class 1259 OID 192586)
 -- Name: index_spree_product_properties_on_property_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13663,7 +13690,7 @@ CREATE INDEX index_spree_product_properties_on_property_id ON public.spree_produ
 
 
 --
--- TOC entry 5489 (class 1259 OID 187076)
+-- TOC entry 5497 (class 1259 OID 192587)
 -- Name: index_spree_products_on_available_on; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13671,7 +13698,7 @@ CREATE INDEX index_spree_products_on_available_on ON public.spree_products USING
 
 
 --
--- TOC entry 5490 (class 1259 OID 187077)
+-- TOC entry 5498 (class 1259 OID 192588)
 -- Name: index_spree_products_on_deleted_at; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13679,7 +13706,7 @@ CREATE INDEX index_spree_products_on_deleted_at ON public.spree_products USING b
 
 
 --
--- TOC entry 5491 (class 1259 OID 187078)
+-- TOC entry 5499 (class 1259 OID 192589)
 -- Name: index_spree_products_on_name; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13687,7 +13714,7 @@ CREATE INDEX index_spree_products_on_name ON public.spree_products USING btree (
 
 
 --
--- TOC entry 5492 (class 1259 OID 187079)
+-- TOC entry 5500 (class 1259 OID 192590)
 -- Name: index_spree_products_on_slug; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13695,7 +13722,7 @@ CREATE UNIQUE INDEX index_spree_products_on_slug ON public.spree_products USING 
 
 
 --
--- TOC entry 5495 (class 1259 OID 187087)
+-- TOC entry 5503 (class 1259 OID 192591)
 -- Name: index_spree_products_taxons_on_position; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13703,7 +13730,7 @@ CREATE INDEX index_spree_products_taxons_on_position ON public.spree_products_ta
 
 
 --
--- TOC entry 5496 (class 1259 OID 187088)
+-- TOC entry 5504 (class 1259 OID 192592)
 -- Name: index_spree_products_taxons_on_product_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13711,7 +13738,7 @@ CREATE INDEX index_spree_products_taxons_on_product_id ON public.spree_products_
 
 
 --
--- TOC entry 5497 (class 1259 OID 187089)
+-- TOC entry 5505 (class 1259 OID 192593)
 -- Name: index_spree_products_taxons_on_taxon_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13719,7 +13746,7 @@ CREATE INDEX index_spree_products_taxons_on_taxon_id ON public.spree_products_ta
 
 
 --
--- TOC entry 5500 (class 1259 OID 187109)
+-- TOC entry 5508 (class 1259 OID 192594)
 -- Name: index_spree_promotion_actions_on_deleted_at; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13727,7 +13754,7 @@ CREATE INDEX index_spree_promotion_actions_on_deleted_at ON public.spree_promoti
 
 
 --
--- TOC entry 5501 (class 1259 OID 187110)
+-- TOC entry 5509 (class 1259 OID 192595)
 -- Name: index_spree_promotion_actions_on_id_and_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13735,7 +13762,7 @@ CREATE INDEX index_spree_promotion_actions_on_id_and_type ON public.spree_promot
 
 
 --
--- TOC entry 5502 (class 1259 OID 187111)
+-- TOC entry 5510 (class 1259 OID 192596)
 -- Name: index_spree_promotion_actions_on_promotion_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13743,7 +13770,7 @@ CREATE INDEX index_spree_promotion_actions_on_promotion_id ON public.spree_promo
 
 
 --
--- TOC entry 5698 (class 1259 OID 187724)
+-- TOC entry 5515 (class 1259 OID 192597)
 -- Name: index_spree_promotion_code_batches_on_promotion_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13751,7 +13778,7 @@ CREATE INDEX index_spree_promotion_code_batches_on_promotion_id ON public.spree_
 
 
 --
--- TOC entry 5507 (class 1259 OID 187735)
+-- TOC entry 5518 (class 1259 OID 192598)
 -- Name: index_spree_promotion_codes_on_promotion_code_batch_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13759,7 +13786,7 @@ CREATE INDEX index_spree_promotion_codes_on_promotion_code_batch_id ON public.sp
 
 
 --
--- TOC entry 5508 (class 1259 OID 187130)
+-- TOC entry 5519 (class 1259 OID 192599)
 -- Name: index_spree_promotion_codes_on_promotion_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13767,7 +13794,7 @@ CREATE INDEX index_spree_promotion_codes_on_promotion_id ON public.spree_promoti
 
 
 --
--- TOC entry 5509 (class 1259 OID 187131)
+-- TOC entry 5520 (class 1259 OID 192600)
 -- Name: index_spree_promotion_codes_on_value; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13775,7 +13802,7 @@ CREATE UNIQUE INDEX index_spree_promotion_codes_on_value ON public.spree_promoti
 
 
 --
--- TOC entry 5512 (class 1259 OID 187139)
+-- TOC entry 5523 (class 1259 OID 192601)
 -- Name: index_spree_promotion_rule_taxons_on_promotion_rule_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13783,7 +13810,7 @@ CREATE INDEX index_spree_promotion_rule_taxons_on_promotion_rule_id ON public.sp
 
 
 --
--- TOC entry 5513 (class 1259 OID 187140)
+-- TOC entry 5524 (class 1259 OID 192602)
 -- Name: index_spree_promotion_rule_taxons_on_taxon_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13791,7 +13818,7 @@ CREATE INDEX index_spree_promotion_rule_taxons_on_taxon_id ON public.spree_promo
 
 
 --
--- TOC entry 5516 (class 1259 OID 187151)
+-- TOC entry 5527 (class 1259 OID 192603)
 -- Name: index_spree_promotion_rules_on_promotion_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13799,7 +13826,7 @@ CREATE INDEX index_spree_promotion_rules_on_promotion_id ON public.spree_promoti
 
 
 --
--- TOC entry 5705 (class 1259 OID 187769)
+-- TOC entry 5530 (class 1259 OID 192604)
 -- Name: index_spree_promotion_rules_stores_on_promotion_rule_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13807,7 +13834,7 @@ CREATE INDEX index_spree_promotion_rules_stores_on_promotion_rule_id ON public.s
 
 
 --
--- TOC entry 5706 (class 1259 OID 187768)
+-- TOC entry 5531 (class 1259 OID 192605)
 -- Name: index_spree_promotion_rules_stores_on_store_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13815,7 +13842,7 @@ CREATE INDEX index_spree_promotion_rules_stores_on_store_id ON public.spree_prom
 
 
 --
--- TOC entry 5523 (class 1259 OID 187173)
+-- TOC entry 5538 (class 1259 OID 192606)
 -- Name: index_spree_promotions_on_advertise; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13823,7 +13850,7 @@ CREATE INDEX index_spree_promotions_on_advertise ON public.spree_promotions USIN
 
 
 --
--- TOC entry 5524 (class 1259 OID 187174)
+-- TOC entry 5539 (class 1259 OID 192607)
 -- Name: index_spree_promotions_on_apply_automatically; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13831,7 +13858,7 @@ CREATE INDEX index_spree_promotions_on_apply_automatically ON public.spree_promo
 
 
 --
--- TOC entry 5525 (class 1259 OID 187176)
+-- TOC entry 5540 (class 1259 OID 192608)
 -- Name: index_spree_promotions_on_expires_at; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13839,7 +13866,7 @@ CREATE INDEX index_spree_promotions_on_expires_at ON public.spree_promotions USI
 
 
 --
--- TOC entry 5526 (class 1259 OID 187177)
+-- TOC entry 5541 (class 1259 OID 192609)
 -- Name: index_spree_promotions_on_id_and_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13847,7 +13874,7 @@ CREATE INDEX index_spree_promotions_on_id_and_type ON public.spree_promotions US
 
 
 --
--- TOC entry 5527 (class 1259 OID 187178)
+-- TOC entry 5542 (class 1259 OID 192610)
 -- Name: index_spree_promotions_on_promotion_category_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13855,7 +13882,7 @@ CREATE INDEX index_spree_promotions_on_promotion_category_id ON public.spree_pro
 
 
 --
--- TOC entry 5528 (class 1259 OID 187179)
+-- TOC entry 5543 (class 1259 OID 192611)
 -- Name: index_spree_promotions_on_starts_at; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13863,7 +13890,7 @@ CREATE INDEX index_spree_promotions_on_starts_at ON public.spree_promotions USIN
 
 
 --
--- TOC entry 5535 (class 1259 OID 187203)
+-- TOC entry 5550 (class 1259 OID 192612)
 -- Name: index_spree_prototype_taxons_on_prototype_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13871,7 +13898,7 @@ CREATE INDEX index_spree_prototype_taxons_on_prototype_id ON public.spree_protot
 
 
 --
--- TOC entry 5536 (class 1259 OID 187204)
+-- TOC entry 5551 (class 1259 OID 192613)
 -- Name: index_spree_prototype_taxons_on_taxon_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13879,7 +13906,7 @@ CREATE INDEX index_spree_prototype_taxons_on_taxon_id ON public.spree_prototype_
 
 
 --
--- TOC entry 5544 (class 1259 OID 187235)
+-- TOC entry 5559 (class 1259 OID 192614)
 -- Name: index_spree_refunds_on_payment_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13887,7 +13914,7 @@ CREATE INDEX index_spree_refunds_on_payment_id ON public.spree_refunds USING btr
 
 
 --
--- TOC entry 5545 (class 1259 OID 187237)
+-- TOC entry 5560 (class 1259 OID 192615)
 -- Name: index_spree_refunds_on_reimbursement_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13895,7 +13922,7 @@ CREATE INDEX index_spree_refunds_on_reimbursement_id ON public.spree_refunds USI
 
 
 --
--- TOC entry 5550 (class 1259 OID 187259)
+-- TOC entry 5565 (class 1259 OID 192616)
 -- Name: index_spree_reimbursement_types_on_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13903,7 +13930,7 @@ CREATE INDEX index_spree_reimbursement_types_on_type ON public.spree_reimburseme
 
 
 --
--- TOC entry 5553 (class 1259 OID 187269)
+-- TOC entry 5568 (class 1259 OID 192617)
 -- Name: index_spree_reimbursements_on_customer_return_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13911,7 +13938,7 @@ CREATE INDEX index_spree_reimbursements_on_customer_return_id ON public.spree_re
 
 
 --
--- TOC entry 5554 (class 1259 OID 187270)
+-- TOC entry 5569 (class 1259 OID 192618)
 -- Name: index_spree_reimbursements_on_order_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13919,7 +13946,7 @@ CREATE INDEX index_spree_reimbursements_on_order_id ON public.spree_reimbursemen
 
 
 --
--- TOC entry 5561 (class 1259 OID 187295)
+-- TOC entry 5576 (class 1259 OID 192619)
 -- Name: index_spree_return_items_on_exchange_inventory_unit_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13927,7 +13954,7 @@ CREATE INDEX index_spree_return_items_on_exchange_inventory_unit_id ON public.sp
 
 
 --
--- TOC entry 5566 (class 1259 OID 187759)
+-- TOC entry 5581 (class 1259 OID 192620)
 -- Name: index_spree_roles_on_name; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13935,7 +13962,7 @@ CREATE UNIQUE INDEX index_spree_roles_on_name ON public.spree_roles USING btree 
 
 
 --
--- TOC entry 5569 (class 1259 OID 187323)
+-- TOC entry 5584 (class 1259 OID 192621)
 -- Name: index_spree_roles_users_on_role_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13943,7 +13970,7 @@ CREATE INDEX index_spree_roles_users_on_role_id ON public.spree_roles_users USIN
 
 
 --
--- TOC entry 5570 (class 1259 OID 187324)
+-- TOC entry 5585 (class 1259 OID 192622)
 -- Name: index_spree_roles_users_on_user_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13951,7 +13978,7 @@ CREATE INDEX index_spree_roles_users_on_user_id ON public.spree_roles_users USIN
 
 
 --
--- TOC entry 5571 (class 1259 OID 187760)
+-- TOC entry 5586 (class 1259 OID 192623)
 -- Name: index_spree_roles_users_on_user_id_and_role_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13959,7 +13986,7 @@ CREATE UNIQUE INDEX index_spree_roles_users_on_user_id_and_role_id ON public.spr
 
 
 --
--- TOC entry 5575 (class 1259 OID 187341)
+-- TOC entry 5590 (class 1259 OID 192624)
 -- Name: index_spree_shipments_on_order_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13967,7 +13994,7 @@ CREATE INDEX index_spree_shipments_on_order_id ON public.spree_shipments USING b
 
 
 --
--- TOC entry 5576 (class 1259 OID 187342)
+-- TOC entry 5591 (class 1259 OID 192625)
 -- Name: index_spree_shipments_on_stock_location_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13975,7 +14002,7 @@ CREATE INDEX index_spree_shipments_on_stock_location_id ON public.spree_shipment
 
 
 --
--- TOC entry 5581 (class 1259 OID 187360)
+-- TOC entry 5596 (class 1259 OID 192626)
 -- Name: index_spree_shipping_method_categories_on_shipping_method_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13983,7 +14010,7 @@ CREATE INDEX index_spree_shipping_method_categories_on_shipping_method_id ON pub
 
 
 --
--- TOC entry 5591 (class 1259 OID 187387)
+-- TOC entry 5606 (class 1259 OID 192627)
 -- Name: index_spree_shipping_methods_on_tax_category_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13991,7 +14018,7 @@ CREATE INDEX index_spree_shipping_methods_on_tax_category_id ON public.spree_shi
 
 
 --
--- TOC entry 5594 (class 1259 OID 187396)
+-- TOC entry 5609 (class 1259 OID 192628)
 -- Name: index_spree_shipping_rate_taxes_on_shipping_rate_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -13999,7 +14026,7 @@ CREATE INDEX index_spree_shipping_rate_taxes_on_shipping_rate_id ON public.spree
 
 
 --
--- TOC entry 5595 (class 1259 OID 187397)
+-- TOC entry 5610 (class 1259 OID 192629)
 -- Name: index_spree_shipping_rate_taxes_on_tax_rate_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14007,7 +14034,7 @@ CREATE INDEX index_spree_shipping_rate_taxes_on_tax_rate_id ON public.spree_ship
 
 
 --
--- TOC entry 5601 (class 1259 OID 187417)
+-- TOC entry 5616 (class 1259 OID 192630)
 -- Name: index_spree_state_changes_on_stateful_id_and_stateful_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14015,7 +14042,7 @@ CREATE INDEX index_spree_state_changes_on_stateful_id_and_stateful_type ON publi
 
 
 --
--- TOC entry 5602 (class 1259 OID 187418)
+-- TOC entry 5617 (class 1259 OID 192631)
 -- Name: index_spree_state_changes_on_user_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14023,7 +14050,7 @@ CREATE INDEX index_spree_state_changes_on_user_id ON public.spree_state_changes 
 
 
 --
--- TOC entry 5605 (class 1259 OID 187428)
+-- TOC entry 5620 (class 1259 OID 192632)
 -- Name: index_spree_states_on_country_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14031,7 +14058,7 @@ CREATE INDEX index_spree_states_on_country_id ON public.spree_states USING btree
 
 
 --
--- TOC entry 5608 (class 1259 OID 187438)
+-- TOC entry 5623 (class 1259 OID 192633)
 -- Name: index_spree_stock_items_on_deleted_at; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14039,7 +14066,7 @@ CREATE INDEX index_spree_stock_items_on_deleted_at ON public.spree_stock_items U
 
 
 --
--- TOC entry 5609 (class 1259 OID 187440)
+-- TOC entry 5624 (class 1259 OID 192634)
 -- Name: index_spree_stock_items_on_stock_location_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14047,7 +14074,7 @@ CREATE INDEX index_spree_stock_items_on_stock_location_id ON public.spree_stock_
 
 
 --
--- TOC entry 5610 (class 1259 OID 187441)
+-- TOC entry 5625 (class 1259 OID 192635)
 -- Name: index_spree_stock_items_on_variant_id_and_stock_location_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14055,7 +14082,7 @@ CREATE UNIQUE INDEX index_spree_stock_items_on_variant_id_and_stock_location_id 
 
 
 --
--- TOC entry 5614 (class 1259 OID 187459)
+-- TOC entry 5629 (class 1259 OID 192636)
 -- Name: index_spree_stock_locations_on_country_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14063,7 +14090,7 @@ CREATE INDEX index_spree_stock_locations_on_country_id ON public.spree_stock_loc
 
 
 --
--- TOC entry 5615 (class 1259 OID 187460)
+-- TOC entry 5630 (class 1259 OID 192637)
 -- Name: index_spree_stock_locations_on_state_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14071,7 +14098,7 @@ CREATE INDEX index_spree_stock_locations_on_state_id ON public.spree_stock_locat
 
 
 --
--- TOC entry 5618 (class 1259 OID 187471)
+-- TOC entry 5633 (class 1259 OID 192638)
 -- Name: index_spree_stock_movements_on_stock_item_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14079,7 +14106,7 @@ CREATE INDEX index_spree_stock_movements_on_stock_item_id ON public.spree_stock_
 
 
 --
--- TOC entry 5623 (class 1259 OID 187491)
+-- TOC entry 5638 (class 1259 OID 192639)
 -- Name: index_spree_store_credit_events_on_deleted_at; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14087,7 +14114,7 @@ CREATE INDEX index_spree_store_credit_events_on_deleted_at ON public.spree_store
 
 
 --
--- TOC entry 5624 (class 1259 OID 187492)
+-- TOC entry 5639 (class 1259 OID 192640)
 -- Name: index_spree_store_credit_events_on_store_credit_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14095,7 +14122,7 @@ CREATE INDEX index_spree_store_credit_events_on_store_credit_id ON public.spree_
 
 
 --
--- TOC entry 5627 (class 1259 OID 187502)
+-- TOC entry 5644 (class 1259 OID 192641)
 -- Name: index_spree_store_credit_types_on_priority; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14103,7 +14130,7 @@ CREATE INDEX index_spree_store_credit_types_on_priority ON public.spree_store_cr
 
 
 --
--- TOC entry 5630 (class 1259 OID 187524)
+-- TOC entry 5647 (class 1259 OID 192642)
 -- Name: index_spree_store_credits_on_deleted_at; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14111,7 +14138,7 @@ CREATE INDEX index_spree_store_credits_on_deleted_at ON public.spree_store_credi
 
 
 --
--- TOC entry 5631 (class 1259 OID 187525)
+-- TOC entry 5648 (class 1259 OID 192643)
 -- Name: index_spree_store_credits_on_type_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14119,7 +14146,7 @@ CREATE INDEX index_spree_store_credits_on_type_id ON public.spree_store_credits 
 
 
 --
--- TOC entry 5632 (class 1259 OID 187526)
+-- TOC entry 5649 (class 1259 OID 192644)
 -- Name: index_spree_store_credits_on_user_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14127,7 +14154,7 @@ CREATE INDEX index_spree_store_credits_on_user_id ON public.spree_store_credits 
 
 
 --
--- TOC entry 5635 (class 1259 OID 187534)
+-- TOC entry 5652 (class 1259 OID 192645)
 -- Name: index_spree_store_payment_methods_on_payment_method_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14135,7 +14162,7 @@ CREATE INDEX index_spree_store_payment_methods_on_payment_method_id ON public.sp
 
 
 --
--- TOC entry 5636 (class 1259 OID 187535)
+-- TOC entry 5653 (class 1259 OID 192646)
 -- Name: index_spree_store_payment_methods_on_store_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14143,7 +14170,7 @@ CREATE INDEX index_spree_store_payment_methods_on_store_id ON public.spree_store
 
 
 --
--- TOC entry 5709 (class 1259 OID 187778)
+-- TOC entry 5656 (class 1259 OID 192647)
 -- Name: index_spree_store_shipping_methods_on_shipping_method_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14151,7 +14178,7 @@ CREATE INDEX index_spree_store_shipping_methods_on_shipping_method_id ON public.
 
 
 --
--- TOC entry 5710 (class 1259 OID 187777)
+-- TOC entry 5657 (class 1259 OID 192648)
 -- Name: index_spree_store_shipping_methods_on_store_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14159,7 +14186,7 @@ CREATE INDEX index_spree_store_shipping_methods_on_store_id ON public.spree_stor
 
 
 --
--- TOC entry 5639 (class 1259 OID 187546)
+-- TOC entry 5660 (class 1259 OID 192649)
 -- Name: index_spree_stores_on_code; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14167,7 +14194,7 @@ CREATE INDEX index_spree_stores_on_code ON public.spree_stores USING btree (code
 
 
 --
--- TOC entry 5640 (class 1259 OID 187547)
+-- TOC entry 5661 (class 1259 OID 192650)
 -- Name: index_spree_stores_on_default; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14175,7 +14202,7 @@ CREATE INDEX index_spree_stores_on_default ON public.spree_stores USING btree ("
 
 
 --
--- TOC entry 5701 (class 1259 OID 187747)
+-- TOC entry 5666 (class 1259 OID 192651)
 -- Name: index_spree_tax_rate_tax_categories_on_tax_category_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14183,7 +14210,7 @@ CREATE INDEX index_spree_tax_rate_tax_categories_on_tax_category_id ON public.sp
 
 
 --
--- TOC entry 5702 (class 1259 OID 187748)
+-- TOC entry 5667 (class 1259 OID 192652)
 -- Name: index_spree_tax_rate_tax_categories_on_tax_rate_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14191,7 +14218,7 @@ CREATE INDEX index_spree_tax_rate_tax_categories_on_tax_rate_id ON public.spree_
 
 
 --
--- TOC entry 5645 (class 1259 OID 187569)
+-- TOC entry 5670 (class 1259 OID 192653)
 -- Name: index_spree_tax_rates_on_deleted_at; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14199,7 +14226,7 @@ CREATE INDEX index_spree_tax_rates_on_deleted_at ON public.spree_tax_rates USING
 
 
 --
--- TOC entry 5646 (class 1259 OID 187571)
+-- TOC entry 5671 (class 1259 OID 192654)
 -- Name: index_spree_tax_rates_on_zone_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14207,7 +14234,7 @@ CREATE INDEX index_spree_tax_rates_on_zone_id ON public.spree_tax_rates USING bt
 
 
 --
--- TOC entry 5649 (class 1259 OID 187582)
+-- TOC entry 5674 (class 1259 OID 192655)
 -- Name: index_spree_taxonomies_on_position; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14215,7 +14242,7 @@ CREATE INDEX index_spree_taxonomies_on_position ON public.spree_taxonomies USING
 
 
 --
--- TOC entry 5652 (class 1259 OID 187738)
+-- TOC entry 5677 (class 1259 OID 192656)
 -- Name: index_spree_taxons_on_lft; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14223,7 +14250,7 @@ CREATE INDEX index_spree_taxons_on_lft ON public.spree_taxons USING btree (lft);
 
 
 --
--- TOC entry 5653 (class 1259 OID 187739)
+-- TOC entry 5678 (class 1259 OID 192657)
 -- Name: index_spree_taxons_on_rgt; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14231,7 +14258,7 @@ CREATE INDEX index_spree_taxons_on_rgt ON public.spree_taxons USING btree (rgt);
 
 
 --
--- TOC entry 5659 (class 1259 OID 187606)
+-- TOC entry 5684 (class 1259 OID 192658)
 -- Name: index_spree_unit_cancels_on_inventory_unit_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14239,7 +14266,7 @@ CREATE INDEX index_spree_unit_cancels_on_inventory_unit_id ON public.spree_unit_
 
 
 --
--- TOC entry 5662 (class 1259 OID 187616)
+-- TOC entry 5687 (class 1259 OID 192659)
 -- Name: index_spree_user_addresses_on_address_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14247,7 +14274,7 @@ CREATE INDEX index_spree_user_addresses_on_address_id ON public.spree_user_addre
 
 
 --
--- TOC entry 5663 (class 1259 OID 187618)
+-- TOC entry 5688 (class 1259 OID 192660)
 -- Name: index_spree_user_addresses_on_user_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14255,7 +14282,7 @@ CREATE INDEX index_spree_user_addresses_on_user_id ON public.spree_user_addresse
 
 
 --
--- TOC entry 5664 (class 1259 OID 187617)
+-- TOC entry 5689 (class 1259 OID 192661)
 -- Name: index_spree_user_addresses_on_user_id_and_address_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14263,7 +14290,7 @@ CREATE UNIQUE INDEX index_spree_user_addresses_on_user_id_and_address_id ON publ
 
 
 --
--- TOC entry 5667 (class 1259 OID 187626)
+-- TOC entry 5692 (class 1259 OID 192662)
 -- Name: index_spree_user_stock_locations_on_user_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14271,7 +14298,7 @@ CREATE INDEX index_spree_user_stock_locations_on_user_id ON public.spree_user_st
 
 
 --
--- TOC entry 5355 (class 1259 OID 187811)
+-- TOC entry 5696 (class 1259 OID 192663)
 -- Name: index_spree_users_on_deleted_at; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14279,7 +14306,7 @@ CREATE INDEX index_spree_users_on_deleted_at ON public.spree_users USING btree (
 
 
 --
--- TOC entry 5356 (class 1259 OID 187812)
+-- TOC entry 5697 (class 1259 OID 192664)
 -- Name: index_spree_users_on_reset_password_token_solidus_auth_devise; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14287,7 +14314,7 @@ CREATE UNIQUE INDEX index_spree_users_on_reset_password_token_solidus_auth_devis
 
 
 --
--- TOC entry 5357 (class 1259 OID 187809)
+-- TOC entry 5698 (class 1259 OID 192665)
 -- Name: index_spree_users_on_spree_api_key; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14295,7 +14322,7 @@ CREATE INDEX index_spree_users_on_spree_api_key ON public.spree_users USING btre
 
 
 --
--- TOC entry 5670 (class 1259 OID 187634)
+-- TOC entry 5701 (class 1259 OID 192666)
 -- Name: index_spree_variant_prop_rule_conditions_on_rule_and_optval; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14303,7 +14330,7 @@ CREATE INDEX index_spree_variant_prop_rule_conditions_on_rule_and_optval ON publ
 
 
 --
--- TOC entry 5673 (class 1259 OID 187645)
+-- TOC entry 5704 (class 1259 OID 192667)
 -- Name: index_spree_variant_property_rule_values_on_property_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14311,7 +14338,7 @@ CREATE INDEX index_spree_variant_property_rule_values_on_property_id ON public.s
 
 
 --
--- TOC entry 5674 (class 1259 OID 187646)
+-- TOC entry 5705 (class 1259 OID 192668)
 -- Name: index_spree_variant_property_rule_values_on_rule; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14319,7 +14346,7 @@ CREATE INDEX index_spree_variant_property_rule_values_on_rule ON public.spree_va
 
 
 --
--- TOC entry 5677 (class 1259 OID 187654)
+-- TOC entry 5708 (class 1259 OID 192669)
 -- Name: index_spree_variant_property_rules_on_product_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14327,7 +14354,7 @@ CREATE INDEX index_spree_variant_property_rules_on_product_id ON public.spree_va
 
 
 --
--- TOC entry 5680 (class 1259 OID 187668)
+-- TOC entry 5711 (class 1259 OID 192670)
 -- Name: index_spree_variants_on_position; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14335,7 +14362,7 @@ CREATE INDEX index_spree_variants_on_position ON public.spree_variants USING btr
 
 
 --
--- TOC entry 5681 (class 1259 OID 187669)
+-- TOC entry 5712 (class 1259 OID 192671)
 -- Name: index_spree_variants_on_product_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14343,7 +14370,7 @@ CREATE INDEX index_spree_variants_on_product_id ON public.spree_variants USING b
 
 
 --
--- TOC entry 5682 (class 1259 OID 187798)
+-- TOC entry 5713 (class 1259 OID 192672)
 -- Name: index_spree_variants_on_shipping_category_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14351,7 +14378,7 @@ CREATE INDEX index_spree_variants_on_shipping_category_id ON public.spree_varian
 
 
 --
--- TOC entry 5683 (class 1259 OID 187670)
+-- TOC entry 5714 (class 1259 OID 192673)
 -- Name: index_spree_variants_on_sku; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14359,7 +14386,7 @@ CREATE INDEX index_spree_variants_on_sku ON public.spree_variants USING btree (s
 
 
 --
--- TOC entry 5684 (class 1259 OID 187671)
+-- TOC entry 5715 (class 1259 OID 192674)
 -- Name: index_spree_variants_on_tax_category_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14367,7 +14394,7 @@ CREATE INDEX index_spree_variants_on_tax_category_id ON public.spree_variants US
 
 
 --
--- TOC entry 5685 (class 1259 OID 187672)
+-- TOC entry 5716 (class 1259 OID 192675)
 -- Name: index_spree_variants_on_track_inventory; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14375,7 +14402,7 @@ CREATE INDEX index_spree_variants_on_track_inventory ON public.spree_variants US
 
 
 --
--- TOC entry 5694 (class 1259 OID 187711)
+-- TOC entry 5719 (class 1259 OID 192676)
 -- Name: index_spree_wallet_payment_sources_on_source_and_user; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14383,7 +14410,7 @@ CREATE UNIQUE INDEX index_spree_wallet_payment_sources_on_source_and_user ON pub
 
 
 --
--- TOC entry 5695 (class 1259 OID 187710)
+-- TOC entry 5720 (class 1259 OID 192677)
 -- Name: index_spree_wallet_payment_sources_on_user_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14391,7 +14418,7 @@ CREATE INDEX index_spree_wallet_payment_sources_on_user_id ON public.spree_walle
 
 
 --
--- TOC entry 5688 (class 1259 OID 187682)
+-- TOC entry 5723 (class 1259 OID 192678)
 -- Name: index_spree_zone_members_on_zone_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14399,7 +14426,7 @@ CREATE INDEX index_spree_zone_members_on_zone_id ON public.spree_zone_members US
 
 
 --
--- TOC entry 5689 (class 1259 OID 187683)
+-- TOC entry 5724 (class 1259 OID 192679)
 -- Name: index_spree_zone_members_on_zoneable_id_and_zoneable_type; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14407,7 +14434,7 @@ CREATE INDEX index_spree_zone_members_on_zoneable_id_and_zoneable_type ON public
 
 
 --
--- TOC entry 5654 (class 1259 OID 187593)
+-- TOC entry 5679 (class 1259 OID 192680)
 -- Name: index_taxons_on_parent_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14415,7 +14442,7 @@ CREATE INDEX index_taxons_on_parent_id ON public.spree_taxons USING btree (paren
 
 
 --
--- TOC entry 5655 (class 1259 OID 187594)
+-- TOC entry 5680 (class 1259 OID 192681)
 -- Name: index_taxons_on_permalink; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14423,7 +14450,7 @@ CREATE INDEX index_taxons_on_permalink ON public.spree_taxons USING btree (perma
 
 
 --
--- TOC entry 5656 (class 1259 OID 187596)
+-- TOC entry 5681 (class 1259 OID 192682)
 -- Name: index_taxons_on_taxonomy_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14431,7 +14458,7 @@ CREATE INDEX index_taxons_on_taxonomy_id ON public.spree_taxons USING btree (tax
 
 
 --
--- TOC entry 5726 (class 1259 OID 187875)
+-- TOC entry 5361 (class 1259 OID 192683)
 -- Name: payment_method_and_source; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14439,7 +14466,7 @@ CREATE UNIQUE INDEX payment_method_and_source ON public.solidus_stripe_customers
 
 
 --
--- TOC entry 5585 (class 1259 OID 187368)
+-- TOC entry 5600 (class 1259 OID 192684)
 -- Name: shipping_method_id_spree_sm_sl; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14447,7 +14474,7 @@ CREATE INDEX shipping_method_id_spree_sm_sl ON public.spree_shipping_method_stoc
 
 
 --
--- TOC entry 5598 (class 1259 OID 187407)
+-- TOC entry 5613 (class 1259 OID 192685)
 -- Name: spree_shipping_rates_join_index; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14455,7 +14482,7 @@ CREATE UNIQUE INDEX spree_shipping_rates_join_index ON public.spree_shipping_rat
 
 
 --
--- TOC entry 5588 (class 1259 OID 187369)
+-- TOC entry 5603 (class 1259 OID 192686)
 -- Name: sstock_location_id_spree_sm_sl; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14463,7 +14490,7 @@ CREATE INDEX sstock_location_id_spree_sm_sl ON public.spree_shipping_method_stoc
 
 
 --
--- TOC entry 5613 (class 1259 OID 187439)
+-- TOC entry 5628 (class 1259 OID 192687)
 -- Name: stock_item_by_loc_and_var_id; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14471,7 +14498,7 @@ CREATE INDEX stock_item_by_loc_and_var_id ON public.spree_stock_items USING btre
 
 
 --
--- TOC entry 5584 (class 1259 OID 187359)
+-- TOC entry 5599 (class 1259 OID 192688)
 -- Name: unique_spree_shipping_method_categories; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -14479,7 +14506,7 @@ CREATE UNIQUE INDEX unique_spree_shipping_method_categories ON public.spree_ship
 
 
 --
--- TOC entry 5740 (class 2606 OID 187853)
+-- TOC entry 5734 (class 2606 OID 192689)
 -- Name: solidus_stripe_slug_entries fk_rails_32ae6ea4fd; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14488,7 +14515,7 @@ ALTER TABLE ONLY public.solidus_stripe_slug_entries
 
 
 --
--- TOC entry 5736 (class 2606 OID 187754)
+-- TOC entry 5739 (class 2606 OID 192694)
 -- Name: spree_tax_rate_tax_categories fk_rails_3e6fe87e12; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14497,7 +14524,7 @@ ALTER TABLE ONLY public.spree_tax_rate_tax_categories
 
 
 --
--- TOC entry 5737 (class 2606 OID 187749)
+-- TOC entry 5740 (class 2606 OID 192699)
 -- Name: spree_tax_rate_tax_categories fk_rails_499313ce8e; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14506,7 +14533,7 @@ ALTER TABLE ONLY public.spree_tax_rate_tax_categories
 
 
 --
--- TOC entry 5738 (class 2606 OID 187832)
+-- TOC entry 5732 (class 2606 OID 192704)
 -- Name: solidus_stripe_payment_intents fk_rails_5305cc8ccd; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14515,7 +14542,7 @@ ALTER TABLE ONLY public.solidus_stripe_payment_intents
 
 
 --
--- TOC entry 5739 (class 2606 OID 187837)
+-- TOC entry 5733 (class 2606 OID 192709)
 -- Name: solidus_stripe_payment_intents fk_rails_5c8dd2b9ff; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14524,7 +14551,7 @@ ALTER TABLE ONLY public.solidus_stripe_payment_intents
 
 
 --
--- TOC entry 5734 (class 2606 OID 187705)
+-- TOC entry 5741 (class 2606 OID 192714)
 -- Name: spree_wallet_payment_sources fk_rails_5dd6e027c5; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14533,7 +14560,7 @@ ALTER TABLE ONLY public.spree_wallet_payment_sources
 
 
 --
--- TOC entry 5741 (class 2606 OID 187869)
+-- TOC entry 5731 (class 2606 OID 192719)
 -- Name: solidus_stripe_customers fk_rails_716e8d4322; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14542,7 +14569,7 @@ ALTER TABLE ONLY public.solidus_stripe_customers
 
 
 --
--- TOC entry 5730 (class 2606 OID 186683)
+-- TOC entry 5730 (class 2606 OID 192724)
 -- Name: active_storage_variant_records fk_rails_993965df05; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14551,7 +14578,7 @@ ALTER TABLE ONLY public.active_storage_variant_records
 
 
 --
--- TOC entry 5735 (class 2606 OID 187725)
+-- TOC entry 5737 (class 2606 OID 192729)
 -- Name: spree_promotion_code_batches fk_rails_c217102f50; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14560,7 +14587,7 @@ ALTER TABLE ONLY public.spree_promotion_code_batches
 
 
 --
--- TOC entry 5729 (class 2606 OID 186667)
+-- TOC entry 5729 (class 2606 OID 192734)
 -- Name: active_storage_attachments fk_rails_c3b3935057; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14569,7 +14596,7 @@ ALTER TABLE ONLY public.active_storage_attachments
 
 
 --
--- TOC entry 5731 (class 2606 OID 187799)
+-- TOC entry 5735 (class 2606 OID 192739)
 -- Name: spree_orders_promotions fk_rails_d79b345745; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14578,7 +14605,7 @@ ALTER TABLE ONLY public.spree_orders_promotions
 
 
 --
--- TOC entry 5732 (class 2606 OID 187804)
+-- TOC entry 5736 (class 2606 OID 192744)
 -- Name: spree_orders_promotions fk_rails_d919cacf25; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14587,7 +14614,7 @@ ALTER TABLE ONLY public.spree_orders_promotions
 
 
 --
--- TOC entry 5733 (class 2606 OID 187730)
+-- TOC entry 5738 (class 2606 OID 192749)
 -- Name: spree_promotion_codes fk_rails_e306e312d9; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -14595,7 +14622,7 @@ ALTER TABLE ONLY public.spree_promotion_codes
     ADD CONSTRAINT fk_rails_e306e312d9 FOREIGN KEY (promotion_code_batch_id) REFERENCES public.spree_promotion_code_batches(id);
 
 
--- Completed on 2025-03-23 19:47:55
+-- Completed on 2025-03-27 20:43:05
 
 --
 -- PostgreSQL database dump complete

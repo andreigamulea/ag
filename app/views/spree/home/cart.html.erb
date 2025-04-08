@@ -1,9 +1,10 @@
+<!-- app/views/spree/home/cart.html.erb -->
 <div class="container mx-auto p-6">
   <h1 class="text-3xl font-bold mb-6">Your Cart</h1>
 
   <% if @cart.line_items.empty? %>
     <p>Your cart is empty.</p>
-    <%= link_to 'Continue Shopping', main_app.store_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600' %>
+    <%= link_to "Continue Shopping", main_app.carti_index_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600' %>
   <% else %>
     <table class="w-full border-collapse">
       <thead>
@@ -27,9 +28,9 @@
     </table>
     <div class="mt-4">
       <p class="text-lg font-bold">Total: <%= number_to_currency(@cart.total) %></p>
-      <%= link_to 'Continue Shopping', main_app.store_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %>
-      <%# Link-ul pentru checkout poate fi adăugat ulterior %>
-      <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Proceed to Checkout</button>
+      
+      <%= link_to "Continue Shopping", main_app.carti_index_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %>
+      <%= link_to "Proceed to Checkout", main_app.checkout_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %>
     </div>
   <% end %>
 </div>

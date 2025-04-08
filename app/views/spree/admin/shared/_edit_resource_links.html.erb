@@ -1,0 +1,20 @@
+<% if can?(:admin, @resource) %>
+  <% if can?(:update, @resource) %>
+    <% if @resource.is_a?(Spree::Store) %>
+      <%= link_to_edit @resource, url: spree.edit_admin_store_path(@resource), class: 'btn btn-primary mr-2 inline-block' %>
+    <% elsif @resource.is_a?(Spree::Product) %>
+      <%= link_to_edit @resource, url: spree.admin_product_product_properties_path(@resource), class: 'btn btn-primary mr-2 inline-block' %>
+    <% else %>
+      <%= link_to_edit @resource, class: 'btn btn-primary mr-2 inline-block' %>
+    <% end %>
+  <% end %>
+  <% if can?(:destroy, @resource) %>
+    <% if @resource.is_a?(Spree::Store) %>
+      <%= link_to_delete @resource, url: spree.admin_store_path(@resource), class: 'btn btn-danger inline-block' %>
+    <% elsif @resource.is_a?(Spree::Product) %>
+      <%= link_to_delete @resource, url: spree.admin_product_product_properties_path(@resource), class: 'btn btn-danger inline-block' %>
+    <% else %>
+      <%= link_to_delete @resource, class: 'btn btn-danger inline-block' %>
+    <% end %>
+  <% end %>
+<% end %>

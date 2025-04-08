@@ -27,5 +27,16 @@
 #       "yes": yup
 #       enabled: "ON"
 
+
+  
+  
 en:
-  hello: "Hello world"
+  spree:
+    new_product_property: "Add New Property"
+    name: "Name"
+    value: "Value"
+    create: "Create"
+    cancel: "Cancel"
+    product_properties: "Product Properties"
+    no_product_properties_found: "No Product Properties Found"
+    actions: "Actions"

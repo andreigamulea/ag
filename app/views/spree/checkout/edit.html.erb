@@ -1,0 +1,259 @@
+<!-- app/views/spree/checkout/edit.html.erb -->
+<div class="container mx-auto p-6">
+  <h1 class="text-3xl font-bold mb-6">Checkout - <%= @order.state.humanize %></h1>
+
+  <% if flash[:error] %>
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-6">
+      <%= flash[:error] %>
+    </div>
+  <% end %>
+    <%= link_to "Continue Shopping", main_app.carti_index_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %>
+    <%= link_to "Înapoi la coș", main_app.cart_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %>
+      <div class="flex flex-wrap -mx-4">
+    <!-- Coloana stânga: Detalii pentru facturare -->
+    <div class="w-full md:w-2/3 px-4 mb-8">
+      <%= form_for @order, url: main_app.checkout_path, method: :patch do |f| %>
+        <% if @order.state == 'address' %>
+          <div class="address-section">
+            <h2 class="text-2xl font-semibold mb-4">Detalii pentru facturare</h2>
+            <%= f.fields_for :ship_address do |ship| %>
+              <div class="mb-4">
+                <%= ship.label :prenume, "Prenume", class: "block text-sm font-medium" %>
+                <%= ship.text_field :prenume, value: current_spree_user&.prenume || ship.object.prenume, class: "w-full p-2 border rounded" %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :name, "Nume", class: "block text-sm font-medium" %>
+                <%= ship.text_field :name, class: "w-full p-2 border rounded" %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :company, "Companie (Opțional)", class: "block text-sm font-medium" %>
+                <%= ship.text_field :company, class: "w-full p-2 border rounded" %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :address1, "Adresă", class: "block text-sm font-medium" %>
+                <%= ship.text_field :address1, class: "w-full p-2 border rounded" %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :address2, "Adresă 2 (Opțional)", class: "block text-sm font-medium" %>
+                <%= ship.text_field :address2, class: "w-full p-2 border rounded" %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :city, "Oraș", class: "block text-sm font-medium" %>
+                <%= ship.text_field :city, class: "w-full p-2 border rounded" %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :zipcode, "Cod Poștal", class: "block text-sm font-medium" %>
+                <%= ship.text_field :zipcode, class: "w-full p-2 border rounded" %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :phone, "Telefon", class: "block text-sm font-medium" %>
+                <%= ship.text_field :phone, class: "w-full p-2 border rounded" %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :alternative_phone, "Telefon Alternativ (Opțional)", class: "block text-sm font-medium" %>
+                <%= ship.text_field :alternative_phone, class: "w-full p-2 border rounded" %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :country_id, "Țară", class: "block text-sm font-medium" %>
+                <%= ship.collection_select :country_id, 
+                                         Spree::Country.all, 
+                                         :id, 
+                                         :name, 
+                                         { prompt: "Selectează Țara" }, 
+                                         { class: "w-full p-2 border rounded" } %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :state_id, "Județ", class: "block text-sm font-medium" %>
+                <%= ship.grouped_collection_select :state_id, 
+                                                  Spree::Country.all, 
+                                                  :states, 
+                                                  :name, 
+                                                  :id, 
+                                                  :name, 
+                                                  { prompt: "Selectează Județul" }, 
+                                                  { class: "w-full p-2 border rounded" } %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :state_name, "Nume Județ (dacă județul nu este listat)", class: "block text-sm font-medium" %>
+                <%= ship.text_field :state_name, class: "w-full p-2 border rounded" %>
+              </div>
+
+              <div class="mb-4">
+                <%= ship.label :email, "Adresă email", class: "block text-sm font-medium" %>
+                <%= ship.text_field :email, value: current_spree_user&.email || @order.email, class: "w-full p-2 border rounded" %>
+              </div>
+            <% end %>
+
+            <h2 class="text-2xl font-semibold mb-4 mt-6">Adresă de livrare</h2>
+            <div class="mb-4">
+              <%= check_box_tag :use_shipping_address_for_billing, "1", false, class: "mr-2", id: "use-shipping-address" %>
+              <%= label_tag :use_shipping_address_for_billing, "Livrează la aceeași adresă", class: "text-sm font-medium" %>
+            </div>
+
+            <div id="billing-address-form">
+              <%= f.fields_for :bill_address do |bill| %>
+                <div class="mb-4">
+                  <%= bill.label :prenume, "Prenume", class: "block text-sm font-medium" %>
+                  <%= bill.text_field :prenume, value: current_spree_user&.prenume || bill.object.prenume, class: "w-full p-2 border rounded" %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :name, "Nume", class: "block text-sm font-medium" %>
+                  <%= bill.text_field :name, class: "w-full p-2 border rounded" %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :company, "Companie (Opțional)", class: "block text-sm font-medium" %>
+                  <%= bill.text_field :company, class: "w-full p-2 border rounded" %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :address1, "Adresă", class: "block text-sm font-medium" %>
+                  <%= bill.text_field :address1, class: "w-full p-2 border rounded" %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :address2, "Adresă 2 (Opțional)", class: "block text-sm font-medium" %>
+                  <%= bill.text_field :address2, class: "w-full p-2 border rounded" %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :city, "Oraș", class: "block text-sm font-medium" %>
+                  <%= bill.text_field :city, class: "w-full p-2 border rounded" %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :zipcode, "Cod Poștal", class: "block text-sm font-medium" %>
+                  <%= bill.text_field :zipcode, class: "w-full p-2 border rounded" %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :phone, "Telefon", class: "block text-sm font-medium" %>
+                  <%= bill.text_field :phone, class: "w-full p-2 border rounded" %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :alternative_phone, "Telefon Alternativ (Opțional)", class: "block text-sm font-medium" %>
+                  <%= bill.text_field :alternative_phone, class: "w-full p-2 border rounded" %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :country_id, "Țară", class: "block text-sm font-medium" %>
+                  <%= bill.collection_select :country_id, 
+                                           Spree::Country.all, 
+                                           :id, 
+                                           :name, 
+                                           { prompt: "Selectează Țara" }, 
+                                           { class: "w-full p-2 border rounded" } %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :state_id, "Județ", class: "block text-sm font-medium" %>
+                  <%= bill.grouped_collection_select :state_id, 
+                                                    Spree::Country.all, 
+                                                    :states, 
+                                                    :name, 
+                                                    :id, 
+                                                    :name, 
+                                                    { prompt: "Selectează Județul" }, 
+                                                    { class: "w-full p-2 border rounded" } %>
+                </div>
+
+                <div class="mb-4">
+                  <%= bill.label :state_name, "Nume Județ (dacă județul nu este listat)", class: "block text-sm font-medium" %>
+                  <%= bill.text_field :state_name, class: "w-full p-2 border rounded" %>
+                </div>
+              <% end %>
+            </div>
+
+            <div class="mb-4">
+              <%= label_tag :order_notes, "Note comandă (opțional)", class: "block text-sm font-medium" %>
+              <%= text_area_tag :order_notes, nil, class: "w-full p-2 border rounded", placeholder: "Note referitoare la comandă, de exemplu: anumită dată pentru livrare." %>
+            </div>
+
+            <script>
+              document.addEventListener('DOMContentLoaded', () => {
+                const useShippingAddressCheckbox = document.getElementById('use-shipping-address');
+                const billingAddressForm = document.getElementById('billing-address-form');
+
+                if (useShippingAddressCheckbox && billingAddressForm) {
+                  useShippingAddressCheckbox.addEventListener('change', () => {
+                    if (useShippingAddressCheckbox.checked) {
+                      billingAddressForm.style.display = 'none';
+                    } else {
+                      billingAddressForm.style.display = 'block';
+                    }
+                  });
+                }
+              });
+            </script>
+          </div>
+
+        <% elsif @order.state == 'delivery' %>
+          <div class="delivery-section">
+            <h2 class="text-2xl font-semibold mb-4">Metodă de livrare</h2>
+            <% @order.available_shipping_methods.each do |method| %>
+              <div class="form-check mb-2">
+                <%= radio_button_tag :shipping_method_id, method.id, @order.shipping_method_id == method.id, class: "form-check-input mr-2" %>
+                <%= label_tag "shipping_method_id_#{method.id}", "#{method.name} - #{number_to_currency(method.cost)}", class: "text-sm font-medium" %>
+              </div>
+            <% end %>
+          </div>
+
+       
+
+        <% elsif @order.state == 'payment' %>
+          <div class="payment-section">
+            <h2 class="text-2xl font-semibold mb-4">Metodă de plată</h2>
+            <p class="text-sm text-gray-600 mb-4">Vei fi redirecționat către Plati.Online pentru a finaliza plata.</p>
+            <%= f.hidden_field :payment_method_id, value: Spree::PaymentMethod.available.first&.id %>
+          </div>
+
+        <% elsif @order.state == 'confirm' %>
+          <div class="confirm-section">
+            <h2 class="text-2xl font-semibold mb-4">Confirmă comanda</h2>
+            <div class="order-summary mb-6">
+              <h3 class="text-xl font-semibold mb-4">Rezumat comandă</h3>
+              <% @order.line_items.each do |item| %>
+                <p><%= item.product.name %> - <%= number_to_currency(item.total) %></p>
+              <% end %>
+              <p class="text-lg font-bold mt-2">Total: <%= number_to_currency(@order.total) %></p>
+            </div>
+          </div>
+        <% end %>
+
+        <%= f.submit "Continuă", class: "bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 mt-4" %>
+      <% end %>
+    </div>
+
+    <!-- Coloana dreapta: Rezumat comandă -->
+    <div class="w-full md:w-1/3 px-4 mb-8">
+      <div class="bg-gray-100 p-4 rounded">
+        <h2 class="text-2xl font-semibold mb-4">Comanda ta</h2>
+        <% @order.line_items.each do |item| %>
+          <div class="flex justify-between mb-2">
+            <span><%= item.product.name %> x <%= item.quantity %></span>
+            <span><%= number_to_currency(item.total) %></span>
+          </div>
+        <% end %>
+        <div class="flex justify-between font-bold mt-4">
+          <span>Total</span>
+          <span><%= number_to_currency(@order.total) %></span>
+        </div>
+      </div>
+    </div>
+    <%= link_to "Continue Shopping", main_app.carti_index_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %>
+  <%= link_to "Înapoi la coș", main_app.cart_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %>
+    </div>
+</div>

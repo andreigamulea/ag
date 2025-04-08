@@ -1,0 +1,106 @@
+<style>
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.product {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.product:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+/* Stiluri pentru stoc */
+.stock-available {
+  color: #16a34a; /* Verde */
+  font-weight: bold;
+}
+
+.stock-preorder {
+  color: #d97706; /* Portocaliu pentru precomandă */
+  font-weight: bold;
+}
+
+.stock-unavailable {
+  color: #dc2626; /* Roșu */
+  font-weight: bold;
+}
+
+button:disabled, input:disabled {
+  background-color: #d1d5db; /* Gri dezactivat */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Stiluri suplimentare */
+button {
+  transition: background-color 0.3s;
+}
+</style>
+
+<div class="container mx-auto p-6">
+<%= link_to "Pagina principala", main_app.root_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %></br></br>
+
+<%= link_to "Mergi la coș", main_app.cart_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %></br></br>
+      
+      
+  <h1 class="text-3xl font-bold mb-6">Produse din categoria 'Cărți'</h1>
+
+  <div class="flex justify-end mb-4">
+    <%= link_to t('spree.cart'), cart_path, class: 'bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 transition-colors', aria: { label: 'Vezi coșul de cumpărături' } %>
+  </div>
+
+  <% if @products.any? %>
+    <div class="products grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <% @products.each do |product| %>
+        <% master_variant = product.master %>
+        <% stock_total = master_variant.total_on_hand %>
+        <% is_available = master_variant.can_supply?(1) %>
+        <% is_backorderable = master_variant.stock_items.any?(&:backorderable?) %>
+        <div class="product border rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+          <% if master_variant.images.any? %>
+            <% image = master_variant.images.first %>
+            <% variant = image.attachment.variant(resize_to_limit: [200, 200]).processed %>
+            <%= image_tag rails_blob_url(variant.blob), alt: product.name, class: 'w-full h-48 object-cover rounded', loading: 'lazy' %>
+          <% else %>
+            <div class="w-full h-48 bg-gray-200 flex items-center justify-center rounded">
+              <span class="text-gray-500"><%= t('spree.product_has_no_description') %></span>
+            </div>
+          <% end %>
+          <h2 class="text-xl font-semibold mt-2"><%= link_to product.name, "/store/products/#{product.slug}", class: 'hover:text-blue-600' %></h2>
+          <p class="text-gray-600"><%= product.description&.truncate(100) || t('spree.product_has_no_description') %></p>
+          <p class="text-lg font-bold mt-2">Preț: <%= number_to_currency(product.price, unit: 'lei', format: '%n %u') %></p>
+          <!-- Afișăm stocul și starea -->
+          <p class="text-gray-600 mt-1">
+            <%= t('spree.stock') %>:
+            <span class="<%= stock_total > 0 ? 'stock-available' : (is_backorderable ? 'stock-preorder' : 'stock-unavailable') %>">
+              <%= stock_total %>
+              <%= stock_total > 0 ? t('spree.on_hand') : (is_backorderable ? t('spree.backorderable') : t('spree.out_of_stock')) %>
+            </span>
+          </p>
+          <%= form_with url: add_to_cart_path, method: :post, class: 'mt-4 flex items-center' do |form| %>
+            <%= form.hidden_field :product_id, value: product.id %>
+            <%= form.number_field :quantity, value: 1, min: 1, class: 'border p-2 rounded w-16 mr-2', disabled: !is_available, aria: { label: 'Cantitate' } %>
+            <%= form.submit t('spree.add_to_cart'), class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors', disabled: !is_available, aria: { disabled: !is_available } %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  <% else %>
+    <p class="text-gray-600"><%= t('spree.no_products_found') %> în categoria 'Cărți'.</p>
+  <% end %>
+</div>

@@ -3,11 +3,18 @@
 
 # Solidus version defaults for preferences that are not overridden
 Spree.load_defaults '4.3.6'
-
+# config/initializers/spree.rb
+Rails.application.config.to_prepare do
+  Dir.glob(Rails.root.join('app/models/spree/**/*_decorator*.rb')).each do |decorator|
+    require decorator
+  end
+end
 Spree.config do |config|
   # Core:
   # Default currency for new sites
-  config.currency = "USD"
+  Spree.config do |config|
+    config.currency = "RON" # Or your preferred currency
+  end
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false

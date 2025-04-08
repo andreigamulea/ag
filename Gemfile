@@ -72,8 +72,9 @@ gem "solidus", "~> 4.3.0"
 gem "solidus_sample", "~> 4.3.0" # Pentru produsele de test (tricouri, genți, etc.)
 gem "solidus_auth_devise", "~> 2.5"
 
-gem "solidus_stripe", "~> 5.a"
+gem "solidus_stripe", "~> 5.0"
 
 gem "solidus_admin", ">= 0.2"
 
 gem "tailwindcss-rails", "~> 3.0"
+gem 'solidus_i18n', '~> 2.2' 

@@ -1,6 +1,8 @@
+@import "application";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 .welcome-box {
   @apply container mx-auto p-6 bg-blue-500 rounded-lg shadow-lg;

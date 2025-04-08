@@ -1,15 +1,19 @@
 {
   "name": "app",
   "private": true,
-  "devDependencies": {
-    "esbuild": "^0.25.1",
-    "tailwindcss": "3.4.14"
-  },
-  "scripts": {
-    "build:css": "npx tailwindcss -c ./tailwind.config.js -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify"
-  },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
-    "@hotwired/turbo-rails": "^8.0.13"
+    "@hotwired/turbo-rails": "^8.0.13",
+    "tailwindcss": "3.4.14",
+    "caniuse-lite": "^1.0.30001712"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.1"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --outdir=app/assets/builds --minify",
+    "build:css": "tailwindcss -c tailwind.config.js -i app/assets/stylesheets/application.tailwind.css -o app/assets/builds/application.css --minify"
   }
 }
+
+

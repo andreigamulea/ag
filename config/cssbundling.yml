@@ -1,0 +1,4 @@
+development:
+  tool: yarn
+production:
+  tool: yarn

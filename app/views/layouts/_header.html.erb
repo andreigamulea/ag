@@ -7,33 +7,27 @@
     </a>
     <div>
     <nav>
-<a href="#">Acasă</a>
+<a href="/">Acasă</a>
 <a href="#">Articole</a>
 <a href="#">Resurse Digitale</a>
 <a href="#">Despre</a>
 <a href="#">Contact</a>
 </nav>
 
-<!--
 <nav>
-
-<% if spree_current_user %>
-  <span class="text-sm">
-    Bine ați venit, <%= spree_current_user.name || spree_current_user.email %>!
-  </span>
-  <%= button_to "Logout", spree.destroy_spree_user_session_path, method: :delete, class: "hover:text-indigo-200 bg-transparent border-none cursor-pointer"%>
-  <%= link_to "Admin - Comenzi", spree.admin_orders_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %>
+<% if spree_current_user %> 
+  <%= link_to "Admin - Comenzi", spree.admin_orders_path %>
   <% else %>
-  <%= link_to "Login", spree.new_spree_user_session_path, class: "hover:text-indigo-200" %>
-  <%= link_to "Creaza un cont", spree.new_spree_user_registration_path, class: "hover:text-indigo-200" %>
+  <%= link_to "Login", spree.new_spree_user_session_path %>
+  <%= link_to "Creaza un cont", spree.new_spree_user_registration_path %>
 <% end %>
-<%= link_to "Produse", main_app.carti_index_path, class: "hover:text-indigo-200" %>
-<%= link_to "Cumpărăturile mele (#{cart_item_count})", main_app.cart_path, class: "hover:text-indigo-200" %>
+<%= link_to "Produse", main_app.carti_index_path %>
+<%= link_to "Coș (#{cart_item_count})", main_app.cart_path %>
 </nav>
--->
 
 
-    <!--<nav class="flex items-center space-x-4">
+<!--
+    <nav class="flex items-center space-x-4">
 
         <%= link_to "Cart (#{cart_item_count})", main_app.cart_path, class: "hover:text-indigo-200" %>
 
@@ -51,7 +45,8 @@
         <% end %>
         
         <%= link_to "My Shop", main_app.carti_index_path, class: "hover:text-indigo-200" %></br></br>
-    </nav>-->
+    </nav>
+-->
     </div>
     
 
@@ -62,85 +57,3 @@
 
 
 
-
-
-    <style>
-
-    /* ----------- HEADER ----------- */
-
-    .header_container {
-        background: white;
-        
-    }
-
-    header {
-        color: white;
-        max-width: 1280px;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 22px;
-        letter-spacing: 2px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header p {
-        font-size: 22px;
-    }
-
-
-    /* ----------- MENIU NAV ----------- */
-    nav {
-        text-align: center;
-        padding: 10px 0;
-        background: white;
-        border-bottom: 1px solid #ddd;
-        border-top: 1px solid #ddd;
-        /*border-top: 3px solid #fbc02d;*/
-    }
-
-    nav a {
-        color: #8b0000;
-        text-decoration: none;
-        margin: 0 20px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 14px;
-    }
-
-    nav a:hover {
-        color: #fbc02d;
-        border-bottom: 2px solid #fbc02d;
-        padding-bottom: 5px;
-    }
-/*
-    nav:hover {
-            transform: translateY(-2px);
-            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
-            
-        }
-*/
-/* Header container styles */
-.header_container {
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-/* Header styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-    </style>

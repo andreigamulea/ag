@@ -69,3 +69,12 @@ nav:hover {
 */
 
 
+        /* ----------- FOOTER ----------- */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #8b0000;
+            color: white;
+            font-size: 14px;
+            margin-top: 40px;
+        }

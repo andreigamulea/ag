@@ -6,9 +6,19 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-
+  <!-- Include stilurile Swiper.js direct prin CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Include Turbo Rails direct prin CDN -->
+  <script src="https://unpkg.com/@hotwired/turbo-rails@7.3.0/dist/turbo.es2017-umd.js"></script>
+  <!-- Include Swiper.js direct prin CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-  <%= javascript_importmap_tags %>
+  <!-- Include stilurile Swiper.js direct prin CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Include Turbo Rails direct prin CDN -->
+  <script src="https://unpkg.com/@hotwired/turbo-rails@7.3.0/dist/turbo.es2017-umd.js"></script>
+  <!-- Include Swiper.js direct prin CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body class="bg-gray-100">
@@ -30,5 +40,8 @@
       <p>© <%= Time.current.year %> Biblioteca Ideilor | Toate drepturile rezervate.</p>
     </div>
   </footer>
+
+  
+
 </body>
 </html>

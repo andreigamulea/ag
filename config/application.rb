@@ -24,5 +24,13 @@ module Ag
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     config.i18n.default_locale = :ro
+   
+     # Dezactivează precompilarea JavaScript prin Sprockets
+    config.assets.paths.delete(Rails.root.join('app', 'assets', 'javascripts'))
+    config.assets.paths.delete(Rails.root.join('app', 'assets', 'builds'))
+
+    # Dezactivează Sprockets pentru JavaScript
+    config.assets.precompile.delete_if { |asset| asset =~ /\.js$/ }
+    config.assets.paths.delete_if { |path| path.to_s.end_with?('builds') }
   end
 end

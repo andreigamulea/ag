@@ -1,62 +1,164 @@
 <style>
+/* Stiluri pentru containerul de produse */
 .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding-top: 20px;
 }
 
+/* Stiluri pentru fiecare produs */
 .product {
-  border: 1px solid #e5e7eb;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  transition: box-shadow 0.3s;
-  background-color: #fff;
+    background: #ffffff;
+    border: 1px solid #8b0000; /* Folosim culoarea principală */
+    border-radius: 8px; /* Rotunjire similară cu .book */
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Tranziție similară cu .box și .book */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08); /* Umbră inițială */
 }
 
 .product:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); /* Efect de ridicare la hover */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15); /* Umbră mai pronunțată la hover */
 }
 
 .product img {
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-  border-radius: 0.25rem;
+    width: 100%;
+    height: 12rem; /* Păstrăm dimensiunea dorită */
+    object-fit: cover; /* Păstrăm stilul de acoperire */
+    border-radius: 5px; /* Rotunjire similară cu .book img */
+    margin-bottom: 10px;
+}
+
+/* Stiluri pentru titlu produs */
+.product h2 {
+    font-size: 18px;
+    color: #8b0000; /* Culoare titlu consistentă */
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product h2 a {
+    text-decoration: none;
+    color: #8b0000;
+}
+
+.product h2 a:hover {
+    color: #bc2c2c; /* Schimbare subtilă la hover */
+}
+
+/* Stiluri pentru descriere */
+.product p {
+    font-size: 14px;
+    color: #555; /* Culoare text consistentă */
+}
+
+/* Stiluri pentru preț */
+.product .text-lg {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8b0000; /* Culoare preț consistentă */
+    margin-top: 8px;
 }
 
 /* Stiluri pentru stoc */
 .stock-available {
-  color: #16a34a; /* Verde */
-  font-weight: bold;
+    color: #16a34a; /* Verde pentru stoc disponibil */
+    font-weight: bold;
 }
 
 .stock-preorder {
-  color: #d97706; /* Portocaliu pentru precomandă */
-  font-weight: bold;
+    color: #d97706; /* Portocaliu pentru precomandă */
+    font-weight: bold;
 }
 
 .stock-unavailable {
-  color: #dc2626; /* Roșu */
-  font-weight: bold;
+    color: #dc2626; /* Roșu pentru indisponibil */
+    font-weight: bold;
 }
 
-button:disabled, input:disabled {
-  background-color: #d1d5db; /* Gri dezactivat */
-  cursor: not-allowed;
-  opacity: 0.7;
+/* Stiluri pentru formular și buton */
+.product form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Stiluri suplimentare */
-button {
-  transition: background-color 0.3s;
+.product input[type="number"] {
+    border: 1px solid #8b0000;
+    padding: 5px;
+    border-radius: 5px;
+    width: 60px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.product button,
+.product input[type="submit"] {
+    padding: 6px 12px;
+    border: 1px solid #8b0000;
+    border-radius: 5px;
+    background: #bc2c2c; /* Culoare fundal buton */
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product button:hover,
+.product input[type="submit"]:hover {
+    background: #8b0000; /* Culoare hover consistentă */
+    color: #ffffff;
+}
+
+.product button:disabled,
+.product input:disabled {
+    background-color: #d1d5db; /* Gri dezactivat */
+    border: 1px solid #d1d5db;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Animație fadeIn pentru produse */
+.product {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: 0.9s; /* Delay similar cu .book */
+}
+
+/* Reutilizăm animația existentă */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 
 <div class="container mx-auto p-6">
-<%= link_to "Pagina principala", main_app.root_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %></br></br>
+  <%= link_to "Pagina principala", main_app.root_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %><br><br>
 
-<%= link_to "Mergi la coș", main_app.cart_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %></br></br>
-      
+  <%= link_to "Mergi la coș", main_app.cart_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2' %><br><br>
       
   <h1 class="text-3xl font-bold mb-6">Produse din categoria 'Cărți'</h1>
 
@@ -75,25 +177,30 @@ button {
           <% if master_variant.images.any? %>
             <% image = master_variant.images.first %>
             <% variant = image.attachment.variant(resize_to_limit: [200, 200]).processed %>
-            <%= image_tag rails_blob_url(variant.blob), alt: product.name, class: 'w-full h-48 object-cover rounded', loading: 'lazy' %>
+            <%= link_to product_path(product) do %>
+              <%= image_tag rails_blob_url(variant.blob), alt: product.name, class: 'w-full h-48 object-cover rounded', loading: 'lazy' %>
+            <% end %>
           <% else %>
             <div class="w-full h-48 bg-gray-200 flex items-center justify-center rounded">
               <span class="text-gray-500"><%= t('spree.product_has_no_description') %></span>
             </div>
           <% end %>
-          <h2 class="text-xl font-semibold mt-2"><%= link_to product.name, "/store/products/#{product.slug}", class: 'hover:text-blue-600' %></h2>
+          <h2 class="text-xl font-semibold mt-2">
+            <%= link_to product.name, product_path(product), class: 'hover:text-blue-600' %>
+          </h2>
           <p class="text-gray-600"><%= product.description&.truncate(100) || t('spree.product_has_no_description') %></p>
           <p class="text-lg font-bold mt-2">Preț: <%= number_to_currency(product.price, unit: 'lei', format: '%n %u') %></p>
           <!-- Afișăm stocul și starea -->
           <p class="text-gray-600 mt-1">
             <%= t('spree.stock') %>:
-            <span class="<%= stock_total > 0 ? 'stock-available' : (is_backorderable ? 'stock-preorder' : 'stock-unavailable') %>">
+            <span class="<%= stock_total > 0 ? 'text-green-500' : (is_backorderable ? 'text-yellow-500' : 'text-red-500') %>">
               <%= stock_total %>
               <%= stock_total > 0 ? t('spree.on_hand') : (is_backorderable ? t('spree.backorderable') : t('spree.out_of_stock')) %>
             </span>
           </p>
           <%= form_with url: add_to_cart_path, method: :post, class: 'mt-4 flex items-center' do |form| %>
             <%= form.hidden_field :product_id, value: product.id %>
+            
             <%= form.number_field :quantity, value: 1, min: 1, class: 'border p-2 rounded w-16 mr-2', disabled: !is_available, aria: { label: 'Cantitate' } %>
             <%= form.submit t('spree.add_to_cart'), class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors', disabled: !is_available, aria: { disabled: !is_available } %>
           <% end %>

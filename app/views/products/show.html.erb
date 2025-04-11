@@ -1,0 +1,116 @@
+<div class="container mx-auto p-6">
+  <%= link_to "Înapoi la Cărți", carti_index_path, class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors mb-6 inline-block' %>
+  <div class="product-details flex gap-6 bg-white rounded-lg shadow-lg p-6">
+    <div class="product-image w-1/3">
+      <% if @product.images.any? %>
+        <!-- Imaginea principală -->
+        <div class="main-image mb-4">
+          <%= image_tag rails_blob_url(@product.images.first.attachment.variant(resize_to_limit: [250, 250]).processed), alt: @product.name, class: 'w-full h-auto object-cover rounded-lg shadow-md main-image-target', loading: 'lazy', id: 'main-image' %>
+        </div>
+      <% else %>
+        <div class="w-full h-64 bg-gray-200 flex items-center justify-center rounded-lg">
+          <span class="text-gray-500">Imagine indisponibilă</span>
+        </div>
+      <% end %>
+    </div>
+    <div class="product-info w-2/3">
+      <h1 class="text-3xl font-bold mb-4 text-gray-800"><%= @product.name %></h1>
+      <p class="text-gray-600 mb-4">
+        <strong>Autor:</strong>
+        <% author = @product.description&.split('autor:')&.last&.strip %>
+        <%= author || 'Necunoscut' %>
+      </p>
+      <p class="text-lg font-bold mb-4 text-blue-600">Preț: <%= number_to_currency(@product.price, unit: 'lei', format: '%n %u') %></p>
+      <p class="text-gray-600 mb-4">
+        <strong>Descriere:</strong>
+        <% description = @product.description&.split('autor:')&.first&.strip || @product.description %>
+        <%= description || 'Fără descriere' %>
+      </p>
+      <p class="text-gray-600 mb-4">
+        <strong>Stoc:</strong>
+        <% stock_total = @product.master.total_on_hand %>
+        <% is_available = @product.master.can_supply?(1) %>
+        <% is_backorderable = @product.master.stock_items.any?(&:backorderable?) %>
+        <span class="<%= stock_total > 0 ? 'text-green-500' : (is_backorderable ? 'text-yellow-500' : 'text-red-500') %>">
+          <%= stock_total %>
+          <%= stock_total > 0 ? t('spree.on_hand') : (is_backorderable ? t('spree.backorderable') : t('spree.out_of_stock')) %>
+        </span>
+      </p>
+      <%= form_with url: add_to_cart_path, method: :post, class: 'mt-4 flex items-center' do |form| %>
+        <%= form.hidden_field :product_id, value: @product.id %>
+        
+        <%= form.number_field :quantity, value: 1, min: 1, class: 'border p-2 rounded w-16 mr-2', disabled: !is_available, aria: { label: 'Cantitate' } %>
+        <%= form.submit "Adaugă în coș", class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors', disabled: !is_available, aria: { disabled: !is_available } %>
+      <% end %>
+    </div>
+  </div>
+  <!-- Caruselul Swiper.js dedesubt -->
+  <% if @product.images.any? %>
+    <div class="thumbnails mt-6">
+      <div class="swiper thumbnails-swiper">
+        <div class="swiper-wrapper">
+          <% @product.images.each_with_index do |image, index| %>
+            <div class="swiper-slide">
+              <%= image_tag rails_blob_url(image.attachment.variant(resize_to_limit: [100, 100]).processed), alt: @product.name, class: 'w-full h-auto object-cover rounded-lg shadow-md thumbnail', loading: 'lazy', data: { index: index } %>
+            </div>
+          <% end %>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  <% end %>
+</div>
+<script>
+let swiperInstance = null;
+let retryCount = 0;
+const maxRetries = 10; // Număr maxim de încercări
+
+function initializeSwiper() {
+  console.log("Attempting to initialize Swiper.js");
+  const swiperElement = document.querySelector('.swiper');
+  if (swiperElement) {
+    console.log("Swiper element found:", swiperElement);
+    // Distruge instanța anterioară de Swiper, dacă există
+    if (swiperInstance) {
+      swiperInstance.destroy(true, true);
+      console.log("Previous Swiper instance destroyed");
+    }
+    // Inițializează o nouă instanță de Swiper
+    swiperInstance = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    console.log("Swiper.js initialized successfully");
+  } else {
+    retryCount++;
+    if (retryCount <= maxRetries) {
+      console.error("Swiper element not found, retrying... Attempt", retryCount);
+      setTimeout(initializeSwiper, 100);
+    } else {
+      console.error("Swiper element not found after", maxRetries, "attempts. Giving up.");
+    }
+  }
+}
+
+// Rulează inițializarea la turbo:load (pentru Turbo Rails)
+document.addEventListener('turbo:load', () => {
+  console.log("Turbo:load event fired");
+  retryCount = 0; // Resetează contorul de încercări
+  initializeSwiper();
+});
+
+// Rulează inițializarea la DOMContentLoaded (ca rezervă)
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("DOMContentLoaded event fired");
+  retryCount = 0; // Resetează contorul de încercări
+  initializeSwiper();
+});
+</script>

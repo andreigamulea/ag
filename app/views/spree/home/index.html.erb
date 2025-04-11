@@ -18,6 +18,7 @@
         <p class="text-lg font-bold mt-2">Price: <%= number_to_currency(product.price) %></p>
         <%= form_with url: main_app.add_to_cart_path, method: :post, class: 'mt-4' do |form| %>
           <%= form.hidden_field :product_id, value: product.id %>
+          
           <%= form.number_field :quantity, value: 1, min: 1, class: 'border p-2 rounded w-16 mr-2' %>
           <%= form.submit 'Add to Cart', class: 'bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600' %>
         <% end %>

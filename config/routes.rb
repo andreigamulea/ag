@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+get '/products/:slug', to: 'products#show', as: :product
+
+
   get "up" => "rails/health#show", as: :rails_health_check
 
   root 'welcome#index'
@@ -34,4 +37,5 @@ Spree::Core::Engine.routes.draw do
                sign_out: 'logout',
                sign_up: 'signup'
              }
+             
 end

@@ -4,8 +4,7 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^8.0.13",
-    "tailwindcss": "3.4.14",
-    "caniuse-lite": "^1.0.30001712"
+    "tailwindcss": "3.4.14"
   },
   "devDependencies": {
     "esbuild": "^0.25.1"
@@ -15,5 +14,3 @@
     "build:css": "tailwindcss -c tailwind.config.js -i app/assets/stylesheets/application.tailwind.css -o app/assets/builds/application.css --minify"
   }
 }
-
-

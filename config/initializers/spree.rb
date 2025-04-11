@@ -15,7 +15,22 @@ Spree.config do |config|
   Spree.config do |config|
     config.currency = "RON" # Or your preferred currency
   end
+# Configurează formatarea monedei pentru RON
+Money::Currency.register({
+  priority: 1,
+  iso_code: "RON",
+  name: "Romanian Leu",
+  symbol: "lei",
+  disambiguate_symbol: "RON",
+  subunit: "Ban",
+  subunit_to_unit: 100,
+  symbol_first: false,
+  thousands_separator: ".",
+  decimal_mark: ","
+})
 
+# Actualizează formatarea implicită pentru Money
+Money.default_currency = Money::Currency.new("RON")
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
 

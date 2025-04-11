@@ -40,12 +40,19 @@ module Spree
       if @order
         line_item = @order.line_items.find(params[:id])
         line_item.destroy
-        head :ok # Returnează doar status 200 OK pentru JavaScript
+        @order.recalculate # Recalculează totalurile comenzii
+        respond_to do |format|
+          format.json { render json: { success: true, order_total: @order.total.to_s }, status: :ok }
+        end
       else
-        head :not_found
+        respond_to do |format|
+          format.json { render json: { success: false, error: 'Order not found' }, status: :not_found }
+        end
       end
     rescue ActiveRecord::RecordNotFound
-      head :not_found
+      respond_to do |format|
+        format.json { render json: { success: false, error: 'Line item not found' }, status: :not_found }
+      end
     end
     private
 

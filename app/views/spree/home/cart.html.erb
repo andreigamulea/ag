@@ -63,28 +63,38 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => {
           console.log('Response status:', response.status);
           if (response.ok) {
-            const row = document.querySelector(`tr[data-line-item-id="${lineItemId}"]`);
-            console.log('Row found:', row);
-            if (row) {
-              row.remove();
-              console.log('Row removed');
-            } else {
-              console.log('Row not found for ID:', lineItemId);
-            }
-            const remainingItems = document.querySelectorAll('tbody tr');
-            console.log('Remaining items:', remainingItems.length);
-            const cartCountElement = document.querySelector('.cart-count');
-            console.log('Cart count element:', cartCountElement); // Debug
-            if (cartCountElement) {
-              cartCountElement.textContent = `Coș (${remainingItems.length})`;
-              console.log('Cart count updated to:', cartCountElement.textContent); // Debug
-            } else {
-              console.log('Cart count element not found'); // Debug
-            }
-            if (remainingItems.length === 0) {
-              console.log('Cart is empty, reloading');
-              window.location.reload();
-            }
+            return response.json().then(data => {
+              const row = document.querySelector(`tr[data-line-item-id="${lineItemId}"]`);
+              console.log('Row found:', row);
+              if (row) {
+                row.remove();
+                console.log('Row removed');
+              } else {
+                console.log('Row not found for ID:', lineItemId);
+              }
+              const remainingItems = document.querySelectorAll('tbody tr');
+              console.log('Remaining items:', remainingItems.length);
+              const cartCountElement = document.querySelector('.cart-count');
+              console.log('Cart count element:', cartCountElement);
+              if (cartCountElement) {
+                cartCountElement.textContent = `Coș (${remainingItems.length})`;
+                console.log('Cart count updated to:', cartCountElement.textContent);
+              } else {
+                console.log('Cart count element not found');
+              }
+              // Actualizează totalul în UI
+              const totalElement = document.querySelector('.text-lg.font-bold');
+              if (totalElement && data.order_total) {
+                totalElement.textContent = `Total: ${data.order_total}`;
+                console.log('Total updated to:', data.order_total);
+              } else {
+                console.log('Total element or order_total not found');
+              }
+              if (remainingItems.length === 0) {
+                console.log('Cart is empty, reloading');
+                window.location.reload();
+              }
+            });
           } else {
             alert('A apărut o eroare la ștergerea produsului.');
           }

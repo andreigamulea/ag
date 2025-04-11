@@ -37,5 +37,5 @@ Spree::Core::Engine.routes.draw do
                sign_out: 'logout',
                sign_up: 'signup'
              }
-             
+             delete '/cart/remove/:id', to: 'home#remove_from_cart', as: :remove_from_cart
 end

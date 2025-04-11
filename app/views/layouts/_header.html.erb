@@ -22,7 +22,9 @@
   <%= link_to "Creaza un cont", spree.new_spree_user_registration_path %>
 <% end %>
 <%= link_to "Produse", main_app.carti_index_path %>
-<%= link_to "Coș (#{cart_item_count})", main_app.cart_path %>
+<%= link_to main_app.cart_path, class: 'cart-link' do %>
+  <span class="cart-count">Coș (<%= cart_item_count %>)</span>
+<% end %>
 </nav>
 
 

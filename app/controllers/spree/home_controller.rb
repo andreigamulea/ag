@@ -35,7 +35,18 @@ module Spree
       # Recalculează totalul comenzii
       @cart.recalculate
     end
-
+    def remove_from_cart
+      @order = current_order
+      if @order
+        line_item = @order.line_items.find(params[:id])
+        line_item.destroy
+        head :ok # Returnează doar status 200 OK pentru JavaScript
+      else
+        head :not_found
+      end
+    rescue ActiveRecord::RecordNotFound
+      head :not_found
+    end
     private
 
     # Obține comanda curentă din sesiune sau creează una nouă

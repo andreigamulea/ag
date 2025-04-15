@@ -10,6 +10,7 @@ Rails.application.config.to_prepare do
   end
 end
 Spree.config do |config|
+  
   # Core:
   # Default currency for new sites
   Spree.config do |config|
@@ -42,7 +43,7 @@ Money.default_currency = Money::Currency.new("RON")
   # Configure adapter for attachments on products and taxons (use ActiveStorageAttachment or PaperclipAttachment)
   config.image_attachment_module = 'Spree::Image::ActiveStorageAttachment'
   config.taxon_attachment_module = 'Spree::Taxon::ActiveStorageAttachment'
-
+ 
   # Defaults
   # Permission Sets:
 

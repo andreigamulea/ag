@@ -11,9 +11,11 @@ module Spree
           end
   
           def edit
+            
             @product = Spree::Product.friendly.find(params[:id])
             @resource = @product
             Rails.logger.info "ProductsController#edit called, resource: #{@resource.inspect}"
+            super # Apelăm logica implicită a Solidus
           end
   
           def create

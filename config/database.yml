@@ -50,7 +50,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  url: postgres://andrei:UMXcEBmB0HojyLF341vJLLdUDchEp1lO@dpg-cgnf1ubldisfgrunqlv0-a.frankfurt-postgres.render.com/ia_production_3f1s
+  url: postgres://andrei:oJGH2fo9VtVZQnnQ4qY58HiAnxFDG58k@dpg-d19hjsjipnbc73elbr8g-a.frankfurt-postgres.render.com/ag_production
   #url: postgres://andrei:UMXcEBmB0HojyLF341vJLLdUDchEp1lO@dpg-cgnf1ubldisfgrunqlv0-a/ia_production_3f1s  #asta e intern
 #production:
  # adapter: postgresql

@@ -10,6 +10,9 @@ bundle install
 echo "📦 Instalez pachete JS..."
 yarn install --frozen-lockfile
 
+echo "📁 Creez directorul pentru fișiere Active Storage..."
+mkdir -p /var/data/storage
+
 echo "🎨 Compilez Tailwind + CSS personalizat..."
 yarn tailwindcss -c tailwind.config.js -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify
 

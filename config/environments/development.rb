@@ -77,4 +77,9 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: "localhost:3000" }
   
   config.assets.precompile = ['application.css', '*.png', '*.jpg', '*.jpeg', '*.gif', '*.ico']
+  config.after_initialize do
+    ActiveStorage::Current.url_options = {
+      host: "http://localhost:3000"
+    }
+  end
 end

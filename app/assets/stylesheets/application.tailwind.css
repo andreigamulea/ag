@@ -7,7 +7,7 @@
 
 
 .welcome-box {
-  @apply container mx-auto p-6 bg-blue-500 rounded-lg shadow-lg;
+  @apply p-6 bg-blue-500 rounded-lg shadow-lg;
 }
 .welcome-title {
   @apply text-5xl font-extrabold text-white mb-4 animate-bounce;

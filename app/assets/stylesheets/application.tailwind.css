@@ -1,5 +1,6 @@
-@import "custom";
-@import "base1";
+@import "./custom.css";
+@import "./base1.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

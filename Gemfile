@@ -77,4 +77,4 @@ gem "solidus_stripe", "~> 5.0"
 gem "solidus_admin", ">= 0.2"
 
 gem "tailwindcss-rails", "~> 3.0"
-gem 'solidus_i18n', '~> 2.2' 
+#gem 'solidus_i18n', '~> 2.2' 

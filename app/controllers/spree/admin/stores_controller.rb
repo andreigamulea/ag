@@ -12,7 +12,7 @@ module Spree
           @store = Spree::Store.find(params[:id])
           @resource = @store
           if @store.update(store_params)
-            redirect_to spree.admin_stores_path, notice: t(:successfully_updated, resource: t(:store))
+            redirect_to spree.admin_stores_path, notice: "Magazinul a fost actualizat cu succes."
           else
             render :edit
           end

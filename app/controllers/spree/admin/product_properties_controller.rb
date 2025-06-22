@@ -10,9 +10,9 @@ module Spree
   
         def create
           @product_property = @product.product_properties.build(product_property_params)
-          if @product_property.save
-            redirect_to spree.admin_product_product_properties_path(@product), notice: t(:successfully_created, resource: t(:product_property))
-          else
+         if @product_property.save
+          redirect_to spree.admin_product_product_properties_path(@product), notice: "Proprietatea produsului a fost creată cu succes."
+        else
             render :new
           end
         end

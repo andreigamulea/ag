@@ -99,7 +99,7 @@ Rails.application.configure do
 # config/environments/production.rbconfig.assets.compile = false
   config.assets.compile = false
   config.assets.precompile = ['application.css', '*.png', '*.jpg', '*.jpeg', '*.gif', '*.ico']
-
+  config.assets.css_compressor = nil
   config.assets.configure do |env|
     env.unregister_preprocessor('text/css', Sprockets::SassCompressor)
   end

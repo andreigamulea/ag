@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -o errexit
-
+echo "🧹 Curăț cache vechi"
+rm -rf tmp/cache
 bundle install
 yarn install
 

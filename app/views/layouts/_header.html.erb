@@ -15,8 +15,8 @@
 </nav>
 
 <nav>
-<!-- Forțăm Tailwind să păstreze aceste clase -->
-<span class="text-sm text-red-800 hover:text-red-600 font-semibold uppercase tracking-normal"></span>
+
+
 
 <% if spree_current_user %> 
 
@@ -24,7 +24,7 @@
 <%= button_to "Delogare", spree.destroy_spree_user_session_path,
   method: :delete,
   form: { class: "inline" },
-  class: "text-sm text-red-800 hover:text-red-600 font-semibold uppercase tracking-normal bg-transparent border-0 p-0 m-0 cursor-pointer align-baseline"
+  class: "link-button"
 %>
 
 

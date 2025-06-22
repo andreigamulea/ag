@@ -6,24 +6,3 @@
 @tailwind utilities;
 
 
-.welcome-box {
-  @apply p-6 bg-blue-500 rounded-lg shadow-lg;
-}
-.welcome-title {
-  @apply text-5xl font-extrabold text-white mb-4 animate-bounce;
-}
-.welcome-text {
-  @apply text-xl text-yellow-200;
-}
-
-
-
-.products {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6;
-}
-.product {
-  @apply border p-4 rounded-lg shadow-md;
-}
-.product img {
-  @apply w-full h-48 object-cover mb-4;
-}

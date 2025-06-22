@@ -12,7 +12,9 @@
   <script src="https://unpkg.com/@hotwired/turbo-rails@7.3.0/dist/turbo.es2017-umd.js"></script>
   <!-- Include Swiper.js direct prin CDN -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= tag.link rel: "stylesheet", href: asset_path("application.css"), "data-turbo-track": "reload" %>
+
+  
   <!-- Include stilurile Swiper.js direct prin CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Include Turbo Rails direct prin CDN -->

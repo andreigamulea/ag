@@ -189,7 +189,7 @@
               <%= link_to product_path(product) do %>
                 <%= image_tag url_for(variant), alt: product.name, class: 'w-full h-48 object-cover rounded', loading: 'lazy' %>
               <% end %>
-            <% elsif image.present? %>
+            <% elsif image&.url.present? %>
               <%= link_to product_path(product) do %>
                 <%= image_tag image.url, alt: product.name, class: 'w-full h-48 object-cover rounded', loading: 'lazy' %>
               <% end %>
@@ -198,6 +198,7 @@
                 <%= image_tag 'placeholder.png', alt: 'Fără imagine', class: 'w-full h-48 object-cover rounded', loading: 'lazy' %>
               <% end %>
             <% end %>
+
 
 
           <% else %>

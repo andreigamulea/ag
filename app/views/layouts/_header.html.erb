@@ -16,6 +16,17 @@
 
 <nav>
 <% if spree_current_user %> 
+
+
+<%= button_to "Delogare", spree.destroy_spree_user_session_path,
+  method: :delete,
+  form: { class: "inline" },
+  class: "text-sm text-red-800 hover:text-red-600 font-semibold uppercase tracking-normal bg-transparent border-0 p-0 m-0 cursor-pointer align-baseline"
+%>
+
+
+
+
   <%= link_to "Admin - Comenzi", spree.admin_orders_path %>
   <% else %>
   <%= link_to "Login", spree.new_spree_user_session_path %>

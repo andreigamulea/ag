@@ -1,4 +1,4 @@
-<% if resource && resource.errors.any? %>
+<% if defined?(resource) && resource && resource.errors.any? %>
   <div id="error_explanation" data-turbo-cache="false">
     <h2>
       Eroare: nu s-a putut salva <%= resource.class.model_name.human.downcase %> (total erori: <%= resource.errors.count %>)

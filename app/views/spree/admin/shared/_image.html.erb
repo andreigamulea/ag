@@ -1,0 +1,7 @@
+<% size ||= :mini %>
+
+<% if image&.attachment&.attached? %>
+  <%= image_tag url_for(image.attachment.variant(resize_to_limit: [100, 100])) rescue nil %>
+<% else %>
+  <span class="image-placeholder <%= size %>">Fără imagine</span>
+<% end %>

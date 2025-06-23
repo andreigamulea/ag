@@ -1,7 +1,27 @@
-<% size ||= :mini %>
+<td class="text-center">
+  <% if image.attachment.attached? %>
+    <%= render partial: "spree/admin/shared/modal",
+      locals: {
+        target: "modal-image-#{image.id}",
+        title: image.alt.presence || "Imagine",
+        content: tag.div(image_tag(image.url(:large)), class: 'align-center')
+      } %>
+  <% else %>
+    <em class="text-gray-500 italic">Fără fișier</em>
+  <% end %>
+</td>
 
-<% if image&.attachment&.attached? %>
-  <%= image_tag url_for(image.attachment.variant(resize_to_limit: [100, 100])) rescue nil %>
-<% else %>
-  <span class="image-placeholder <%= size %>">Fără imagine</span>
-<% end %>
+<td><%= image.viewable.sku if image.viewable.respond_to?(:sku) %></td>
+
+<td>
+  <%= image.position %>
+</td>
+
+<td>
+  <%= image.alt %>
+</td>
+
+<td class="text-end">
+  <%= link_to_edit image, url: edit_object_url(image) %>
+  <%= link_to_delete image, url: object_url(image) %>
+</td>

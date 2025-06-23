@@ -24,9 +24,9 @@
   </td>
 
   <td class="text-end">
-    <% if image.persisted? %>
-      <%= link_to_edit image, url: [:edit, :admin, image] %>
-      <%= link_to_delete image, url: [:admin, image] %>
+    <% if image.persisted? && image.viewable.respond_to?(:product) %>
+      <%= link_to_edit image, url: edit_admin_product_image_path(image.viewable.product, image) %>
+      <%= link_to_delete image, url: admin_product_image_path(image.viewable.product, image) %>
     <% end %>
   </td>
 </tr>

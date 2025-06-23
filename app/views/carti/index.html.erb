@@ -188,7 +188,7 @@
   <% if image&.attachment&.attached? %>
     <%= image_tag url_for(image.attachment), alt: product.name, class: 'w-full h-48 object-cover rounded', loading: 'lazy' %>
   <% else %>
-    <%= image_tag 'placeholder.png', alt: 'Fără imagine', class: 'w-full h-48 object-cover rounded', loading: 'lazy' %>
+    <%= image_tag '/placeholder.png', alt: 'Fără imagine', class: 'w-full h-48 object-cover rounded', loading: 'lazy' %>
   <% end %>
 <% end %>
 
